@@ -311,7 +311,7 @@ if (usern == 'login' && passw == 'password'){
     window.location = "index.html";
     return false;
 }
-//else {alert('Wrong...');};
+else {alert('Wrong...');};
 
 }
 
