@@ -306,7 +306,7 @@ function validate(){
 
 const usern = document.getElementById('log').value;
 const passw = document.getElementById('pas').value; 
-if (usern == 'login' && passw == 'password'){
+if (usern == 'login' && passw == 'pas'){
     alert('Success!');
     window.location.href="https://aelexx.github.io/Reports.html";
     return false;
