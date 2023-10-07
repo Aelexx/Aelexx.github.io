@@ -308,7 +308,7 @@ const usern = document.getElementById('log').value;
 const passw = document.getElementById('pas').value; 
 if (usern == 'login' && passw == 'password'){
     alert('Success!');
-    window.location = "index.html";
+    window.location.assign('index.html');
     return false;
 }
 else {alert('Wrong...');};
