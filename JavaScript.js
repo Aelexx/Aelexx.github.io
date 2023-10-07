@@ -302,14 +302,18 @@ formSI12.addEventListener("submit", function(event){
     
 });*/
 
-const widg = document.querySelector('.pict');
-const popMenu = document.querySelector('.formWidget'); 
+function validate(){
 
-widg.addEventListener('click', function(event){
-    popMenu;
-    console.log('Click on');
-});
+const usern = document.getElementById('log').value;
+const passw = document.getElementById('pas').value; 
+if (usern == 'login' && passw == 'password'){
+    alert('Success!');
+    window.location = "Success.html";
+    return false;
+}
+//else {alert('Wrong...');};
 
+}
 
 
 
