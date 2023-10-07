@@ -313,13 +313,14 @@ if (usern == 'login' && passw == 'pasw'){
 }
 else {alert('Wrong...');};
 }
-switch (key) {
-    case value:
-        
-        break;
 
-    default:
-        break;
+function choose(){
+    const chooser = document.getElementById('chb5');
+    if(chooser){
+        window.location.href="https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/realtime/overview?params=_u..nav%3Dmaui&collectionId=life-cycle";
+
+    }
+
 }
 
 
