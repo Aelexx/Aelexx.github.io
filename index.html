@@ -115,23 +115,7 @@
                     <input type="input" name="num02" placeholder="password...">
                     <button>Submit</button>      
                 </form>
-                <?php 
-                    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                    $num01 = filter_input(INPUT_POST, 'num01', FILTER_SANITIZE_NUMBER_FLOAT);
-                    $num02 = filter_input(INPUT_POST, 'num02', FILTER_SANITIZE_NUMBER_FLOAT);
                 
-                    $error = false;
-                    if(empty($num01) || empty($num02)){
-                        echo '<p class="calc-error">Fill every field</p>';
-                        $error = true;
-                    }
-                    
-                    if(!$error){
-                        $value = 0;
-                            echo '<p class="calc-error"> Wrong happend!</p>';                       
-                            }  
-                    } 
-                ?>
             </div>
         <ol id="mainPlanList">
             <li><a href="http://localhost:8000/Website/PlanBrasil.html" target="_blank" class="linkPrevent">Total</a> scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?</li>
