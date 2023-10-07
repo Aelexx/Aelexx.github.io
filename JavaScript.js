@@ -308,7 +308,7 @@ const usern = document.getElementById('log').value;
 const passw = document.getElementById('pas').value; 
 if (usern == 'login' && passw == 'password'){
     alert('Success!');
-    window.open("https://aelexx.github.io/index.html");
+    window.open("https://aelexx.github.io/Reports.html");
     return false;
 }
 else {alert('Wrong...');};
