@@ -108,14 +108,57 @@
 
         </h1>
     </div>
-    <h2> OKEYs </h2>
-            <div class="dropSearch">
-                <button class="dropBtn">List</button>
-                <div class="dropContent">
-                    <input class="searchField" type="search" id="site-search" placeholder="Search..." name="q" maxlength="55" required>
-                    <button>Search</button>
-                    <div class="textareaCounter">Remains <span></span> letters</div>
-                </div> 
+    <h2> OKEY </h2>
+            <div class="form-signin">
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                    <input type="number" name="num01" placeholder="Number 1">
+                        <select name="operator">
+                            <option value="add">+</option>
+                            <option value="subtract">-</option>
+                            <option value="multiply">*</option>
+                            <option value="divide">/</option>
+                        </select>  
+                    <input type="number" name="num02" placeholder="Number 2">
+                    <button>Computing</button>      
+                </form>
+                <?php 
+                    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                    $num01 = filter_input(INPUT_POST, 'num01', FILTER_SANITIZE_NUMBER_FLOAT);
+                    $num02 = filter_input(INPUT_POST, 'num02', FILTER_SANITIZE_NUMBER_FLOAT);
+                    $operator = htmlspecialchars($_POST['operator']);
+                
+                    $error = false;
+                    if(empty($num01) || empty($num02) || empty($operator)){
+                        echo '<p class="calc-error">Fill every field</p>';
+                        $error = true;
+                    }
+                    if(!is_numeric($num01) || !is_numeric($num02)){
+                        echo '<p class="calc-error">Only numbers!</p>';
+                        $error = true;
+                    }
+                    if(!$error){
+                        $value = 0;
+                        switch ($operator) {
+                            case 'add':
+                                $value = $num01 + $num02;
+                                break;
+                            case 'subtract':
+                                $value = $num01 - $num02;
+                                break;
+                            case 'multiply':
+                                $value = $num01 * $num02;
+                                break;
+                            case 'divide':
+                                $value = $num01 / $num02;
+                                break;
+        
+                            default:
+                                echo '<p class="calc-error"> Wrong happend!</p>';
+                                break;
+                            }
+                        echo "<p class='calc-result'>Result = " .  $value . "</p>";
+                        }
+                    }
             </div>
         <ol id="mainPlanList">
             <li><a href="http://localhost:8000/Website/PlanBrasil.html" target="_blank" class="linkPrevent">Total</a> scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?</li>
