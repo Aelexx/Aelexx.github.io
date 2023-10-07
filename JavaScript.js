@@ -312,7 +312,14 @@ if (usern == 'login' && passw == 'pasw'){
     return false;
 }
 else {alert('Wrong...');};
+}
+switch (key) {
+    case value:
+        
+        break;
 
+    default:
+        break;
 }
 
 
