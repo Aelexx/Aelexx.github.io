@@ -323,6 +323,10 @@ function redirect(){
     }
 
 }
+$("#subm").click(function(){
+    alert("Clicks!");
+});
+
 
 
 
