@@ -315,7 +315,7 @@ else {alert('No authorization. Try another one');};
 
 function redirect(){
     if(document.getElementById('chb1').checked == true){
-        window.open('https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/reports/dashboard?params=_u..nav%3Dmaui&r=lifecycle-acquisition-overview&ruid=lifecycle-acquisition-overview,life-cycle,acquisition&collectionId=life-cycle');
+        window.open('https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/reports/dashboard/edit?params=_u..nav%3Dmaui&r=lifecycle-acquisition-overview&ruid=lifecycle-acquisition-overview,life-cycle,acquisition&collectionId=life-cycle');
     }
 
     if(document.getElementById('chb5').checked == true){
