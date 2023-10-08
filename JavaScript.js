@@ -314,12 +314,11 @@ if (usern == 'login' && passw == 'pasw'){
 else {alert('Wrong...');};
 }
 
-function choose(){
-    //const chooser = document.getElementById('chb5');
-    if(document.getElementById('chb5').checked){
+function redirect(){
+    if(document.getElementById('chb5').checked == true){
         window.location.href="https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/realtime/overview?params=_u..nav%3Dmaui&collectionId=life-cycle";
-
     }
+    else{alert('Check it! For result');};
 
 }
 
