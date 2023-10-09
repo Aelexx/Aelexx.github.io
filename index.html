@@ -134,24 +134,6 @@
   }).mount('#app')
 </script>
 
-<script> 
-import { createApp, ref } from 'vue'
-
-createApp({
-  setup() {
-    return {
-      count: ref(0)
-    }
-  }
-}).mount('#app')
-</script>
-
-<div id="app">
-    <button @click="count++">
-      Count is: {{ count }}
-    </button>
-  </div>
-
         <div class="container">
             <div class="form-signin">
                 <form id="form-id" action="" method="post">
