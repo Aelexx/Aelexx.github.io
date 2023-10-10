@@ -310,7 +310,7 @@ if (usern == 'login' && passw == 'pasw'){
     window.location.href="https://aelexx.github.io/Reports.html";
     return false;
 }
-else {alert('No authorization. Try another one');};
+else {alert('Wrong authorization, try another one.');};
 }
 
 function redirect(){
@@ -324,7 +324,6 @@ function redirect(){
 
 };
     
-
 
 $("#subm").click(function(){
     alert("Clicks!");
