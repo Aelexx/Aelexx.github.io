@@ -156,8 +156,8 @@
         $("#leave-me").mouseout(function(){
             $(this).hide();
         });
-        $("#enter-me").keypress(function(){
-            $(this).hide();
+        $("#enter-me").click(function(){
+            $(this).css("color", "red");
         });
          
     });
