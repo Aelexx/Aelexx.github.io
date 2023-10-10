@@ -17,6 +17,84 @@
 .formWidget{
     display: none;
 }
+
+#headerBrasil{
+    background-color:aliceblue;
+    color:azure;
+    padding:50px;
+    border:groove;
+    text-align:center;
+}
+#mainPlanList{
+    text-align:left;
+    text-decoration:solid;
+}
+.city {
+    background-color: antiquewhite;
+    color:aqua;
+    border:double;
+    padding:30px;
+    text-align:left;
+}
+#mainCity {
+    text-align: left;
+    text-decoration: solid;
+}
+.parentDiv{
+    display: block;
+    background-color: bisque;
+    width: 30vw;
+    height: 30vh;
+    overflow: visible;
+    position: absolute;
+}
+.childDiv{
+    display: block;
+    background-color:aquamarine;
+    width: 20vw;
+    height: 20vh;
+    overflow: visible;
+    border: 1cm;
+    position:absolute;
+}
+.greatChildDiv{
+    display: block;
+    background-color:rgb(127, 127, 255);
+    width: 10vw;
+    height: 10vh;
+    overflow: visible;
+    border: 1cm;
+    position:absolute;
+}
+.dropSearch {
+    position: relative;
+    display: inline-block;
+}
+
+.dropContent{
+    display:none;
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 1;
+}
+.show-form .dropContent {
+    display: block;
+}
+.close-form .dropContent{
+    display: none;
+}
+.dropBtn{
+    background-color: cornflowerblue;
+    color:black;
+    padding: 16px;
+    block-size: auto;
+    font-size: small;
+    border: none;
+}
+.searchform{
+    display:none;
+}
+
 #enter-me{
     display: none;
     font-size: large;
