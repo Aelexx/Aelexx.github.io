@@ -94,10 +94,8 @@
     display: none;
 }
 
-
-
 #enter-me{
-    display: none;
+    display: inline-block;
     font-size: large;
 }
 
