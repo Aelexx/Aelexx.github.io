@@ -20,11 +20,23 @@
   <meta name="google-site-verification" content="2PJjnwr4mSaI1a5j7JmKpg3fIMtiCQMGEjlfJwE4Wxg" />
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="739646488085-e9arvn706p30ujr65a498cos5qu1s19u.apps.googleusercontent.com">
-  
+  <style>
+    a:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: red;
+    }
+    </style>
 </head>
 <body>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <fieldset>
         <p> Choose options </p>
         <div class="reports">
             <a href="https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/reports/dashboard?params=_u..nav%3Dmaui&r=6269311450&ruid=lifecycle-acquisition-overview,life-cycle,acquisition&collectionId=6269259544" style="background-color: brown; color: antiquewhite"  target="_blank">Acquisition</a>
@@ -38,12 +50,7 @@
             <label>Real time</label>
             <input type="checkbox" id="chb5">
             <button type="submit" onclick="redirect()">Accept</button>
-
         </div>
-        
-    </fieldset>
-
-    
     <script src="JavaScript.js"></script>
 </body>
 </html>
