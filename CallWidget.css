@@ -96,7 +96,10 @@
 
 #enter-me{
     display: inline-block;
-    font-size: 33px;
+    font-size: 23px;
 }
-
-
+.acquis {
+    background-color: brown;
+    color:azure;
+    display: inline-block;
+}
