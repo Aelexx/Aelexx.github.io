@@ -98,4 +98,6 @@
     display: inline-block;
     font-size: 23px;
 }
-
+.reports{
+    display: none;
+}
