@@ -68,6 +68,29 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <script>
+      window.YaAuthSuggest.init(
+        {
+       client_id: 'c90eed8df5de43c2a6107c0307b0db83',
+       response_type: 'token',
+       redirect_uri: 'https://aelexx.github.io/Step1.html/suggest/token'
+    },
+        tokenPageOrigin,
+        {
+          view: "button",
+          parentId: "buttonContainerId",
+          buttonSize: 'm',
+          buttonView: 'main',
+          buttonTheme: 'light',
+          buttonBorderRadius: "0",
+          buttonIcon: 'ya',
+        }
+      )
+      .then(({handler}) => handler())
+      .then(data => console.log('Сообщение с токеном', data))
+      .catch(error => console.log('Обработка ошибки', error))
+    </script>
         <p> Step 1 </p>
         <div class="reports">
             <a href="https://tagmanager.google.com/#/container/accounts/6200355730/containers/168205475/workspaces/9/tags" target="_self">My Google tags</a>
