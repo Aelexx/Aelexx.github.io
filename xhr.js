@@ -1,16 +1,21 @@
+function sendRequest(method, url){
+    return new Promise((resolve, reject) => {
 const requestURL = 'https://jsonplaceholder.typicode.com/users';
 const xhr = new XMLHttpRequest();
 xhr.open('GET', requestURL);
 xhr.responseType = 'json';
 xhr.onload = () => {
     if(xhr.status >= 400){
-        console.error(xhr.response);
+        reject(xhr.response);
     }
     else{
-        console.log(xhr.response);
+        resolve(xhr.response);
     }  
 }
 xhr.onerror = () => {
-    console.log(xhr.response);
+    reject(xhr.response);
 }
 xhr.send();
+    })
+}
+
