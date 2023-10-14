@@ -21,7 +21,7 @@ xhr.send(body);
 }
 const body = {
     name:'Alex',
-    size:M
+    age: 24
 }
 sendRequest('GET', requestURL, body)
 .then(data => console.log(data))
