@@ -18,4 +18,6 @@ xhr.onerror = () => {
 xhr.send();
     })
 }
-
+sendRequest('GET', requestURL)
+.then(data => console.log(data))
+.catch(err => console.log(err))
