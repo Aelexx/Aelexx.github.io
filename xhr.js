@@ -2,7 +2,7 @@ function sendRequest(method, url){
     return new Promise((resolve, reject) => {
 const requestURL = 'https://jsonplaceholder.typicode.com/users';
 const xhr = new XMLHttpRequest();
-xhr.open('GET', requestURL);
+xhr.open(method, url);
 xhr.responseType = 'json';
 xhr.onload = () => {
     if(xhr.status >= 400){
