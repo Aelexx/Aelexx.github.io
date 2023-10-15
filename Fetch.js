@@ -1,4 +1,4 @@
-let requestURL = 'https://jsonplaceholder.typicode.com/users'
+const requestURL = 'https://jsonplaceholder.typicode.com/users'
 
 function sendRequest(method, url, body = null){
     const headers = {
