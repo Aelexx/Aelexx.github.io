@@ -26,6 +26,10 @@ const body = {
     name:'Alex',
     age: 24
 }
-sendRequest('POST', requestURL, body)
+sendRequest('GET', requestURL, body)
 .then(data => console.log(data))
 .catch(err => console.log(err))
+
+// sendRequest('POST', requestURL, body)
+// .then(data => console.log(data))
+// .catch(err => console.log(err))
