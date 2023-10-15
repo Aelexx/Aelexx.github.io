@@ -10,7 +10,15 @@ function sendRequest(method, url, body = null){
         headers: headers
     }
         ).then(response => {
-        return response.json()
+            if(response.ok){
+            return response.json()
+            }
+            return response.json().then(error => {
+                const er = new Error('Something wrong')
+                er.data = error
+                throw er
+            })
+        
     })
 }
 
