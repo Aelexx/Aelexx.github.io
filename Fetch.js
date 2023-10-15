@@ -4,7 +4,7 @@ function sendRequest(method, url, body = null){
     return fetch(url)
 }
 
-sendRequest('GET', requestURL, body)
+sendRequest('GET', requestURL)
 .then(data => console.log(data))
 .catch(err => console.log(err))
 
