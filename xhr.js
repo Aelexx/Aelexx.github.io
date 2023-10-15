@@ -19,7 +19,7 @@ xhr.onload = () => {
 xhr.onerror = () => {
     reject(xhr.response)
 }
-xhr.send(body)
+xhr.send(JSON.stringify(body))
 })
 }
 const body = {
