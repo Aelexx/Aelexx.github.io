@@ -1,7 +1,9 @@
 const requestURL = 'https://jsonplaceholder.typicode.com/users'
 
 function sendRequest(method, url, body = null){
-    return fetch(url)
+    return fetch(url).then(response => {
+        return response.json()
+    })
 }
 
 sendRequest('GET', requestURL)
