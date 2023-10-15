@@ -1,4 +1,4 @@
-const requestURL = 'https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/reports/reportinghub?params=_u..nav%3Dmaui'
+const requestURL = 'https://jsonplaceholder.typicode.com/users'
 
 function sendRequest(method, url, body = null){
     const headers = {
