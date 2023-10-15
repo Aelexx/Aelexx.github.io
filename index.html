@@ -30,6 +30,7 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="js/bootstrap.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -118,8 +119,8 @@
 </script>
 <script>
     $(document).ready(function(){
-        $('btn').click(function(){
-            $('ajax').load('LoadTxt.txt');
+        $("#btn").click(function(){
+            $("#ajax").load('LoadTxt.txt');
         });
     });
 </script>
