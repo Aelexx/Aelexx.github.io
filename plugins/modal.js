@@ -21,7 +21,8 @@ function _createModal (){
             </div>
         </div>
 
-    </div>`);
+    </div>`)
+    return modal;
 
 }
 
