@@ -1,6 +1,6 @@
 const requestURL = 'https://jsonplaceholder.typicode.com/users'
 
-function sendRequest(method, url, body = null){
+function sendRequest(method, url){
     const headers = {
         'Content-Type': 'application/json'
     }
