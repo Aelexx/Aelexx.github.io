@@ -1,3 +1,4 @@
-$.modal = function(){
-    
+$.modal = function(options){
+    return
+
 }

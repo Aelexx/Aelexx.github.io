@@ -28,9 +28,14 @@ function sendRequest(method, url){
 
 const body = {
     name:'Alex',
-    age: 24
+    age: 24,
+    last_name: 'Madison',
+    IQ: 150
+}
+const header = {
+    name: 'Mind'
 }
 
-sendRequest('POST', requestURL, body)
+sendRequest('POST', requestURL, body, header)
 .then(data => console.log(data))
 .catch(err => console.log(err))
