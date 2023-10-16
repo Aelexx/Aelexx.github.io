@@ -1,5 +1,5 @@
 function _createModal (){
-    const myModal = documentCreateElement('div');
+    const modal = documentCreateElement('div');
     modal.classList.add('amodal');
     modal.insertAdjustHTML('afterbegin', `   
 
@@ -22,7 +22,7 @@ function _createModal (){
         </div>
 
     </div>`)
-    return modal;
+    return modal
 
 }
 
