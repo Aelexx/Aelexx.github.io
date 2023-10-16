@@ -1,7 +1,7 @@
 function _createModal (){
     const modal = document.createElement('div');
     modal.classList.add('amodal');
-    modal.insertAdjustHTML('afterbegin', `   
+    modal.insertAdjacentHTML('afterbegin', `   
 
     <div class="modal-overlay">
         <div class="modal-window">
