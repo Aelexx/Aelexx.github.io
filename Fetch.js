@@ -6,7 +6,7 @@ function sendRequest(method, url){
     }
     return fetch(url, {
         method: method,
-        body: JSON.stringify(body, header),
+        body: JSON.stringify(body),
         headers: headers
     }
         ).then(response => {
@@ -32,10 +32,8 @@ const body = {
     last_name: 'Madison',
     IQ: 150
 }
-const header = {
-    name: 'Mind'
-}
 
-sendRequest('POST', requestURL, body, header)
+
+sendRequest('POST', requestURL, body)
 .then(data => console.log(data))
 .catch(err => console.log(err))
