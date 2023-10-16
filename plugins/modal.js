@@ -1,5 +1,5 @@
 function _createModal (){
-    const modal = documentCreateElement('div');
+    const modal = document.createElement('div');
     modal.classList.add('amodal');
     modal.insertAdjustHTML('afterbegin', `   
 
