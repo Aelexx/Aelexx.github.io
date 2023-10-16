@@ -6,7 +6,7 @@ function sendRequest(method, url, body = null){
     }
     return fetch(url, {
         method: method,
-        body: JSON.stringify(),
+        body: JSON.stringify(body),
         headers: headers
     }
         ).then(response => {
