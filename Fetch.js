@@ -1,10 +1,10 @@
 const requestURL = 'https://jsonplaceholder.typicode.com/users'
 
-function sendRequest(method, url, body){
+function sendRequest(method, url, body = null){
     const headers = {
         'Content-Type': 'application/json'
     }
-    return fetch(url, {
+    return fetch(url, body, {
         method: method,
         body: JSON.stringify(),
         headers: headers
