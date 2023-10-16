@@ -9,7 +9,7 @@
 .modal-window{
     width: 700px;
     height: 500px;
-    margin-top: 105px auto;
+    margin: 105px auto;
     border-radius: 7px;
-    color: azure;
+    background: azure;
 }
