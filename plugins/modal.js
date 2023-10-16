@@ -28,5 +28,9 @@ function _createModal (){
 
 $.modal = function(options){
     const $modal = _createModal(options)
-
+    return {
+        open(){},
+        close(){},
+        destroy(){}
+    }
 }
