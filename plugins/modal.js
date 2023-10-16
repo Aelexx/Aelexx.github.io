@@ -22,6 +22,7 @@ function _createModal (){
         </div>
 
     </div>`)
+    document.body.appendChild(modal)
     return modal
 
 }
