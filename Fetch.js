@@ -4,7 +4,7 @@ function sendRequest(method, url, body = null){
     const headers = {
         'Content-Type': 'application/json'
     }
-    return fetch(url, body, {
+    return fetch(url, {
         method: method,
         body: JSON.stringify(),
         headers: headers
