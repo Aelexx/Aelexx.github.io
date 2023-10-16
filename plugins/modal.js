@@ -27,6 +27,6 @@ function _createModal (){
 }
 
 $.modal = function(options){
-    return
+    const $modal = _createModal(options)
 
 }
