@@ -24,3 +24,6 @@
 .modal-close{
     cursor: pointer;
 }
+.modal-body p {
+    margin:0, 0, 5px;
+}
