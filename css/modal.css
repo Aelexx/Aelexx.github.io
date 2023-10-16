@@ -1,7 +1,7 @@
 .amodal{}
 
-.amodal.open() .modal-overlay,
-.amodal.open() .modal-window{
+.amodal.open .modal-overlay,
+.amodal.open .modal-window{
     opacity: 1;
     z-index: 100;
 }
