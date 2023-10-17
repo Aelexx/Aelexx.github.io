@@ -19,7 +19,7 @@
     background: rgba(0, 0, 0, .5)
 }
 .amodal.hide .modal-window{
-    transform: translateY(-200px);
+    transform: translateY(200px);
 }
 .amodal.hide .modal-overlay{
     background: rgba(0, 0, 0, 0)
