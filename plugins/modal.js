@@ -28,7 +28,7 @@ function _createModal (){
 }
 
 $.modal = function(options){
-    const ANIMASPEED = 300
+    const ANIMASPEED = 900
     const $modal = _createModal(options)
     let closing = false;
     return {
