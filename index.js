@@ -1,1 +1,1 @@
-//const  = 57;
+const modal = $.modal();
