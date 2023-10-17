@@ -43,7 +43,7 @@ $.modal = function(options){
              setTimeout( () => {
                  $modal.classList.remove('hide')
                  closing = false
-             }, 2000)
+             }, 2)
             
         },
         destroy(){}
