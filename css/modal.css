@@ -6,7 +6,7 @@
     z-index: 100;
 }
 .amodal.open .modal-window{
-    transform: translateY(300px);
+    transform: translateY(0px);
 }
 .amodal.open .modal-overlay{
     background: rgba(0, 0, 0, .5)
@@ -31,7 +31,7 @@
     height: 500px;
     margin: 0 auto;
     transform: translateY(-300px);
-    transition: ease-in;
+    transition: transform .2ms ease-in;
     border-radius: 7px;
     background:white;
 }
