@@ -33,7 +33,7 @@
     height: 500px;
     margin: 0 auto;
     transform: translateY(-155px);
-    transition: transform .2ms ease-in;
+    transition: transform .2s ease-in;
     border-radius: 7px;
     background:white;
 }
