@@ -8,6 +8,9 @@
 .amodal.open .modal-window{
     transform: translateY(300px);
 }
+.amodal.open .modal-overlay{
+    background: rgba(0, 0, 0, .5)
+}
 
 .modal-window, .modal-overlay{
     opacity: 0;
@@ -20,7 +23,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0);
+    transition: background .2s ease-in;
 }
 .modal-window{
     width: 700px;
