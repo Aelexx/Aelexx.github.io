@@ -8,9 +8,7 @@
 .amodal.open .modal-window{
     transform: translateY(300px);
 }
-.amodal.close .modal-window{
-    transform: translateX(-320px);
-}
+
 .modal-window, .modal-overlay{
     opacity: 0;
     z-index: -1;
@@ -29,7 +27,7 @@
     height: 500px;
     margin: 0 auto;
     transform: translateY(-300px);
-    transition: ease-in;
+    transition: transform .2ms ease-in;
     border-radius: 7px;
     background:white;
 }
