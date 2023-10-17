@@ -28,22 +28,21 @@ function _createModal (){
 }
 
 $.modal = function(options){
-    //const ANIMASPEED = 900
     const $modal = _createModal(options)
-    let closing = false;
+   // let closing = false;
     return {
         open(){
-         !closing && $modal.classList.add('open')
+         $modal.classList.add('open')
             
         },
         close(){
-            closing = true
+          //  closing = true
             $modal.classList.remove('open')
             $modal.classList.add('hide')
              setTimeout( () => {
                  $modal.classList.remove('hide')
-                 closing = false
-             }, )
+                 //closing = false
+             }, 2000)
             
         },
         destroy(){}
