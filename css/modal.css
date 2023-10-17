@@ -1,4 +1,6 @@
-.amodal{}
+.amodal{
+    color: bisque;
+}
 
 .amodal.open .modal-overlay,
 .amodal.open .modal-window{
