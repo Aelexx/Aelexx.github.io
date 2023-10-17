@@ -44,7 +44,7 @@
     height: 500px;
     margin: 0 auto;
     transform: translateY(-155px);
-    transition: transform 1s ease-in;
+    transition: transform 5s ease-in;
     border-radius: 7px;
     background:white;
 }
