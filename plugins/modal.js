@@ -28,7 +28,7 @@ function _createModal (){
 }
 
 $.modal = function(options){
-    const ANIMASPEED = 900
+    //const ANIMASPEED = 900
     const $modal = _createModal(options)
     let closing = false;
     return {
@@ -43,7 +43,7 @@ $.modal = function(options){
              setTimeout( () => {
                  $modal.classList.remove('hide')
                  closing = false
-             }, ANIMASPEED)
+             }, .2)
             
         },
         destroy(){}
