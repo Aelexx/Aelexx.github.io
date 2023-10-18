@@ -4,12 +4,12 @@ function _createModal (options){
     modal.classList.add('amodal');
     modal.insertAdjacentHTML('afterbegin', `   
 
-    <div class="modal-overlay" data-close>
+    <div class="modal-overlay" data-close = true>
         <div class="modal-window" style="width: ${options.width || defwidth}">
 
             <div class="modal-header">
             <span class="modal-title">${options.title || ''}</span>    
-            ${options.closable ? `<span class="modal-close" data-close>&times;</span>` : ''}
+            ${options.closable ? `<span class="modal-close" data-close = true>&times;</span>` : ''}
             </div>
 
             <div class="modal-body">
