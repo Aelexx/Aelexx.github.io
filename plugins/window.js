@@ -5,3 +5,4 @@ function createWindow(options){
     document.body.appendChild(awindow)
     return awindow
 }
+
