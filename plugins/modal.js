@@ -39,12 +39,14 @@ $.modal = function(options){
           //  closing = true
             $modal.classList.remove('open')
             $modal.classList.add('hide')
-              setTimeout( () => {
-                  $modal.classList.remove('hide')
-                  //closing = false
-              }, 2000)
+            //   setTimeout( () => {
+            //       $modal.classList.remove('hide')
+            //       //closing = false
+            //   }, 2000)
             
         },
-        destroy(){}
+        destroy(){
+            
+        }
     }
 }
