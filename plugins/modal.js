@@ -29,30 +29,35 @@ function _createModal (options){
 }
 
 $.modal = function(options){
+    const modal =  {
+        open(){
+            !closing && $modal.classList.add('open')
+               
+           },
+           close(){
+               closing = true
+               $modal.classList.remove('open')
+               $modal.classList.add('hide')
+                  setTimeout( () => {
+                     $modal.classList.remove('hide')
+                      closing = false
+                  }, 2000)
+               
+           },
+            destroy(){
+                closing = true
+                $modal.classList.remove('open')
+                closing = false
+            }
+        
+    }
     const $modal = _createModal(options)
     let closing = false;
     $modal.addEventListener('click', event => {
         console.log("Clicked!", event.target.dataset.close)
+        if (event.target.dataset.close){
+            modal.close()
+        }
     })
-    return {
-        open(){
-         !closing && $modal.classList.add('open')
-            
-        },
-        close(){
-            closing = true
-            $modal.classList.remove('open')
-            $modal.classList.add('hide')
-               setTimeout( () => {
-                  $modal.classList.remove('hide')
-                   closing = false
-               }, 2000)
-            
-        },
-         destroy(){
-             closing = true
-             $modal.classList.remove('open')
-             closing = false
-         }
-    }
+    return modal
 }
