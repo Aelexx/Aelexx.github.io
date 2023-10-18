@@ -46,6 +46,7 @@ $.modal = function(options){
             
         },
         destroy(){
+            closing = true
             $modal.classList.remove('open')
             closing = false
         }
