@@ -53,11 +53,20 @@ $.modal = function(options){
     }
     const $modal = _createModal(options)
     let closing = false;
+    let destroyd = false;
     $modal.addEventListener('click', event => {
         console.log("Clicked!", event.target.dataset.close)
         if (event.target.dataset.close){
             modal.close()
         }
     })
-    return modal
+    return Object.assign(modal, {
+        destroy(){
+            $modal.parentNode.removeChild($modal)
+            destroyd = true
+        }
+    })
+
+
+    
 }
