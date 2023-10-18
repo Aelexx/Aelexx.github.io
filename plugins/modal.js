@@ -1,10 +1,11 @@
 function _createModal (options){
+    const defwidth = 550
     const modal = document.createElement('div');
     modal.classList.add('amodal');
     modal.insertAdjacentHTML('afterbegin', `   
 
     <div class="modal-overlay">
-        <div class="modal-window">
+        <div class="modal-window" style="width = ${options.width || defwidth}">
 
             <div class="modal-header">
             <span class="modal-title">${options.title || ''}</span>    
