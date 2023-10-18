@@ -22,7 +22,7 @@
     transform: translateX(-4350px);
 }
 .amodal.hide .modal-overlay{
-    background: rgba(6, 250, 238, 0)
+    background: green
 }
 
 .modal-window, .modal-overlay{
