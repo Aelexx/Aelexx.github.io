@@ -22,7 +22,7 @@
     transform: translateX(-4350px);
 }
 .amodal.hide .modal-overlay{
-    background: green
+    background: rgb(50, 110, 166)
 }
 
 .modal-window, .modal-overlay{
@@ -60,5 +60,5 @@
     cursor: pointer;
 }
 .modal-body p {
-    margin:0, 0, 5px;
+    margin:20, 20, 5px;
 }
