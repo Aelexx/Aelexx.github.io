@@ -31,7 +31,7 @@ function _createModal (options){
 $.modal = function(options){
     const $modal = _createModal(options)
     let closing = false;
-    $modal = addEventListener('click', event => {
+    $modal.addEventListener('click', event => {
         console.log("Clicked!", event.target)
     })
     return {
