@@ -31,6 +31,9 @@ function _createModal (options){
 $.modal = function(options){
     const modal =  {
         open(){
+            if(destroyd){
+                console.log('Do not run it!')
+            }
             !closing && $modal.classList.add('open')
                
            },
