@@ -7,7 +7,7 @@ function _createModal (options){
         <div class="modal-window">
 
             <div class="modal-header">
-            <span class="modal-title">Title</span>    
+            <span class="modal-title">${options.title || ''}</span>    
             <span class="modal-close">&times;</span>
             </div>
 
