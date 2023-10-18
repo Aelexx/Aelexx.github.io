@@ -1,6 +1,8 @@
 function createWindow(options){
-    const window = document.createElement('div')
-    window.classList.add('mwindow', 'nwindow')
+    const awindow = document.createElement('div')
+    awindow.classList.add('mwindow', 'nwindow')
+    awindow.createElement('button')
+
     
 
 }
