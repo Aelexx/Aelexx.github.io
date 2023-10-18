@@ -29,19 +29,19 @@ function _createModal (){
 
 $.modal = function(options){
     const $modal = _createModal(options)
-   // let closing = false;
+    let closing = false;
     return {
         open(){
          $modal.classList.add('open')
             
         },
         close(){
-          //  closing = true
+            closing = true
             $modal.classList.remove('open')
             $modal.classList.add('hide')
                setTimeout( () => {
                   $modal.classList.remove('hide')
-                   //closing = false
+                   closing = false
                }, 20000)
             
         },
