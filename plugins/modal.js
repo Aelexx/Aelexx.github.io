@@ -29,7 +29,7 @@ function _createModal (){
 
 $.modal = function(options){
     const $modal = _createModal(options)
-    //let closing = false;
+    let closing = false;
     return {
         open(){
          $modal.classList.add('open')
@@ -45,10 +45,10 @@ $.modal = function(options){
                }, 20000)
             
         },
-        // destroy(){
-        //     closing = true
-        //     $modal.classList.remove('open')
-        //     closing = false
-        // }
+         destroy(){
+             closing = true
+             $modal.classList.remove('open')
+             closing = false
+         }
     }
 }
