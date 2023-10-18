@@ -1,4 +1,4 @@
-function _createModal (){
+function _createModal (options){
     const modal = document.createElement('div');
     modal.classList.add('amodal');
     modal.insertAdjacentHTML('afterbegin', `   
@@ -12,12 +12,12 @@ function _createModal (){
             </div>
 
             <div class="modal-body">
-            <p> See me good </p>
+            ${options.content || ''}
             </div>
 
             <div class="modal-footer">
             <button>Okay</button>
-            <button>Ca</button>
+            <button>Cancel</button>
             </div>
         </div>
 
