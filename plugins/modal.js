@@ -32,7 +32,7 @@ $.modal = function(options){
     let closing = false;
     return {
         open(){
-         $modal.classList.add('open')
+         !closing && $modal.classList.add('open')
             
         },
         close(){
