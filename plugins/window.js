@@ -46,20 +46,18 @@ const fieldSet = document.createElement('fieldset');
 // List ordered <ol>
 const divOl = document.createElement('div');
 divOl.setAttribute('id', 'id-divOl');
-//const lis = getElementById('id-divOl').getElementsByTagName('li');
 
 const newOl = document.createElement('ol');
-//newOl.setAttribute('type', '1');
+
 newOl.setAttribute('style', 'list-style-type:lower-alpha');
 newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'color:red');
-//newList.setAttribute('type', '1');     
+    
 
 // Child inside parent    
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
-//divOl.appendChild(newOl);
 
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
@@ -69,7 +67,6 @@ newLi4.appendChild(txtLi4);
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
 
-//divOl.appendChild(newOl);
 
 // Input field
 const newInput = document.createElement('input');
@@ -84,7 +81,7 @@ newButton.setAttribute('text', 'submits');
 // Checkbox
 const newCheck = document.createElement('input');
 newCheck.setAttribute('type', 'checkbox');
-newCheck.setAttribute('checked', 'true');
+newCheck.setAttribute('checked', 'false');
 
 // Radio
 const newRadio = document.createElement('input');
