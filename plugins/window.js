@@ -82,6 +82,7 @@ newButton.setAttribute('text', 'submits');
 const newCheck = document.createElement('input');
 newCheck.setAttribute('type', 'checkbox');
 newCheck.setAttribute('checked', '0');
+newCheck.setAttribute('value', 'Great coder');
 
 // Radio
 const newRadio = document.createElement('input');
