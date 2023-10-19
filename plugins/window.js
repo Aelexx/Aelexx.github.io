@@ -30,7 +30,7 @@ const newLi3 = document.createElement('li');
 const newLi4 = document.createElement('li');
 //newLi.setAttribute('value', '4');
 
-// Text for li
+// li's
 const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
 const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);');
 const txtLi3 = document.createTextNode('Going to Flight WAY BEFORE TIME;');
@@ -61,7 +61,7 @@ newOl.setAttribute('style', 'color:red');
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
-newOl.appendChild(newLi2);
+divOl.appendChild(newOl);
 
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
@@ -99,7 +99,7 @@ document.getElementById('rules').appendChild(newInput);
 document.getElementById('rules').appendChild(newButton);
 document.getElementById('mainPlanList').appendChild(newCheck);
 document.getElementById('mainPlanList').appendChild(newRadio);
-document.getElementById('rules').appendChild(newOl);
+document.getElementById('rules').appendChild(divOl);
 document.getElementById('rules').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
