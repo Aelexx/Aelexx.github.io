@@ -51,6 +51,7 @@ const fieldSet = document.createElement('fieldset');
 const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'list-style-type:upper-roman');
+newOl.setAttribute('type', '1');
 //newList.setAttribute('type', '1');     
 
 // Child inside parent    
