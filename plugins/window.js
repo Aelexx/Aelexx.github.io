@@ -117,8 +117,8 @@ newButton.addEventListener('keypress', () => {
 
 };
 
-$(document).ready(function(){
-    $('#enter-me').hover(function(){
+$(document).ready(()=>{
+    $('#enter-me').hover(()=>{
         $(this).hide();
     });
 });
