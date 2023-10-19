@@ -114,6 +114,11 @@ newButton.addEventListener('keypress', () => {
     console.log('Key pressed'); //point on btn and press key ))
 });
 
+$(document).ready(function(){
+    $('btn-ajax').hover(function(){
+        $(this).hide();
+    });
+});
 };
 
 
