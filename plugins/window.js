@@ -107,7 +107,7 @@ document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
 
 // Listeners
-newH1.addEventListener('click', function(){
+newH1.addEventListener('click',() => {
     alert('Hi JS!');
     console.log('Clicked', event.target);
 });
