@@ -109,10 +109,10 @@ document.getElementById('mainPlanList').appendChild(newPar);
 };
 
 // Listeners
-let newParlisn = document.querySelector('.class-h1');
-newParlisn = addEventListener('click', event =>{
-    console.log('Clicks', event.target);
-});
+// let newParlisn = document.querySelector('.class-h1');
+// newParlisn = addEventListener('click', event =>{
+//     console.log('Clicks', event.target);
+// });
 
 
 
