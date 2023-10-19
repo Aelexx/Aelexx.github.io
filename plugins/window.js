@@ -114,14 +114,13 @@ newButton.addEventListener('keypress', () => {
     console.log('Key pressed'); //point on btn and press key ))
 });
 
+};
+
 $(document).ready(function(){
     $('enter-me').hover(function(){
         $(this).hide();
     });
 });
-};
-
-
 
 
 
