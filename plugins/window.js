@@ -115,7 +115,7 @@ newButton.addEventListener('keypress', () => {
 });
 
 $(document).ready(function(){
-    $('btn-ajax').hover(function(){
+    $('enter-me').hover(function(){
         $(this).hide();
     });
 });
