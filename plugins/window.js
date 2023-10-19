@@ -50,7 +50,7 @@ const fieldSet = document.createElement('fieldset');
 // List ordered <ol>
 const divOl = document.createElement('div');
 divOl.setAttribute('id', 'id-divOl');
-const lis = getElementById('id-divOl').getElementsByTagName('li');
+//const lis = getElementById('id-divOl').getElementsByTagName('li');
 
 const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
