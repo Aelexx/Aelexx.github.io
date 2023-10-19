@@ -69,7 +69,7 @@ newLi4.appendChild(txtLi4);
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
 
-divOl.appendChild(newOl);
+//divOl.appendChild(newOl);
 
 // Input field
 const newInput = document.createElement('input');
