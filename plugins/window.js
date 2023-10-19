@@ -25,7 +25,7 @@ const newLi = document.createElement('li');
 newLi.setAttribute('value', '1');
 
 // Text for li
-const txtLi = document.createTextNode('Text for li');
+const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
 
 // Fieldset
 const fieldSet = document.createElement('fieldset');
