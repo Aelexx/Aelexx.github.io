@@ -109,11 +109,11 @@ document.getElementById('mainPlanList').appendChild(newPar);
 };
 
 // Listeners
-document.getElementById('rules').addEventListener('click',displayDate);
+newH1.addEventListener('click', function(){
+    alert('Hi JS!');
+});
 
-function displayDate(){
-    document.getElementById('mainCity').innerHTML.Date();
-}
+
 
 // newParlisn = addEventListener('click', event =>{
 //     console.log('Clicks', event.target);
