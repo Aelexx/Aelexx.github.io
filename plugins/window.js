@@ -68,7 +68,7 @@ document.getElementById('rules').appendChild(newDiv);
 document.getElementById('rules').appendChild(newH1);
 document.getElementById('rules').appendChild(newInput);    
 document.getElementById('rules').appendChild(newButton);
-//document.getElementById('id-h1').appendChild(newCheck);
+document.getElementById('id-h1').appendChild(newCheck);
 document.getElementById('id-h1').appendChild(newRadio);
 document.getElementById('rules').appendChild(newOl);
 document.getElementById('rules').appendChild(newH2);
