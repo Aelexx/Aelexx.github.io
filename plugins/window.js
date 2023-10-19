@@ -111,7 +111,7 @@ newH1.addEventListener('click',() => {
     alert('Hi JS!');
     console.log('Clicked', event.target);
 });
-newPar.addEventListener('mouseover', () =>{
+newPar.addEventListener('mouseout', () =>{
     console.log('Mouse over');
     
 })
