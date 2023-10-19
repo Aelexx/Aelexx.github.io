@@ -27,12 +27,15 @@ const newLi2 = document.createElement('li');
 newLi.setAttribute('value', '2');
 const newLi3 = document.createElement('li');
 newLi.setAttribute('value', '3');
-
+const newLi4 = document.createElement('li');
+newLi.setAttribute('value', '4');
 
 // Text for li
 const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
 const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);');
 const txtLi3 = document.createTextNode('Going to Flight WAY BEFORE TIME;');
+const txtLi4 = document.createTextNode('Rent apartment in Moscow (20grands + payments for utilities);');
+
 // Fieldset
 const fieldSet = document.createElement('fieldset');
 
@@ -50,6 +53,7 @@ newOl.appendChild(newLi);
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
 newLi3.appendChild(txtLi3);
+newLi4.appendChild(txtLi4);
 
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
