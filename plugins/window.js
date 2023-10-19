@@ -106,12 +106,14 @@ document.getElementById('headerBrasil').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
 
-};
-
 // Listeners
 newH1.addEventListener('click', function(){
     alert('Hi JS!');
 });
+
+};
+
+
 
 
 
