@@ -40,9 +40,9 @@ const txtLi6 = document.createTextNode('Work remote via Internet (upwork, fiverr
 const txtLi7 = document.createTextNode('Language Brazil portuguese');
 const txtLi8 = document.createTextNode('Cheap food, favor on fruits via salers on the streets;');
 const txtLi9 = document.createTextNode('Economy and dont celebrate until I stable;');
-const txtLi9 = document.createTextNode('Plug adapter better buy in Brazil;');
-const txtLi9 = document.createTextNode('White clothes, summer clothes to walk around (shorts, t-shorts, sunglasses, white panama);');
-const txtLi9 = document.createTextNode('Free wifi in McDonalds and others public places run by owners;');
+const txtLi10 = document.createTextNode('Plug adapter better buy in Brazil;');
+const txtLi11 = document.createTextNode('White clothes, summer clothes to walk around (shorts, t-shorts, sunglasses, white panama);');
+const txtLi12 = document.createTextNode('Free wifi in McDonalds and others public places run by owners;');
 
 // Fieldset
 const fieldSet = document.createElement('fieldset');
