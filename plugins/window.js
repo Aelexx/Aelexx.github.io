@@ -63,7 +63,7 @@ newOl.setAttribute('style', 'color:red');
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
-divOl.appendChild(newOl);
+//divOl.appendChild(newOl);
 
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
