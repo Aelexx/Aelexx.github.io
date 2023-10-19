@@ -117,11 +117,15 @@ newButton.addEventListener('keypress', () => {
 };
 
 $(document).ready(function(){
-    $('enter-me').hover(function(){
+    $('#enter-me').hover(function(){
         $(this).hide();
     });
 });
-
+$(document).ready( () => {
+    $('#rules').click( ()=> {
+        $(this).slideToggle(1000);
+    });
+});
 
 
 
