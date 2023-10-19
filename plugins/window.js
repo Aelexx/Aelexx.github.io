@@ -111,6 +111,10 @@ newH1.addEventListener('click', function(){
     alert('Hi JS!');
     console.log('Clicked', event.target);
 });
+newPar.addEventListener('mouseover', () =>{
+    console.log('Mouse over');
+    
+})
 
 };
 
