@@ -52,6 +52,7 @@ const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'list-style-type:upper-roman');
 newOl.setAttribute('type', '1');
+newOl.setAttribute('style', 'color:red');
 //newList.setAttribute('type', '1');     
 
 // Child inside parent    
