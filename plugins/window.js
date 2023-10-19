@@ -109,6 +109,7 @@ document.getElementById('mainPlanList').appendChild(newPar);
 // Listeners
 newH1.addEventListener('click', function(){
     alert('Hi JS!');
+    console.log('Clicked', event.target);
 });
 
 };
