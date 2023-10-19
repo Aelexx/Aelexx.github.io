@@ -10,7 +10,7 @@ const txtPar = document.createTextNode('Bioshop');
 
 // Headers <h>
 const newH1 = document.createElement('h1');
-Object.assign(newPar, {
+Object.assign(newH1, {
     id: 'id-h1',
     class: 'class-h1',
     name: 'h1_name',
@@ -35,6 +35,14 @@ const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, whe
 const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);');
 const txtLi3 = document.createTextNode('Going to Flight WAY BEFORE TIME;');
 const txtLi4 = document.createTextNode('Rent apartment in Moscow (20grands + payments for utilities);');
+const txtLi5 = document.createTextNode('Rent in Rio, cheap, far from ocean, but with microwave or oven;');
+const txtLi6 = document.createTextNode('Work remote via Internet (upwork, fiverr);');
+const txtLi7 = document.createTextNode('Language Brazil portuguese');
+const txtLi8 = document.createTextNode('Cheap food, favor on fruits via salers on the streets;');
+const txtLi9 = document.createTextNode('Economy and dont celebrate until I stable;');
+const txtLi9 = document.createTextNode('Plug adapter better buy in Brazil;');
+const txtLi9 = document.createTextNode('White clothes, summer clothes to walk around (shorts, t-shorts, sunglasses, white panama);');
+const txtLi9 = document.createTextNode('Free wifi in McDonalds and others public places run by owners;');
 
 // Fieldset
 const fieldSet = document.createElement('fieldset');
@@ -50,6 +58,7 @@ newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
 newOl.appendChild(newLi, newLi2, newLi3, newLi4);
+
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
 newLi3.appendChild(txtLi3);
