@@ -50,7 +50,7 @@ const fieldSet = document.createElement('fieldset');
 // List ordered <ol>
 const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
-newOl.setAttribute('style', 'list-style-type:upper-roman');
+newOl.setAttribute('style', 'list-style-type:lower-alpha');
 newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'color:red');
 //newList.setAttribute('type', '1');     
