@@ -101,3 +101,8 @@
 .reports{
     display: none;
 }
+
+#id-h1{
+    border-color: red;
+    font-weight: bold;
+}
