@@ -23,14 +23,17 @@ const txtH2 = document.createTextNode('Okey!');
 // List
 const newLi = document.createElement('li');
 newLi.setAttribute('value', '1');
+const newLi2 = document.createElement('li');
+newLi.setAttribute('value', '2');
+
 
 // Text for li
 const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
-
+const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);')
 // Fieldset
 const fieldSet = document.createElement('fieldset');
 
-// List ordered
+// List ordered <ol>
 const newOl = document.createElement('ol');
 newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'list-style-type:upper-roman');
