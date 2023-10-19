@@ -22,13 +22,9 @@ const txtH2 = document.createTextNode('Okey!');
 
 // List
 const newLi = document.createElement('li');
-//newLi.setAttribute('value', '1');
 const newLi2 = document.createElement('li');
-//newLi.setAttribute('value', '2');
 const newLi3 = document.createElement('li');
-//newLi.setAttribute('value', '3');
 const newLi4 = document.createElement('li');
-//newLi.setAttribute('value', '4');
 
 // li's
 const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
@@ -118,18 +114,11 @@ newInput.addEventListener('mousemove', () => {
     console.log('Mouse moved');
 });
 newButton.addEventListener('keypress', () => {
-    console.log('Key pressed');
+    console.log('Key pressed'); //point on btn and press key ))
 });
 
 };
 
-
-
-
-
-// newParlisn = addEventListener('click', event =>{
-//     console.log('Clicks', event.target);
-// });
 
 
 
