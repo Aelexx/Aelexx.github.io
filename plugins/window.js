@@ -111,11 +111,14 @@ newH1.addEventListener('click',() => {
     alert('Hi JS!');
     console.log('Clicked', event.target);
 });
-newPar.addEventListener('mouseout', () =>{
-    console.log('Mouse out'); 
+newPar.addEventListener('mouseout', () => {
+    console.log('Mouse outed'); 
 });
-newInput.addEventListener('mousemove', ()=>{
-    console.log('Mouse move');
+newInput.addEventListener('mousemove', () => {
+    console.log('Mouse moved');
+});
+newButton.addEventListener('keypress', () => {
+    console.log('Key pressed');
 });
 
 };
