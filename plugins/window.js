@@ -101,7 +101,7 @@ document.getElementById('rules').appendChild(newInput);
 document.getElementById('rules').appendChild(newButton);
 document.getElementById('mainPlanList').appendChild(newCheck);
 document.getElementById('mainPlanList').appendChild(newRadio);
-document.getElementById('rules').appendChild(divOl);
+document.getElementById('rules').appendChild(newOl);
 document.getElementById('rules').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
