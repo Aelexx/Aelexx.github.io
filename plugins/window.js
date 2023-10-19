@@ -51,6 +51,7 @@ const fieldSet = document.createElement('fieldset');
 const divOl = document.createElement('div');
 divOl.setAttribute('id', 'id-divOl');
 const lis = getElementById('id-divOl').getElementsByTagName('li');
+
 const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'list-style-type:lower-alpha');
