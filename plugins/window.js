@@ -109,7 +109,12 @@ document.getElementById('mainPlanList').appendChild(newPar);
 };
 
 // Listeners
-// let newParlisn = document.querySelector('.class-h1');
+document.getElementById('rules').addEventListener('click',displayDate);
+
+function displayDate(){
+    document.getElementById('mainCity').innerHTML.Date();
+}
+
 // newParlisn = addEventListener('click', event =>{
 //     console.log('Clicks', event.target);
 // });
