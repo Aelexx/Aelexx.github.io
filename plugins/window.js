@@ -48,6 +48,8 @@ const txtLi12 = document.createTextNode('Free wifi in McDonalds and others publi
 const fieldSet = document.createElement('fieldset');
 
 // List ordered <ol>
+const divOl = document.createElement('div');
+divOl.setAttribute('id', 'id-divOl');
 const newOl = document.createElement('ol');
 //newOl.setAttribute('type', '1');
 newOl.setAttribute('style', 'list-style-type:lower-alpha');
@@ -68,6 +70,8 @@ newLi4.appendChild(txtLi4);
 
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
+
+divOl.appendChild(newOl);
 
 // Input field
 const newInput = document.createElement('input');
