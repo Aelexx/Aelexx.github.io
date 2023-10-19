@@ -68,12 +68,12 @@ document.getElementById('rules').appendChild(newDiv);
 document.getElementById('rules').appendChild(newH1);
 document.getElementById('rules').appendChild(newInput);    
 document.getElementById('rules').appendChild(newButton);
-document.getElementById('id-h1').appendChild(newCheck);
-document.getElementById('id-h1').appendChild(newRadio);
+document.getElementById('mainPlanList').appendChild(newCheck);
+document.getElementById('mainPlanList').appendChild(newRadio);
 document.getElementById('rules').appendChild(newOl);
 document.getElementById('rules').appendChild(newH2);
-document.getElementById('id-h1').appendChild(fieldSet);
-document.getElementById('id-h1').appendChild(newPar);
+document.getElementById('mainPlanList').appendChild(fieldSet);
+document.getElementById('mainPlanList').appendChild(newPar);
 
 };
 
