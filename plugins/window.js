@@ -25,11 +25,14 @@ const newLi = document.createElement('li');
 newLi.setAttribute('value', '1');
 const newLi2 = document.createElement('li');
 newLi.setAttribute('value', '2');
+const newLi3 = document.createElement('li');
+newLi.setAttribute('value', '3');
 
 
 // Text for li
 const txtLi = document.createTextNode('Total scenario, rules in Brasil: How, where, how long and results; Socets 110v or 220v?');
-const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);')
+const txtLi2 = document.createTextNode('Music bands, russian communities, friends (girls);');
+const txtLi3 = document.createTextNode('Going to Flight WAY BEFORE TIME;');
 // Fieldset
 const fieldSet = document.createElement('fieldset');
 
@@ -42,8 +45,12 @@ newOl.setAttribute('style', 'list-style-type:upper-roman');
 // Child inside parent    
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
+
 newOl.appendChild(newLi);
 newLi.appendChild(txtLi);
+newLi2.appendChild(txtLi2);
+newLi3.appendChild(txtLi3);
+
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
 
