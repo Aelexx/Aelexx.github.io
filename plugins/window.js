@@ -112,9 +112,12 @@ newH1.addEventListener('click',() => {
     console.log('Clicked', event.target);
 });
 newPar.addEventListener('mouseout', () =>{
-    console.log('Mouse over');
-    
-})
+    console.log('Mouse over'); 
+});
+newInput.addEventListener('mousemove', ()=>{
+    console.log('Mouse move');
+
+});
 
 };
 
