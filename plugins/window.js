@@ -49,7 +49,7 @@ newOl.setAttribute('style', 'list-style-type:upper-roman');
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
-newOl.appendChild(newLi);
+newOl.appendChild(newLi, newLi2, newLi3, newLi4);
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
 newLi3.appendChild(txtLi3);
