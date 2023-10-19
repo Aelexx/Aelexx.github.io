@@ -1,30 +1,12 @@
 document.body.onload = createElements;
 function createElements(){
 
-// Fieldset
-const fieldSet = document.createElement('fieldset');
-// List ordered
-const newOl = document.createElement('ol');
-newOl.setAttribute('type', '1');
-newOl.setAttribute('style', 'list-style-type:upper-roman');
-//newList.setAttribute('type', '1');    
-
-// List
-const newLi = document.createElement('li');
-newLi.setAttribute('value', '1');
-
-// Text for li
-const txtLi = document.createTextNode('Text for li')    
-
 // Div with text    
 const newDiv = document.createElement('div');
 const newText = document.createTextNode('Some text here');
 
 const newPar = document.createElement('p');
 const txtPar = document.createTextNode('Bioshop');
-
-
-//newText.setAttribute('font', );
 
 // Headers <h>
 const newH1 = document.createElement('h1');
@@ -37,6 +19,22 @@ const txtH1 = document.createTextNode('Pirozhok');
 
 const newH2 = document.createElement('h2');
 const txtH2 = document.createTextNode('Okey!');
+
+// List
+const newLi = document.createElement('li');
+newLi.setAttribute('value', '1');
+
+// Text for li
+const txtLi = document.createTextNode('Text for li');
+
+// Fieldset
+const fieldSet = document.createElement('fieldset');
+
+// List ordered
+const newOl = document.createElement('ol');
+newOl.setAttribute('type', '1');
+newOl.setAttribute('style', 'list-style-type:upper-roman');
+//newList.setAttribute('type', '1');     
 
 // Child inside parent    
 newDiv.appendChild(newText);
@@ -76,14 +74,14 @@ document.getElementById('rules').appendChild(newOl);
 document.getElementById('rules').appendChild(newH2);
 document.getElementById('id-h1').appendChild(fieldSet);
 document.getElementById('id-h1').appendChild(newPar);
+
+};
+
 // Listeners
 let newParlisn = document.querySelector('.class-h1');
 newParlisn = addEventListener('click', event =>{
     console.log('Clicks', event.target);
 });
-};
-
-
 
 
 
