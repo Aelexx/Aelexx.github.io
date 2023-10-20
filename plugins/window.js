@@ -133,6 +133,11 @@ $(document).ready(function(){
         $(this).alert('Hello my friend!');
     });
 });
+$(document).ready(function(){
+    $('#rules').hover(function(){
+        $(this).blind();
+    });
+});
 
 
 
