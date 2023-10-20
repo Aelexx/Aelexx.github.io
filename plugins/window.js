@@ -152,7 +152,7 @@ let myStyles = `
         width: 65px;
         text-color: red;
         color: red;
-        background-color: blue;
+        background-color: #fff;
     }
 `
 let newMyStyle = document.createElement('style');
