@@ -20,6 +20,7 @@ Object.assign(newH1, {
 const txtH1 = document.createTextNode('Pirozhok'); 
 
 const newH2 = document.createElement('h2');
+newH2.setAttribute('id', 'id-newH2');
 const txtH2 = document.createTextNode('Okey!');
 
 // List
@@ -128,17 +129,22 @@ newButton.addEventListener('keypress', () => {
 
 
 let myStyles = `
+    #id-newH2{
+        font-family: Arial;
+        text-align: center;
+    }
+
     #id-h1{
         font-family: Georgia;
         margin: 30px, auto, 0, auto;
         text-align: center;
 
-    };
+    }
     #id-newPar{
         font-family: Georgia;
         margin: 23px, auto, 0, auto;
         text-align: right;
-    };
+    }
 `
 let newMyStyle = document.createElement('style');
 newMyStyle.innerText = myStyles;
