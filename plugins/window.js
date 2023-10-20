@@ -126,10 +126,12 @@ newButton.addEventListener('keypress', () => {
     console.log('Key pressed'); //point on btn and press key ))
 });
 
+
 let myStyles = `
     #id-h1{
         font-family: Georgia;
         margin: 30px, auto, 0, auto;
+        text-align: center;
 
     };
     #id-newPar{
