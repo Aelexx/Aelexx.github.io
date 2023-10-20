@@ -43,6 +43,8 @@ const txtLi12 = document.createTextNode('Free wifi in McDonalds and others publi
 // Fieldset
 const fieldSet = document.createElement('fieldset');
 
+const newLegend = document.createElement('legend');
+
 // List ordered <ol>
 const divOl = document.createElement('div');
 divOl.setAttribute('id', 'id-divOl');
@@ -93,6 +95,7 @@ document.getElementById('rules').appendChild(newDiv);
 document.getElementById('rules').appendChild(newH1);
 document.getElementById('rules').appendChild(newInput);    
 document.getElementById('rules').appendChild(newButton);
+document.getElementById('rules').appendChild(newLegend);
 document.getElementById('mainPlanList').appendChild(newCheck);
 document.getElementById('mainPlanList').appendChild(newRadio);
 document.getElementById('rules').appendChild(newOl);
