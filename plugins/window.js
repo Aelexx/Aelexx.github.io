@@ -130,7 +130,7 @@ $(document).ready( function(){
 
 $(document).ready(function(){
     $('#btn-ajax').hover(function(){
-        $(this).scroll('Hello my friend!');
+        $(this).scroll();
     });
 });
 $(document).ready(function(){
