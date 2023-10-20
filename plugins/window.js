@@ -129,7 +129,7 @@ $(document).ready( function(){
 });
 
 $(document).ready(function(){
-    $('#btn-ajax').hover(function(){
+    $('#btn-ajax').click(function(){
         $(this).scroll();
     });
 });
