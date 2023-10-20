@@ -105,7 +105,7 @@ document.getElementById('rules').appendChild(newOl);
 document.getElementById('headerBrasil').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
-document.getElementsByName('planList').appendChild(fieldSet);
+document.getElementsByName('mainPlanList').appendChild(fieldSet);
 
 // Listeners
 newH1.addEventListener('click',() => {
