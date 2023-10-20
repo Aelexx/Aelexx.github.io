@@ -134,7 +134,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('#rules').hover(function(){
+    $('#mainCity').hover(function(){
         $(this).blur();
     });
 });
