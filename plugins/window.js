@@ -131,11 +131,11 @@ let myStyles = `
         font-family: Georgia;
         margin: 30px, auto, 0, auto;
 
-    }
+    };
     #id-newPar{
         font-family: Cambria;
         margin: 23px, auto, 0, auto;
-    }
+    };
 `
 let newMyStyle = document.createElement('style');
 newMyStyle.innerText = myStyles;
