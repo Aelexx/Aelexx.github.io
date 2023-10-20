@@ -49,8 +49,8 @@ fieldsetChB.setAttribute('type', 'checkbox');
 const newLegend = document.createElement('legend');
 
 // List ordered <ol>
-const divOl = document.createElement('div');
-divOl.setAttribute('id', 'id-divOl');
+//const divOl = document.createElement('div');
+//divOl.setAttribute('id', 'id-divOl');
 
 const newOl = document.createElement('ol');
 
