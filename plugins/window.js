@@ -22,6 +22,7 @@ const txtH2 = document.createTextNode('Okey!');
 
 // List
 const newLi = document.createElement('li');
+newLi.setAttribute('id', 'id-Li');
 const newLi2 = document.createElement('li');
 const newLi3 = document.createElement('li');
 const newLi4 = document.createElement('li');
