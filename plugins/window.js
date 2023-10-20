@@ -103,7 +103,7 @@ document.getElementById('mainPlanList').appendChild(newCheck);
 document.getElementById('mainPlanList').appendChild(newRadio);
 document.getElementById('rules').appendChild(newOl);
 document.getElementById('headerBrasil').appendChild(newH2);
-document.getElementsByName('planList').appendChild(fieldSet);
+document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
 
 
