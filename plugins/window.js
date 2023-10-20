@@ -152,7 +152,7 @@ let myStyles = `
         width: 65px;
         text-color: red;
         color: red;
-        background-color: #fff;
+        background-color: #f77;
         type: submit;
     }
 `
