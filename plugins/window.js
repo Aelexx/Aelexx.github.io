@@ -131,7 +131,8 @@ newButton.addEventListener('keypress', () => {
 let myStyles = `
     #id-newH2{
         font-family: Arial;
-        text-align: left;
+        text-align: center;
+        margin: auto;
     }
 
     #id-h1{
