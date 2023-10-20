@@ -85,9 +85,9 @@ newInput.setAttribute('color', 'yellow');
 
 // Button
 const newButton = document.createElement('button');
-newButton.setAttribute('type', 'submit');
+//newButton.setAttribute('type', 'submit');
 newButton.setAttribute('text', 'Tont');
-newButton.setAttribute('id', 'id-btn')
+newButton.setAttribute('id', 'id-btn');
 
 // Checkbox
 const newCheck = document.createElement('input');
@@ -153,6 +153,7 @@ let myStyles = `
         text-color: red;
         color: red;
         background-color: #fff;
+        type: submit;
     }
 `
 let newMyStyle = document.createElement('style');
