@@ -14,7 +14,8 @@ Object.assign(newH1, {
     id: 'id-h1',
     class: 'class-h1',
     name: 'h1_name',
-    style: 'background-color:tomato'});
+    style: 'background-color:tomato',
+    style: 'text-align:center'});
 const txtH1 = document.createTextNode('Pirozhok'); 
 
 const newH2 = document.createElement('h2');
