@@ -129,7 +129,7 @@ $(document).ready( function(){
 });
 
 $(document).ready(function(){
-    $('#headerBrasil').hover(function(){
+    $('#btn-ajax').hover(function(){
         $(this).alert('Hello my friend!');
     });
 });
