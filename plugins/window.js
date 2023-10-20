@@ -89,6 +89,7 @@ const newButton = document.createElement('button');
 newButton.setAttribute('text', 'Tont');
 newButton.setAttribute('id', 'id-btn');
 newButton.textContent('Tont');
+newButton.innerText = 'AAA';
 
 // Checkbox
 const newCheck = document.createElement('input');
