@@ -85,16 +85,14 @@ newInput.setAttribute('color', 'yellow');
 
 // Button
 const newButton = document.createElement('button');
-//newButton.setAttribute('type', 'submit');
-newButton.setAttribute('text', 'Tont');
 newButton.setAttribute('id', 'id-btn');
-newButton.innerText = 'AAA';
+newButton.innerText = 'Tont';
 
 // Checkbox
 const newCheck = document.createElement('input');
 newCheck.setAttribute('type', 'checkbox');
 newCheck.setAttribute('checked', '0');
-newCheck.setAttribute('value', '2');
+newCheck.innerText = 'Good coder';
 
 // Radio
 const newRadio = document.createElement('input');
@@ -151,8 +149,8 @@ let myStyles = `
     #id-btn{
         height: 45px;
         width: 65px;
-        text-color: red;
-        color: red;
+        text-color: #777;
+        color: grey;
         background-color: #f77;
         type: submit;
         padding: 30px 30px;
