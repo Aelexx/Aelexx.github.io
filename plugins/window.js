@@ -159,6 +159,7 @@ let myStyles = `
         border: 3px solid black;
         display: inline-block;
         font-size: 12px;
+        border-radius: 12px;
     }
 `
 let newMyStyle = document.createElement('style');
