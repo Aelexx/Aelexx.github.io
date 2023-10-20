@@ -6,6 +6,7 @@ const newDiv = document.createElement('div');
 const newText = document.createTextNode('Some text here');
 
 const newPar = document.createElement('p');
+newPar.setAttribute('id', 'id-newPar');
 const txtPar = document.createTextNode('Bioshop');
 
 // Headers <h>
@@ -14,8 +15,8 @@ Object.assign(newH1, {
     id: 'id-h1',
     class: 'class-h1',
     name: 'h1_name',
-    style: 'background-color:tomato',
-    style: 'text-align:center'});
+    style: 'background-color:tomato', 'text-align:center'
+     });
 const txtH1 = document.createTextNode('Pirozhok'); 
 
 const newH2 = document.createElement('h2');
