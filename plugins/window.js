@@ -150,6 +150,7 @@ let myStyles = `
     #id-btn{
         height: 22px;
         width: 33px;
+        text: The Button;
     }
 `
 let newMyStyle = document.createElement('style');
@@ -184,3 +185,7 @@ $(document).ready(function(){
 
 };
 
+// Creation window
+function windowCreate(){
+
+}
