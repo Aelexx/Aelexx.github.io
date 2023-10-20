@@ -71,6 +71,7 @@ newLi4.appendChild(txtLi4);
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
 fieldSet.appendChild(fieldsetChB);
+newOl.appendChild(newLi);
 
 
 // Input field
