@@ -130,12 +130,12 @@ $(document).ready( function(){
 
 $(document).ready(function(){
     $('#btn-ajax').hover(function(){
-        $(this).alert('Hello my friend!');
+        $(this).scroll('Hello my friend!');
     });
 });
 $(document).ready(function(){
     $('#rules').hover(function(){
-        $(this).blind();
+        $(this).blur();
     });
 });
 
