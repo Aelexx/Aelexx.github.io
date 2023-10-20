@@ -154,6 +154,9 @@ let myStyles = `
         color: red;
         background-color: #f77;
         type: submit;
+        padding: 30px 30px;
+        border: 3px solid black;
+        display: inline-block;
     }
 `
 let newMyStyle = document.createElement('style');
