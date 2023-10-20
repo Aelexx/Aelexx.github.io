@@ -150,6 +150,9 @@ let newMyStyle = document.createElement('style');
 newMyStyle.innerText = myStyles;
 document.body.appendChild(newMyStyle);
 
+let liAr = ['newLi','newLi2', 'newLi3', 'newLi4'];
+console.log(liAr.join());
+
 //JQuery
 $(document).ready(function(){
     $('#enter-me').hover(function(){
