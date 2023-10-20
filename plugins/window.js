@@ -150,7 +150,7 @@ let myStyles = `
         height: 45px;
         width: 65px;
         text-color: #777;
-        color: grey;
+        color: orange;
         background-color: #f77;
         type: submit;
         padding: 30px 30px;
