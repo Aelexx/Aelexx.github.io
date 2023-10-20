@@ -86,7 +86,7 @@ newInput.setAttribute('color', 'yellow');
 // Button
 const newButton = document.createElement('button');
 newButton.setAttribute('type', 'submit');
-newButton.setAttribute('style', 'text');
+newButton.setAttribute('text', 'Tont');
 newButton.setAttribute('id', 'id-btn')
 
 // Checkbox
