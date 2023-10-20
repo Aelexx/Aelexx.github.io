@@ -150,7 +150,7 @@ let myStyles = `
     #id-btn{
         height: 45px;
         width: 65px;
-        text: 'The Button';
+        text-color: red;
     }
 `
 let newMyStyle = document.createElement('style');
