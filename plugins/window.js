@@ -151,6 +151,8 @@ let myStyles = `
         height: 45px;
         width: 65px;
         text-color: red;
+        color: red;
+        background-color: blue;
     }
 `
 let newMyStyle = document.createElement('style');
