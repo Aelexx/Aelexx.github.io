@@ -135,8 +135,9 @@ let myStyles = `
 
     };
     #id-newPar{
-        font-family: Cambria;
+        font-family: Georgia;
         margin: 23px, auto, 0, auto;
+        text-align: right;
     };
 `
 let newMyStyle = document.createElement('style');
