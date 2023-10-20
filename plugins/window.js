@@ -125,8 +125,18 @@ newButton.addEventListener('keypress', () => {
     console.log('Key pressed'); //point on btn and press key ))
 });
 
-};
+let myStyles = `
+    #id-h1{
+        font-family: Georgia;
+        margin: 30px, auto, 0, auto;
 
+    }
+`
+let newMyStyle = document.createElement('style');
+newMyStyle.innerText = myStyles;
+document.body.appendChild(newMyStyle);
+
+//JQuery
 $(document).ready(function(){
     $('#enter-me').hover(function(){
         $(this).hide();
@@ -149,5 +159,5 @@ $(document).ready(function(){
     });
 });
 
-
+};
 
