@@ -107,11 +107,11 @@ document.getElementById('rules').appendChild(newButton);
 document.getElementById('rules').appendChild(newLegend);
 document.getElementById('mainPlanList').appendChild(newCheck);
 document.getElementById('mainPlanList').appendChild(newRadio);
-//document.getElementById('rules').appendChild(newOl);
+document.getElementById('rules').appendChild(newOl);
 document.getElementById('headerBrasil').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
-document.body.appendChild(newOl);
+
 
 // Listeners
 newH1.addEventListener('click',() => {
