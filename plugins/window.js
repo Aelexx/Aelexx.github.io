@@ -128,5 +128,11 @@ $(document).ready( function(){
     });
 });
 
+$(document).ready(function(){
+    $(#headerBrasil).hover(function(){
+        $(this).alert('Hello my friend!');
+    });
+});
+
 
 
