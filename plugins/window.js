@@ -148,9 +148,9 @@ let myStyles = `
         text-align: right;
     }
     #id-btn{
-        height: 22px;
-        width: 33px;
-        text: The Button;
+        height: 45px;
+        width: 65px;
+        text: 'The Button';
     }
 `
 let newMyStyle = document.createElement('style');
