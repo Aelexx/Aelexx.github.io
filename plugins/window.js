@@ -42,7 +42,10 @@ const txtLi12 = document.createTextNode('Free wifi in McDonalds and others publi
 
 // Fieldset
 const fieldSet = document.createElement('fieldset');
+const fieldsetChB = document.createElement('input');
+fieldsetChB.setAttribute('type', 'checkbox'); 
 
+// Legend
 const newLegend = document.createElement('legend');
 
 // List ordered <ol>
@@ -60,7 +63,6 @@ newOl.setAttribute('style', 'color:red');
 newDiv.appendChild(newText);
 newH1.appendChild(txtH1);
 
-
 newLi.appendChild(txtLi);
 newLi2.appendChild(txtLi2);
 newLi3.appendChild(txtLi3);
@@ -68,6 +70,7 @@ newLi4.appendChild(txtLi4);
 
 newH2.appendChild(txtH2);
 newPar.appendChild(txtPar);
+fieldSet.appendChild(fieldsetChB);
 
 
 // Input field
@@ -84,7 +87,7 @@ newButton.setAttribute('text', 'submits');
 const newCheck = document.createElement('input');
 newCheck.setAttribute('type', 'checkbox');
 newCheck.setAttribute('checked', '0');
-newCheck.setAttribute('value', 'Great coder');
+newCheck.setAttribute('value', '2');
 
 // Radio
 const newRadio = document.createElement('input');
@@ -102,6 +105,7 @@ document.getElementById('rules').appendChild(newOl);
 document.getElementById('headerBrasil').appendChild(newH2);
 document.getElementById('mainPlanList').appendChild(fieldSet);
 document.getElementById('mainPlanList').appendChild(newPar);
+document.getElementsByName('planList').appendChild(fieldSet);
 
 // Listeners
 newH1.addEventListener('click',() => {
