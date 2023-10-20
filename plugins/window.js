@@ -186,6 +186,7 @@ $(document).ready(function(){
 };
 
 // Creation window
-function windowCreate(){
-
+function popupCreate(url){
+    popwindow = window.open(url, 'mypopWindow',
+    'height=300','width=350', 'left=100','top=100');
 }
