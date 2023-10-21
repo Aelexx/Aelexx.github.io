@@ -191,7 +191,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('#id-newPar').scroll(function(){
+    $('#id-newPar').hover(function(){
         $(this).alert('OPDSS!');
     });
 });
