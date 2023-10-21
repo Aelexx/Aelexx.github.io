@@ -144,7 +144,8 @@ let myStyles = `
     #id-newPar{
         font-family: Georgia;
         margin: 23px, auto, 0, auto;
-        text-align: right;
+        text-align: center;
+        font-weight: 950;
     }
     #id-btn{
         height: 45px;
