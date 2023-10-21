@@ -29,6 +29,16 @@ let windowStyles = `
     text-decoration: none;
     cursor: pointer;
 }
+#headerM{
+    background-color: #f44;
+    text-decoration: underline overline;
+    color: green;
+}
+#bodyM{
+    background-color: #f44;
+    text-decoration: underline overline;
+    color: brown;
+}
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
