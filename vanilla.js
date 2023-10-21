@@ -30,17 +30,17 @@ let windowStyles = `
     cursor: pointer;
 }
 #headerM{
-    background-color: #f44;
+    background-color: #358287;
     text-decoration: underline overline;
     color: green;
 }
 #bodyM{
-    background-color: #f44;
+    background-color: #81ba57;
     text-decoration: line through;
-    color: brown;
+    color: white;
 }
 #footerM{
-    background-color: #f44;
+    background-color: #d4c64e;
     text-decoration: underline;
     color: green;
 }
