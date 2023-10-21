@@ -56,8 +56,15 @@ let spans = document.getElementsByClassName('close')[0];
 
 // Events
 btn.onclick = function() {
-    windowM.style.display = 'block';
-};
+    if(windowM.style.display === 'none'){
+        window.style.display = 'block'
+    }
+        else{
+            window.style.display = 'block'
+        };
+    
+    };
+
 
 spans.onclick = function(){
     windowM.style.display = 'none';
