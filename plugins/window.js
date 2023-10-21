@@ -200,10 +200,11 @@ $(document).ready(function(){
 // Creation windows
 function popupCreate(url){
     popwindow = window.open(url, 'mypopWindow',
-    'height=300','width=350', 'left=102','top=500 resizable=yes');
+    'height=300','width=350', 'left=102','top=500', 'resizable=yes');
 };
 
 function window2 (url){
     windowURL = window.open(url, 'windowBM', 
-    'height=555 width=455 top=200 left=300 resizable=yes');
+    'height=555', 'width=455', 'top=200', 'left=300', 'resizable=yes',
+    'menubar=yes');
 };
