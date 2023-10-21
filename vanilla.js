@@ -1,6 +1,6 @@
 //document.getElementById('test-table');
 let windowStyles = `
-.window{
+.windowM{
     display: none;
     position: fixed;
     z-index: 2;
@@ -11,7 +11,7 @@ let windowStyles = `
     height: 500px
 
 }
-.window-content{
+.windowM-content{
     padding: 30px;
     background-color: white;
     margin: 15%;
@@ -34,14 +34,14 @@ stylesForWindow.innerText = windowStyles;
 document.body.appendChild(stylesForWindow);
 
 let btn = document.getElementById('btn');
-let window = document.getElementById('myWindow'); 
+let windowM = document.getElementById('myWindow'); 
 let span = document.getElementsByClassName('close');
 
 btn.onclick = function() {
-    window.style.display = 'block';
+    windowM.style.display = 'block';
 };
 
 span.onclick = function(){
-    window.style.display = 'none';
+    windowM.style.display = 'none';
 };
 
