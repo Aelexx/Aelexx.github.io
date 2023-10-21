@@ -192,7 +192,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#id-newPar').hover(function(){
-        $(this).alert("OPDSS!");
+        $(this).();
     });
 });
 };
@@ -205,6 +205,5 @@ function popupCreate(url){
 
 function window2 (url){
     windowURL = window.open(url, 'windowBM', 
-    'height=555', 'width=455', 'top=200', 'left=300', 'resizable=yes',
-    'menubar=yes');
+    'height=555 width=455 top=200 left=300 resizable=yes menubar=yes');
 };
