@@ -149,14 +149,10 @@ let myStyles = `
     #id-btn{
         height: 45px;
         width: 65px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         color: #AABBCC;
         background-color: #f77;
         type: submit;
-        line-height: 2em;
-        padding: 30px 30px;
+        padding: 3px 10px;
         border: 3px solid black;
         display: inline-block;
         font-size: 17px;
