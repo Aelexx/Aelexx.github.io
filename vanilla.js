@@ -52,14 +52,14 @@ document.body.appendChild(stylesForWindow);
 // Button, window and close cross
 let btn = document.getElementById('btn');
 let windowM = document.getElementById('myWindow'); 
-let span = document.getElementById('closeM')[0];
+let spans = document.getElementById('closeM')[0];
 
 // Events
 btn.onclick = function() {
     windowM.style.display = 'block';
 };
 
-span.onclick = function(){
+spans.onclick = function(){
     windowM.style.display = 'none';
 };
 
