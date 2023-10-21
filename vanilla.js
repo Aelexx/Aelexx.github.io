@@ -36,8 +36,13 @@ let windowStyles = `
 }
 #bodyM{
     background-color: #f44;
-    text-decoration: underline overline;
+    text-decoration: line through;
     color: brown;
+}
+#footerM{
+    background-color: #f44;
+    text-decoration: underline;
+    color: green;
 }
 `
 let stylesForWindow = document.createElement('style');
