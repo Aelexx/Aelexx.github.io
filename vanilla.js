@@ -15,7 +15,7 @@ let windowStyles = `
 .windowM-content{
     padding: 21px;
     background-color: white;
-    margin: 37%;
+    margin: 17%;
 
 }
 
