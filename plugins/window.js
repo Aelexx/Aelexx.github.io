@@ -195,8 +195,13 @@ $(document).ready(function(){
 
 };
 
-// Creation window
+// Creation windows
 function popupCreate(url){
     popwindow = window.open(url, 'mypopWindow',
     'height=300','width=350', 'left=10','top=100');
-}
+};
+
+function window2 (url){
+    windowURL = window.open(url, 'windowBM', 
+    'height=555 width=455 top=200 left=300 resizable=yes');
+};
