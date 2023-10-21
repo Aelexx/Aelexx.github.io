@@ -161,8 +161,8 @@ let myStyles = `
     }
 `
 let newMyStyle = document.createElement('style');
-newMyStyle.innerText = myStyldocument.body.appendChildes;
-(newMyStyle);
+newMyStyle.innerText = myStyles;
+document.body.appendChildes(newMyStyle);
 
 let liAr = ['newLi','newLi2', 'newLi3', 'newLi4'];
 console.log(liAr.join());
