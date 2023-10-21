@@ -153,6 +153,7 @@ let myStyles = `
         color: #AABBCC;
         background-color: #f77;
         type: submit;
+        line-height: 2em;
         padding: 30px 30px;
         border: 3px solid black;
         display: inline-block;
