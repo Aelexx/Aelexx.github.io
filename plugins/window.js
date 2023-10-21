@@ -189,6 +189,11 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('#id-newPar').scroll(function(){
+        $(this).alert('OPDSS!');
+    });
+});
 };
 
 // Creation windows
