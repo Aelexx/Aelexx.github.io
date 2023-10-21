@@ -16,15 +16,32 @@ let windowStyles = `
     background-color: white;
     margin: 15%;
 
-
 }
 
 .close{
     color: blue;
-    float: 
-
+    float: right;
+}
+.close: hover,
+.close: focus{
+    color: #aabbcc;
+    text-decoration: none;
+    cursor: pointer;
 }
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
 document.body.appendChild(stylesForWindow);
+
+let btn = document.getElementById('btn');
+let window = document.getElementById('myWindow'); 
+let span = document.getElementsByClassName('close');
+
+btn.onclick = function() {
+    window.style.display = 'block';
+};
+
+span.onclick = function(){
+    window.style.display = 'none';
+};
+
