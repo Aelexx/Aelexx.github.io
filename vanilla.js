@@ -47,6 +47,17 @@ let windowStyles = `
     text-decoration: underline;
     color: white;
 }
+@keyframes sample{
+    from {background-color: white;}
+    to {background-color: red;}
+
+#btn{
+    background-color: white;
+    animation-name: sample;
+    animation-duration: 3s;
+}    
+
+}
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
