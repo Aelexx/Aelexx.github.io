@@ -60,7 +60,7 @@ btn.onclick = function() {
         windowM.style.display = 'none'
     }
         else{
-            windowM.style.display = 'none'
+            windowM.style.display = 'block'
         };
     
     };
