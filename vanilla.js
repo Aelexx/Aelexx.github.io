@@ -25,7 +25,7 @@ let windowStyles = `
 }  
 .close: hover,
 .close: focus{
-    color: #aabbcc;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -68,3 +68,4 @@ window.onclick = function(event){
         windowM.style.display = 'none';
     };
 };
+
