@@ -57,10 +57,10 @@ let spans = document.getElementsByClassName('close')[0];
 // Events
 btn.onclick = function() {
     if(windowM.style.display === 'none'){
-        window.style.display = 'block'
+        windowM.style.display = 'block'
     }
         else{
-            window.style.display = 'block'
+            windowM.style.display = 'block'
         };
     
     };
