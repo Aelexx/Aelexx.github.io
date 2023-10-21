@@ -186,15 +186,15 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('#mainCity').hover(function(){
-        $(this).blur();
+        $(this).trigger('blur');
     });
 });
 
-$(document).ready(function(){
-    $('#id-newPar').hover(function(){
-        $(this).open('https://api.jquery.com/category/data/');
-    });
-});
+// $(document).ready(function(){
+//     $('#id-newPar').hover(function(){
+//         $(this).open('https://api.jquery.com/category/data/');
+//     });
+// });
 };
 
 // Creation windows
