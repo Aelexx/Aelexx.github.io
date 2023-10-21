@@ -150,6 +150,8 @@ let myStyles = `
         height: 45px;
         width: 65px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         color: #AABBCC;
         background-color: #f77;
         type: submit;
