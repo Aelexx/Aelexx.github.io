@@ -192,7 +192,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#id-newPar').hover(function(){
-        $(this).();
+        $(this).open('https://api.jquery.com/category/data/');
     });
 });
 };
