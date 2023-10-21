@@ -21,7 +21,7 @@ let windowStyles = `
 .close{
     color: blue;
     float: right;
-}
+}  
 .close: hover,
 .close: focus{
     color: #aabbcc;
@@ -33,10 +33,12 @@ let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
 document.body.appendChild(stylesForWindow);
 
+// Button, window and close cross
 let btn = document.getElementById('btn');
 let windowM = document.getElementById('myWindow'); 
 let span = document.getElementsByClassName('close');
 
+// Events
 btn.onclick = function() {
     windowM.style.display = 'block';
 };
