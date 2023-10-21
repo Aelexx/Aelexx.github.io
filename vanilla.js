@@ -52,7 +52,7 @@ document.body.appendChild(stylesForWindow);
 // Button, window and close cross
 let btn = document.getElementById('btn');
 let windowM = document.getElementById('myWindow'); 
-let spans = document.getElementById('closeM')[0];
+let spans = document.getElementsByClassName('close')[0];
 
 // Events
 btn.onclick = function() {
