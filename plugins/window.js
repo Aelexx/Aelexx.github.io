@@ -198,7 +198,7 @@ $(document).ready(function(){
 // Creation windows
 function popupCreate(url){
     popwindow = window.open(url, 'mypopWindow',
-    'height=300','width=350', 'left=10','top=100');
+    'height=300','width=350', 'left=102','top=500');
 };
 
 function window2 (url){
