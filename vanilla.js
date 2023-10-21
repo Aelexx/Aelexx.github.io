@@ -32,7 +32,7 @@ let windowStyles = `
 #headerM{
     background-color: #358287;
     text-decoration: underline overline;
-    color: green;
+    color: white;
 }
 #bodyM{
     background-color: #81ba57;
@@ -42,7 +42,7 @@ let windowStyles = `
 #footerM{
     background-color: #d4c64e;
     text-decoration: underline;
-    color: green;
+    color: white;
 }
 `
 let stylesForWindow = document.createElement('style');
