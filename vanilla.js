@@ -4,8 +4,8 @@ let windowStyles = `
     display: none;
     position: fixed;
     z-index: 2;
-    left: 200px;
-    top: 200px;
+    left: 300px;
+    top: 100px;
     overflow: auto;
     width: 500px;
     height: 500px;
