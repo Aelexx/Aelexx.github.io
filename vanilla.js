@@ -8,7 +8,8 @@ let windowStyles = `
     top: 0;
     overflow: auto;
     width: 500px;
-    height: 500px
+    height: 500px;
+    background-color: #aabbcc;
 
 }
 .windowM-content{
