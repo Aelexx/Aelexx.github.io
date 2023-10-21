@@ -23,7 +23,10 @@ let windowStyles = `
     color: blue;
     float: right;
 }  
-.close: hover,
+.close: hover{
+    color: white;
+}
+
 .close: focus{
     color: red;
     text-decoration: none;
@@ -62,7 +65,6 @@ btn.onclick = function() {
         else{
             windowM.style.display = 'block'
         };
-    
     };
 
 
