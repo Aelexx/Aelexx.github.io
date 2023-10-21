@@ -45,3 +45,8 @@ span.onclick = function(){
     windowM.style.display = 'none';
 };
 
+window.onclick = function(event){
+    if(event.target == windowM){
+        windowM.style.display = 'none';
+    };
+};
