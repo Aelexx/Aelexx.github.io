@@ -9,7 +9,7 @@ let windowStyles = `
     overflow: auto;
     width: 500px;
     height: 500px;
-    background-color: #aabbcc;
+    background-color: #9bcdd1;
 
 }
 .windowM-content{
