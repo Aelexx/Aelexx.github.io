@@ -69,7 +69,7 @@ let windowStyles = `
     display: inline-block;
 }
 
-.tooltiptext{
+.tooltip-1 .tooltiptext{
     visability: hidden;
     width: auto;
     height: auto;
