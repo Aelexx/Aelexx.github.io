@@ -23,11 +23,11 @@ let windowStyles = `
     color: blue;
     float: right;
 }  
-.close: hover{
+#closeM: hover{
     color: white;
 }
 
-.close: focus{
+#closeM: focus{
     color: red;
     text-decoration: none;
     cursor: pointer;
