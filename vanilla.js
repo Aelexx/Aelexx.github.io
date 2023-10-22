@@ -90,7 +90,8 @@ let windowStyles = `
     content: "";
     position: absolute;
     top: 50%;
-    right: 87%;
+    right: 90%;
+    padding: 5px;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
