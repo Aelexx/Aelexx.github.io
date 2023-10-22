@@ -89,9 +89,9 @@ let windowStyles = `
 .tooltip-1 .tooltiptext::after{
     content: "";
     position: absolute;
-    left: 100%;
-    top: 50%;
-    margin-left: -110px;
+    right: 100%;
+    bottom: 100%;
+    margin-left: -100px;
     border-width: 5px;
     border-style: solid;
     border-color: #5a60b8 transparent transparent transparent;
