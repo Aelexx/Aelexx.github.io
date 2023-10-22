@@ -55,13 +55,13 @@ let windowStyles = `
 
 @keyframes sample{
     from {background-color: white;}
-    to {background-color: red;}
+    to {background-color: #7c44b8;}
 }
 
 #btn{
     background-color: white;
     animation-name: sample;
-    animation-duration: 12s;
+    animation-duration: 11s;
 }    
 
 .tooltip-1{
