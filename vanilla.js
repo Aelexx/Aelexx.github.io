@@ -67,6 +67,7 @@ document.body.appendChild(stylesForWindow);
 let btn = document.getElementById('btn');
 let windowM = document.getElementById('myWindow'); 
 let spans = document.getElementsByClassName('close')[0];
+let btnCn = document.getElementById('btn-modal-cn');
 
 // Events
 btn.onclick = function() {
@@ -78,7 +79,6 @@ btn.onclick = function() {
         };
     };
 
-
 spans.onclick = function(){
     windowM.style.display = 'none';
 };
@@ -87,5 +87,9 @@ window.onclick = function(event){
     if(event.target == windowM){
         windowM.style.display = 'none';
     };
+};
+
+btnCn.onclick = function(){
+    windowM.style.display ='none';
 };
 
