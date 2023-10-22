@@ -68,6 +68,7 @@ let btn = document.getElementById('btn');
 let windowM = document.getElementById('myWindow'); 
 let spans = document.getElementsByClassName('close')[0];
 let btnCn = document.getElementById('btn-modal-cn');
+let btnOk = document.getElementById('btn-modal-ok');
 
 // Events
 btn.onclick = function() {
@@ -90,6 +91,10 @@ window.onclick = function(event){
 };
 
 btnCn.onclick = function(){
-    windowM.style.display ='none';
+    windowM.style.display = 'none';
+};
+
+btnOk.onclick = function(){
+    windowM.style.display = 'none';
 };
 
