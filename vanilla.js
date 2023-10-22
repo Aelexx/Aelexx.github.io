@@ -19,7 +19,7 @@ let windowStyles = `
 
 }
 
-.close{
+#closeM{
     color: blue;
     float: right;
 }  
