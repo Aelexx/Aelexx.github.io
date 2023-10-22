@@ -237,7 +237,7 @@
     <ul id="authors"></ul>
     <script>
         const uler = document.getElementById('authors');
-        const list = createDocumentFragment();
+        const list = document.createDocumentFragment();
         const url = 'https://jsonplaceholder.typicode.com/users';
         fetch(url)
         .then((response) =>{
