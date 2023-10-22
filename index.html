@@ -252,8 +252,14 @@
 
                 name.innerHTML = `${author.name}`;
                 email.innerHTML = `${author.email}`;
+
+                li.appendChild(name);
+                li.appendChild(email);
+                list.appendChild(li);
+
             })
         })
+        ul.appendChild(list)
     </script>
  
     
