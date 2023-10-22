@@ -21,7 +21,7 @@ let windowStyles = `
 }
 
 #closeM{
-    color: yellow;
+    color: black;
     float: left;
 }  
 
