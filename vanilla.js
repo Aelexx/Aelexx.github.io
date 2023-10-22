@@ -27,7 +27,7 @@ let windowStyles = `
     color: white;
 }
 
-#closeM: focus{
+#closeM: tabindex{
     color: red;
     text-decoration: none;
     cursor: pointer;
