@@ -249,15 +249,13 @@
                 let li = document.createElement('li');
                 let name = document.createElement('h2');
                 let email = document.createElement('span');
-
                 name.innerHTML = `${author.name}`;
                 email.innerHTML = `${author.email}`;
-
                 li.appendChild(name);
                 li.appendChild(email);
                 list.appendChild(li);
             });
-        }).
+        })
         .catch(function(error){
             console.log(error);
         });
