@@ -82,6 +82,7 @@ let windowStyles = `
 }
 .tooltip-1:hover .tooltiptext{
     visability: visible;
+    z-index: 2;
 }
 `
 let stylesForWindow = document.createElement('style');
