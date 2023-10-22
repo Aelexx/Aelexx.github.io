@@ -61,7 +61,7 @@ let windowStyles = `
 #btn{
     background-color: white;
     animation-name: sample;
-    animation-duration: 3s;
+    animation-duration: 12s;
 }    
 
 .tooltip-1{
