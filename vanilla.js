@@ -21,7 +21,7 @@ let windowStyles = `
 
 #closeM{
     color: blue;
-    float: right;
+    float: left;
 }  
 #closeM: hover{
     color: white;
