@@ -91,6 +91,10 @@ let windowStyles = `
     position: absolute;
     left: 100%;
     top: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-colo: black transparent transparent transparent;
 }
 
 `
