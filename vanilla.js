@@ -20,7 +20,7 @@ let windowStyles = `
 }
 
 #closeM{
-    color: blue;
+    color: yellow;
     float: left;
 }  
 #closeM: hover{
