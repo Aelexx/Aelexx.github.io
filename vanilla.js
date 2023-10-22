@@ -86,6 +86,13 @@ let windowStyles = `
     visibility: visible;
    
 }
+.tooltip-1 .tooltiptext::after{
+    content:' ';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+}
+
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
