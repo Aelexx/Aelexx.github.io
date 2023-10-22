@@ -87,7 +87,7 @@ let windowStyles = `
    
 }
 .tooltip-1 .tooltiptext::after{
-    content:' ';
+    content: "";
     position: absolute;
     left: 100%;
     top: 50%;
