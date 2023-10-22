@@ -239,7 +239,18 @@
         const uler = document.getElementById('authors');
         const list = createDocumentFragment();
         const url = 'https://jsonplaceholder.typicode.com/users';
-        fetch(url);
+        fetch(url)
+        .then((response) =>{
+            return response.json();
+        })
+        .then((data) =>{
+            let authors = data;
+            author.map(function(author){
+                let li = document.createElement('li');
+                let name = document.createElement('h2');
+                let email = document.createElement('span');
+            })
+        })
     </script>
  
     
