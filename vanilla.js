@@ -12,6 +12,7 @@ let windowStyles = `
     background-color: #9bcdd1;
 
 }
+
 .windowM-content{
     padding: 21px;
     background-color: white;
@@ -23,6 +24,7 @@ let windowStyles = `
     color: yellow;
     float: left;
 }  
+
 #closeM: hover + div{
     color: white;
 }
@@ -32,25 +34,30 @@ let windowStyles = `
     text-decoration: none;
     cursor: pointer;
 }
+
 #headerM{
     background-color: #358287;
     text-decoration: underline overline;
     color: white;
 }
+
 #bodyM{
     background-color: #81ba57;
     text-decoration: line through;
     color: white;
 }
+
 #footerM{
     background-color: #d4c64e;
     text-decoration: underline;
     color: white;
 }
+
 @keyframes sample{
     from {background-color: white;}
     to {background-color: red;}
 }
+
 #btn{
     background-color: white;
     animation-name: sample;
@@ -58,9 +65,17 @@ let windowStyles = `
 }    
 
 .tooltip-1{
+    position: relative;
+    display: inline-block;
+}
 
+.tooltip-1 .tooltiptext{
+    visability: hidden;
+    width: auto;
+    height: auto;
+    
 }
-}
+
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
