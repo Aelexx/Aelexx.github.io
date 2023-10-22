@@ -55,8 +55,13 @@ let windowStyles = `
     background-color: white;
     animation-name: sample;
     animation-duration: 3s;
-}    
+    }    
+}
+.tooltip-1{
+    
 
+
+}
 }
 `
 let stylesForWindow = document.createElement('style');
