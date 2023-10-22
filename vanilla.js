@@ -73,9 +73,14 @@ let windowStyles = `
     visability: hidden;
     width: auto;
     height: auto;
-    
+    color: white;
+    text-align: center;
+    background-color: #5a60b8;
+    border-radius: 5px;
 }
-
+.tooltip-1:hover .tooltiptext{
+    visability: visible;
+}
 `
 let stylesForWindow = document.createElement('style');
 stylesForWindow.innerText = windowStyles;
