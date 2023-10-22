@@ -94,7 +94,7 @@ let windowStyles = `
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #5a60b8 transparent transparent transparent;
+    border-color: transparent #5a60b8 transparent transparent;
 }
 
 `
