@@ -256,10 +256,12 @@
                 li.appendChild(name);
                 li.appendChild(email);
                 list.appendChild(li);
-
-            })
-        })
-        ul.appendChild(list)
+            });
+        }).
+        .catch(function(error){
+            console.log(error);
+        });
+        ul.appendChild(list);
     </script>
  
     
