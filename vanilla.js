@@ -23,7 +23,7 @@ let windowStyles = `
     color: yellow;
     float: left;
 }  
-#closeM: hover{
+#closeM: hover + div{
     color: white;
 }
 
