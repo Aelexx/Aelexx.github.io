@@ -77,6 +77,8 @@ let windowStyles = `
     text-align: center;
     background-color: #5a60b8;
     border-radius: 5px;
+    top: -5px;
+    left: 115%;
 }
 .tooltip-1:hover .tooltiptext{
     visability: visible;
