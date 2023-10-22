@@ -70,19 +70,21 @@ let windowStyles = `
 }
 
 .tooltip-1 .tooltiptext{
-    visability: hidden;
+    visibility: hidden;
     width: auto;
     height: auto;
     color: white;
     text-align: center;
     background-color: #5a60b8;
     border-radius: 5px;
+    postion: absolute;
+    z-index: 1;
     top: -52px;
     left: 215%;
 }
 .tooltip-1:hover .tooltiptext{
-    visability: visible;
-    z-index: 2;
+    visibility: visible;
+   
 }
 `
 let stylesForWindow = document.createElement('style');
