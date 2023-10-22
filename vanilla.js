@@ -82,7 +82,7 @@ let windowStyles = `
     top: -52px;
     left: 215%;
 }
-.tooltip-1:hover .tooltiptext{
+.tooltip-1:hover .close{
     visibility: visible;
    
 }
