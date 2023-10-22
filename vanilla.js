@@ -124,8 +124,8 @@ btnOk.onclick = function(){
     windowM.style.display = 'none';
 };
 
-$(document).ready(function(){
-    $('#tooltipsi').hover(function(){
-        $(this).hide();
-    });
-});
+// $(document).ready(function(){
+//     $('#tooltipsi').hover(function(){
+//         $(this).hide();
+//     });
+// });
