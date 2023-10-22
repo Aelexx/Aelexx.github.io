@@ -91,7 +91,7 @@ let windowStyles = `
     position: absolute;
     left: 100%;
     top: 50%;
-    margin-left: 5px;
+    margin-left: -55px;
     border-width: 5px;
     border-style: solid;
     border-color: #5a60b8 transparent transparent transparent;
