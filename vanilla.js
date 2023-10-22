@@ -121,7 +121,7 @@ btnCn.onclick = function(){
 };
 
 btnOk.onclick = function(){
-    windowM.style.width = '600px';
+    windowM.style.width = '888px';
 };
 
 // $(document).ready(function(){
