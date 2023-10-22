@@ -51,7 +51,7 @@ let windowStyles = `
     from {background-color: white;}
     to {background-color: red;}
 
-#myWindow{
+#btn{
     background-color: white;
     animation-name: sample;
     animation-duration: 3s;
