@@ -242,7 +242,7 @@
         })
         .then(data => {
             data.forEach(user => {
-                const markup = `<li> ${user.name}</li>`;
+                const markup = `<li> ${user.id}</li>`;
                 document.querySelector('ul').insertAdjacentHTML(`afterend`, markup);
             });
         })
