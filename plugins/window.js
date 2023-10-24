@@ -207,3 +207,20 @@ function window2 (url){
     windowURL = window.open(url, 'windowBM', 
     'height=555 width=455 top=200 left=300 resizable=yes menubar=yes');
 };
+
+function MyBottn(){
+    return (
+    <button> 
+        This is batn
+    </button>
+    );
+};
+
+export default function MyApsp(){
+    return (
+    <div>
+        <h3>Welcome my APP</h3>
+        <MyBottn />
+    </div>
+    );
+};
