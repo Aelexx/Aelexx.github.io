@@ -165,7 +165,7 @@ export default function MyApsp(){
     return (
     <div>
         <h3>Welcome my APP</h3>
-        <MyBtn />
+        <MyBottn />
     </div>
     );
 };
