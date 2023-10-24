@@ -208,19 +208,19 @@ function window2 (url){
     'height=555 width=455 top=200 left=300 resizable=yes menubar=yes');
 };
 
-function MyButton() {
-    return (
-      <button>
-        I'm a button
-      </button>
-    );
-  }
+// function MyButton() {
+//     return (
+//       <button>
+//         I'm a button
+//       </button>
+//     );
+//   }
   
-  export default function MyApp() {
-    return (
-      <div>
-        <h1>Welcome to my app</h1>
-        <MyButton />
-      </div>
-    );
-  }
+//   export default function MyApp() {
+//     return (
+//       <div>
+//         <h1>Welcome to my app</h1>
+//         <MyButton />
+//       </div>
+//     );
+//   }
