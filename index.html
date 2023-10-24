@@ -283,7 +283,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js
       <script>
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
-            type: 'polarArea',
+            type: 'bar',
             data:{
                 labels: [red, blue, green],
                 datasets:[{                    
@@ -293,7 +293,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js
                  }]
 
         },
-        options: {
+            options: {
             scales: {
                 y: {
                     beginAtZero: true
