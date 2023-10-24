@@ -153,19 +153,3 @@ function math(){
     console.log((a * b) + (c * d) + e);
 };
 
-function MyBottn(){
-    return (
-    <button> 
-        This is batn
-    </button>
-    );
-};
-
-export default function MyApsp(){
-    return (
-    <div>
-        <h3>Welcome my APP</h3>
-        <MyBottn />
-    </div>
-    );
-};
