@@ -26,33 +26,31 @@
         padding: 0.25em;
       }
     </style>
+    
     <script>
-      // Enter the API key from the Google Developer Console - to handle any unauthenticated
+      // Enter the API key from the Google Develoepr Console - to handle any unauthenticated
       // requests in the code.
       // The provided key works for this sample only when run from
-      // https://google-api-javascript-client.googlecode.com/hg/samples/simpleRequest.html
+      // https://google-api-javascript-client.googlecode.com/hg/samples/requestSample.html
       // To use in your own application, replace this API key with your own.
       var apiKey = 'AIzaSyDKctdr5Wut2y9EwsrZFVyN-zFmYAa1878';
 
       function handleClientLoad() {
-          gapi.load('client', initClient);
+          gapi.load('client', makeRequest);
       }
 
       function initClient() {
         gapi.client.init({
           apiKey: apiKey,
-          discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/urlshortener/v1/rest']
-        }).then(showInputs)
-      }
-
-      function showInputs() {
-        document.getElementById('requestFields').style.display = '';
+        }).then(makeRequest)
       }
 
       function makeRequest() {
+        gapi.client.setApiKey(apiKey);
+
         function writeResponse(resp) {
           var responseText;
-          if (resp.code && resp.data[0].debugInfo == 'QuotaState: BLOCKED') {
+          if (resp.error && resp.error.errors[0].debugInfo == 'QuotaState: BLOCKED') {
             responseText = 'Invalid API key provided. Please replace the "apiKey" value with your own.';
           } else {
             responseText = 'Short URL ' + shortUrl + ' expands to ' + resp.longUrl;
@@ -63,10 +61,12 @@
         }
 
         var shortUrl = document.getElementById('shortUrl').value;
-        var request = gapi.client.urlshortener.url.get({
-          'shortUrl': shortUrl
+        var restRequest = gapi.client.request({
+           'path': '/urlshortener/v1/url',
+           'params' : {'shortUrl' : shortUrl}
         });
-        request.execute(writeResponse);
+
+        restRequest.execute(writeResponse);
       }
     </script>
     <script async defer src="https://apis.google.com/js/api.js"
@@ -74,15 +74,14 @@
       onreadystatechange="if (this.readyState === 'complete') this.onload();">
     </script>
   </head>
+
   <body>
     <p>Enter a short URL and click "Expand URL" to get the full URL.</p>
-    <div id="requestFields" style="display:none;">
-      <label for="shortUrl">Short URL </label>
-      <input id="shortUrl" type="text" value="http://goo.gl/fbsS" />
-      <button onclick="makeRequest();">
-        Expand URL
-      </button>
-    </div>
+    <label for="shortUrl">Short URL </label>
+    <input id="shortUrl" type="text" value="http://goo.gl/fbsS" />
+    <button onclick="makeRequest();">
+      Expand URL
+    </button>
     <div style="margin-top:0.5em;"><span id="info">Results</span></div>
   </body>
 </html>
