@@ -151,3 +151,16 @@ function math(){
     let e = 5;
     console.log((a * b) + (c * d) + e);
 };
+function MyBtn(){
+    return 
+    (<button> This is batn</button>);
+}
+
+export default function MyApp(){
+    return (
+    <div>
+        <h3>Welocome my APP</h3>
+        <MyBtn/>
+    </div>
+    );
+}
