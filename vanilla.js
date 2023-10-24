@@ -1,4 +1,5 @@
-//document.getElementById('test-table');
+// Css in JS
+
 let windowStyles = `
 .windowM{
     display: none;
