@@ -242,8 +242,10 @@
         })
         .then(data => {
             data.forEach(user => {
-                const markup = `<li> ${user.username}</li>`;
+                const markup = `<li>${user.username}</li>`;
+                const markup2 = `<li>${user.email}</li>`;
                 document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup);
+                document.querySelector('ul').insertAdjacentHTML(`afterend`, markup2);
             });
         })
         .catch(error => console.log(error));
