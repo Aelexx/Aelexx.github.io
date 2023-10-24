@@ -208,19 +208,19 @@ function window2 (url){
     'height=555 width=455 top=200 left=300 resizable=yes menubar=yes');
 };
 
-function MyBottn(){
+function MyButton() {
     return (
-    <button> 
-        This is batn
-    </button>
+      <button>
+        I'm a button
+      </button>
     );
-};
-
-export default function MyApsp(){
+  }
+  
+  export default function MyApp() {
     return (
-    <div>
-        <h3>Welcome my APP</h3>
-        <MyBottn />
-    </div>
+      <div>
+        <h1>Welcome to my app</h1>
+        <MyButton />
+      </div>
     );
-};
+  }
