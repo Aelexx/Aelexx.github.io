@@ -154,15 +154,18 @@ function math(){
 };
 
 function MyBtn(){
-    return 
-    (<button> This is batn</button>);
+    return (
+    <button> 
+        This is batn
+    </button>
+    );
 };
 
 export default function MyApp(){
     return (
     <div>
         <h3>Welocome my APP</h3>
-        <MyBtn/>
+        <MyBtn />
     </div>
     );
 };
