@@ -242,11 +242,12 @@
             return res.json();
         })
         .then(data => {
-            data.forEach(user => {
-                const markup = `<li>${user.username}</li>`;
-                const markup2 = `<li>${user.email}</li>`;
-                document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup);
-                document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup2);
+            data.forEach(div => {
+                //const markup = `<li>${main-page-class}</li>`;
+                //const markup2 = `<li>${user.email}</li>`;
+                //document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup);
+                //document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup2); 
+                console.log(div);
             });
         })
         .catch(error => console.log(error));
