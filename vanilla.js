@@ -152,9 +152,4 @@ function math(){
     let e = 5;
     console.log((a * b) + (c * d) + e);
 };
-Route.get('/datatest', function()
-{
-    $analyticsData = 
-    Analytics.fetchTotalVisitorsAndPageViews(Period.days(30));
-    dd($analyticsData);
-});
+
