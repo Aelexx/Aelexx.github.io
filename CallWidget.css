@@ -1,9 +1,11 @@
-#headerBrasil{
-    background-color:rgb(35, 121, 197);
-    color:rgb(55, 167, 167);
+#header_Brasil{
+    background-color:rgb(96, 161, 218);
+    color:rgb(252, 252, 252);
     padding:50px;
     border:groove;
     text-align:center;
+    text-decoration: solid;
+    
 }
 #mainPlanList{
     text-align:left;
