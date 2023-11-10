@@ -177,7 +177,7 @@ text-shadow: none;
 
 @keyframes ಠ_ಠ {
 100% {
-    transform: rotateY(-80deg) rotateX(-83deg);
+    transform: rotateY(-80deg) rotateX(83deg);
 }
 }
 #what_todo{
