@@ -1,10 +1,11 @@
 #header_Brasil{
-    background-color:rgb(96, 161, 218);
-    color:rgb(252, 252, 252);
+    font-family: Geneva;
+    font-stretch: extra-expanded;
+    background-color:rgb(80, 148, 207);
+    color:rgb(255, 255, 255);
     padding:50px;
-    border:groove;
     text-align:center;
-    text-decoration-style: wavy;
+
     
 }
 #mainPlanList{
