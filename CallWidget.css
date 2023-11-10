@@ -33,7 +33,7 @@ body {
 min-height: 450px;
 height: 100vh;
 margin: 0;
-background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+background: #ffffff;/*radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);*/
 }
 
 .stage {
