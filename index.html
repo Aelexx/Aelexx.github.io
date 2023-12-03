@@ -1,10 +1,320 @@
-{% extends layout.html%}
+<!DOCTYPE html>
 
-{% block body %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M95DKVGR');</script>
+    <!-- End Google Tag Manager -->
 
-    <form action="/greet" method="post">
-        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="Text">
-        <input type="submit">  
-    </form>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Google tag (gtag.js)--> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-61584KVT26"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-61584KVT26');
+</script>
+    <meta charset="utf-8" />
+    <title> Brasil </title>
+    <link rel="stylesheet" href="CallWidget.css">
+    <script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<title>Hello Google Analytics API - MY FRIEND!!!</title>
+<link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Cantarell|Inconsolata">
+<link rel="stylesheet" type="text/css"
+    href="pretty.css">
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="whole_image" style="background-color: beige;">
+    <!-- Google Tag Manager (noscript) --> 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M95DKVGR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+    <div class="caption_Brasil">
+        <h1 id='header_Brasil'> Brazil </h1>
+    </div>
+
+    <div class="stage">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
     
-{% endblock %}
+    <style>
+        * *, *::before, *::after { 
+        animation-play-state: running !important;
+        }
+    </style>
+    <script>window.setTimeout = null;</script>
+
+        <button type="button" class="btn btn-primary"> Bootstrap button </button>
+    <div id="app">{{ Heyheyhey!!! }}</div>
+
+<script>
+const { createApp, ref } = Vue
+createApp({
+    setup() {
+    const message = ref('Hello vue!')
+    return {
+        message
+    }
+    }
+}).mount('#app')
+</script>
+<p id="hover-me"> Hover me and I desappear </p>
+<p id="click-me"> Click on me </p>
+<p id="dclick-me"> Double click on me </p>
+<p id="leave-me"> Leave me alone </p>
+<p id='enter-me'> Enter me </p>
+<script>
+    $(document).ready(function(){
+        $("#hover-me").hover(function(){
+            $(this).hide();
+        });
+        $("#click-me").click(function(){
+            $(this).hide();
+        });
+        $("#dclick-me").dblclick(function(){
+            $(this).hide();
+        });
+        $("#leave-me").mouseout(function(){
+            $(this).hide();
+        });
+        $("#enter-me").click(function(){
+            $("#click-me").slideToggle(2000);
+        });
+        $("#header_Brasil").hover(function(){
+            $(this).focusd()
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#ajax").load('LoadTxt.txt');
+        });
+    });
+</script>
+<div> 
+    <p id="ajax"> Some text here </p>
+</div>
+<button id="btn-ajax"> Click to run Ajax </button>
+<div class="container">
+            <div class="form-signin">
+                <form id="form-id" action="" method="post">
+                    <label for="log">Login</label>
+                    <input type="text" id="log"> 
+                    <label for="pas">Password</label>
+                    <input type="password" id="pas">
+                    <input type="button" value="Submit" id="subm" onclick="validate()">      
+                </form>   
+            </div>
+        </div>
+
+        <!--<section class="pyscript">
+            Hi PyScript! I love you <br> 
+        <py-script>
+            from datetime import datetime
+            now = datetime.now()
+            display (now.strftime("%m%d%Y, %H:%M:%S"))
+            display ("TIME")
+        </py-script>
+
+        </section>-->
+        <h1 id="what_todo"> What I need to do and remember </h1>
+        <ol id="mainPlanList" name="planList">
+            <li> Total scenario, rules in Brasil: How, where, how long and results; </li>
+            <li> Music bands, russian communities, friends (girls); </li>
+            <li> Going to Flight WAY BEFORE TIME; </li>
+            <li> Rent apartment in Moscow (20000RUB + payments for utilities); </li>
+            <li> Rent in Rio, cheap, far from ocean, but with microwave or oven; </li>
+            <li> Work in transnational company, remote via Internet; </li>
+            <li> Learn portuguese; </li>
+            <li> Cheap food, eat more fruits that sale on the streets and hunt for it; </li>
+            <li> Economy and don't celebrate until finally all okey; </li>
+            <li> Plug adapter better buy in Brazil; </li>
+            <li> White clothes, summer clothes to walk around (shorts, t-shorts, sunglasses, white panama); </li>
+            <li> Free wifi in McDonald's and others public places run by owners; </li>
+            <li> Use avarage laptop with mouse. About 25000-30000RUB. </li>
+        </ol>
+        <br>
+        
+        <h3 id="rules"> Rules I need to know - HOW IT WILL WORKS IN CODESPACE </h3>
+        <object data="https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p409874903/reports/reportinghub?params=_u..nav%3Dmaui" width="400" height="400"></object> 
+        <ol id="mainRulesBrasil">
+            <li> Rent the apt: Inkom real estate, Floors real estate, Miel real estate. 20000RUB + 3000 communication.</li>
+            <li> Brazil likes russians and girls too, come with me boy!</li>
+            <li> UnionPay china works! Russian Standard or another without sanctions bank. Work in gazprom in telegram review was. Belarus Visa Gold 7000RUB remote apply in MTBank.</li>
+            <li> Two-way tickets, but in third country also good.</li>
+            <li> Cities: Villa Vehla 500 northen Rio, sea.</li>
+            <li> Flights Turkish airlines from Moscow - Buenos Aires and then bus to Brazil.</li>
+            <li> Installed micro translater on phone.</li>
+            <li> Sim-card Claro 30 reals 6 Dollars.</li>
+            <li> CPF like Russian INN for medicine, tax and bank acount.</li>
+            <li> Born certificate renew for me till 1993 coz.</li>
+            <li> Paper no law problem.</li>
+            <li> Florianopolis safety 50 and good/ rent 300$, safiest I found from many cities. Many russians Englesis district.</li>
+            <li> In Turkey ask for back ticket in Sao Paulo no. I see August 5 no need back tickets in Turkey. Or in Argentina is good.</li>
+            <li> Bradesco bank better for withdrawl in Flori.</li>
+            <li> Natalia Pavlova translater in telega.</li>
+            <li> Cold in bus and in room somewhere. </li>
+            <li> Season from November to February rent is big. </li>
+            <li> Crypto or cash + visa SNG. </li>
+            <li> Flights in Sao Paulo: Turkish Airlines, EgyptAir, Emirates, Ethiopian Airlines</li>
+            <li> Women like sporty and hairdress good and active, greengo, use tinder, be chill, samba, gentleman</li>
+            I watch on you there and you so nice, let's meet
+            Day = beach
+            Night = club
+            Samba dancing or any free activities is great to meet a girl!
+
+            <li> Work visa can do in third country, but not in Brazil. Better to do Resident card for work as option or better...</li>
+            <li> IT not good as in world, but it steady increase in Brazil, good idea. Russia 2nd and Brazil 38th.</li>
+            <li> Work in Mall cafe better via notebook than usual cafe, but better in home.</li>
+
+        </ol>        
+    </div>
+    <!--Creation button and div for window modal with all content-->
+    <button id="btn">Open window</button>
+    <div id="myWindow" class="windowM">
+        <div class="windowM-content" >
+            <div id="tooltipsi" class="tooltip-1">
+                <span id="toolsi" class="tooltiptext">Press to close</span>
+                <span id="closeM" class="close">&times;</span>
+            </div>        
+            <div id="headerM">
+                <h3>Bioshop vinit</h3>
+            </div>
+            <div id="bodyM">
+                <p>I have a good day</p>
+            </div>
+            <div id="footerM">
+                <button id="btn-modal-ok" class="btn-m-ok">Okey</button>
+                <button id="btn-modal-cn" class="btn-m-cn">Canc</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <h1>Users by fetch</h1>
+    <ul id="users"></ul>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users')
+        //fetch ('https://aelexx.github.io/Reports.html')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            data.forEach(user => {
+                const markup = `<li>${user.name}</li>`;
+                const markup2 = `<li>${user.email}</li>`;
+                document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup);
+                document.querySelector('ul').insertAdjacentHTML(`beforeend`, markup2); 
+    
+            });
+        })
+        .catch(error => console.log(error));
+
+
+
+    </script>
+    
+    <div class="city">
+        <h2 id='mainCity'> Rio de Janeiro</h2>
+    </div>
+</div>
+<section class="mainformSection1">
+    <form name="formSI1">
+    <label for="firstname1">Firstname</label>
+    <input tabindex="3" id="firstname1" type="text" name="firstname" placeholder="Firstname..."> 
+
+    <label for="lastname1">Lastname</label>
+    <input tabindex="4" id="lastname1" type="text" name="lastname" placeholder="Lastname...">
+    <button type="submit">Submit</button>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        const ctx = document.getElementById('myChart');
+    
+        new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: ['#3ba36d'],
+            borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+            x: {
+                beginAtZero: true
+            }
+            }
+        }
+        });
+    </script>
+    
+    <script src="JavaScript.js"></script>
+    <script src="vanilla.js"></script>
+    <script src="index.js"></script>
+    <!--<script src="xhr.js"></script>-->
+    <script src="plugins/window.js"></script>
+    <script src="Fetch.js"></script>
+    <!--<py-script src="Python_Code.py"></py-script>-->
+</div>
+</body>
+</html>
