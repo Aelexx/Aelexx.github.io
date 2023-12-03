@@ -8,5 +8,5 @@ def index():
 
 @app.route("/greet")
 def greet():
-    name = request.form.get("name", "worlds")
+    name = request.args.get("name", "worlds")
     return render_template("greet.html", name=name)
