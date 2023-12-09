@@ -1,16 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+   <body>
+      <canvas id = "mycanvas" width = "600" height = "200"></canvas>
 
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-    <title></title> 
-</head> 
-  
-<body> 
-    <canvas id="canvas" width="400" height="300"> 
-        Your browser does not support HTML5 
-    </canvas> 
-    <script src="app.js"></script> 
-</body> 
-  
-</html> 
+      <script>
+         var canvas = document.getElementById('mycanvas');
+         var context = canvas.getContext('2d');
+			
+         context.font = '20pt Calibri';
+         context.fillStyle = 'green';
+         context.fillText('Welcome to Tutorialspoint', 70, 70);
+      </script>
+   </body>
+</html>
