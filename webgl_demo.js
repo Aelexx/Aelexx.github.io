@@ -1,17 +1,11 @@
-
-// Request html canvas element 
-var canvas = document.getElementById("canvas"); 
-  
-// Create a WebGL rendering context   
-var gl = canvas.getContext("webgl2"); 
-  
-// Tell user if their browser does not support WebGL 
-if (!gl) { 
-    alert("Your browser does not support WebGL"); 
-} 
-  
-// Set the color of the canvas. 
-// Parameters are RGB colors (red, green, blue, alpha) 
-gl.clearColor(0, 0.6, 0.0, 1.0); 
-// Clear the color buffer with specified color 
-gl.clear(gl.COLOR_BUFFER_BIT);
+<!DOCTYPE html>
+<html>
+   <canvas id = 'my_canvas'></canvas>
+	
+   <script>
+      var canvas = document.getElementById('my_canvas');
+      var gl = canvas.getContext('experimental-webgl');
+      gl.clearColor(0.9,0.9,0.8,1);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+   </script>
+</html>
