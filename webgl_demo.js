@@ -11,7 +11,7 @@ gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
 var vertCode = 
     "attribute vec2 coordinates;" +
-    "void main(void) {"+" gl_Position = vec4(coordinates, 0.0, 1.0); "+"}"
+    "void main(void) {"+" gl_Position = vec4(coordinates, 0.0, 1.0); "+"}";
 
 var vertShader = gl.createShader(gl.VERTEX_SHADER);
 gl.shaderSource = (vertShader, vertCode);
