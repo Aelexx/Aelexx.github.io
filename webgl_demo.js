@@ -7,10 +7,10 @@ gl.clear(gl.COLOR_BUFFER_BIT);
 var vertices = [0.3, 0.3, 0.3,-0.5,-0.5,-0.5];
 var vertex_buffer = gl.createBuffer();
 
-gl.bind_Buffer(gl.ARRAY_BUFFER, vertex_buffer);
+gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
 gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 
-gl.bind_Buffer(gl.ARRAY_BUFFER, null);
+gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
 var vertCode = 
     "attribute vec2 coordinates;" +
@@ -30,6 +30,15 @@ gl.attachShader(shaderProgram, vertShader);
 gl.attachShader(shaderProgram, fragShader);
 
 gl.linkProgram(shaderProgram);
+gl.useProgram(shaderProgram);
+
+
+gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
+var coord = gl.getAttribLocation(shaderProgram, "coordinates");
+gl.vertexAttribPointer(coord, 2, gl.FLOAT, false, 0, 0);
+
+gl.enableVertexAttribArray(coord);
+
 
 
 
