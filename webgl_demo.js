@@ -5,7 +5,7 @@ var gl = canvas.getContext('experimental-webgl');
 
  /* Step2: Define the geometry and store it in buffer objects */
 
-var vertices = [0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5];
+var vertices = [0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5,];
 
  // Create a new buffer object
 var vertex_buffer = gl.createBuffer();
@@ -91,4 +91,4 @@ gl.clear(gl.COLOR_BUFFER_BIT);
 gl.viewport(0,0,canvas.width,canvas.height);
 
  // Draw the triangle
-gl.drawArrays(gl.SQUARE, 0, 4);
+gl.drawArrays(gl.TRIANGLES, 0, 3);
