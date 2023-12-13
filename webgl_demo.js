@@ -6,6 +6,7 @@ var gl = canvas.getContext('experimental-webgl');
  /* Step2: Define the geometry and store it in buffer objects */
 
 var vertices = [0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.9, 0.9, 0.9, -0.9, -0.9, -0.9];
+var indices = [0, 1, 2, 2, 3, 4]
 
  // Create a new buffer object
 var vertex_buffer = gl.createBuffer();
