@@ -80,7 +80,7 @@ gl.enableVertexAttribArray(coord);
  /* Step5: Drawing the required object (triangle) */
 
  // Clear the canvas
-gl.clearColor(99, 89, 181, 0.8);
+gl.clearColor(0.9, 0.7, 0.2, 0.8);
 
  // Enable the depth test
 gl.enable(gl.DEPTH_TEST); 
