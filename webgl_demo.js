@@ -24,8 +24,8 @@ gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
  // Vertex shader source code
 var vertCode =
-'attribute vec2 coordinates;' + 
-'void main(void) {' + ' gl_Position = vec4(coordinates,0.0, 1.0);' + '}';
+'attribute vec3 coordinates;' + 
+'void main(void) {' + ' gl_Position = vec4(coordinates, 1.0);' + '}';
 
  //Create a vertex shader object
 var vertShader = gl.createShader(gl.VERTEX_SHADER);
@@ -37,7 +37,7 @@ gl.shaderSource(vertShader, vertCode);
 gl.compileShader(vertShader);
 
  //Fragment shader source code
-var fragCode = 'void main(void) {' + 'gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);' + '}';
+var fragCode = 'void main(void) {' + 'gl_FragColor = vec4(0.2, 0.0, 0.1, 1.0);' + '}';
 
  // Create fragment shader object
 var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
@@ -72,7 +72,7 @@ gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
 var coord = gl.getAttribLocation(shaderProgram, "coordinates");
 
  //point an attribute to the currently bound VBO
-gl.vertexAttribPointer(coord, 2, gl.FLOAT, false, 0, 0);
+gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
 
  //Enable the attribute
 gl.enableVertexAttribArray(coord);
@@ -92,4 +92,4 @@ gl.clear(gl.COLOR_BUFFER_BIT);
 gl.viewport(0,0,canvas.width,canvas.height);
 
  // Draw the triangle
-gl.drawArrays(gl.POLYGON, 0, 4);
+gl.drawArrays(gl.TRIANGLES, indices.length, gl_UNSIGNED_SHORT, 0);
