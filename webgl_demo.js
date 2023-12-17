@@ -30,8 +30,10 @@ gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
  // Vertex shader source code
 var vertCode =
-'attribute vec3 coordinates;' + 
-'void main(void) {' + ' gl_Position = vec4(coordinates, 1.0);' + '}';
+'attribute vec3 coordinates;' +
+'void main(void) {' +
+    ' gl_Position = vec4(coordinates, 1.0);' +
+'}';
 
  //Create a vertex shader object
 var vertShader = gl.createShader(gl.VERTEX_SHADER);
@@ -43,7 +45,7 @@ gl.shaderSource(vertShader, vertCode);
 gl.compileShader(vertShader);
 
  //Fragment shader source code
-var fragCode = 'void main(void) {' + 'gl_FragColor = vec4(0.2, 0.0, 0.1, 1.0);' + '}';
+var fragCode = 'void main(void) {' +' gl_FragColor = vec4(0.5, 0.3, 0.0, 7.5);' +'}';
 
  // Create fragment shader object
 var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
