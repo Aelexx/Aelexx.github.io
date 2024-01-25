@@ -1,3 +1,15 @@
 #header_UFCapp{
     align-items:center;
 }
+background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 0 / 50%),
+    rgb(0 0 255 / 50%)
+), url("https://github.com/Aelexx/Aelexx.github.io/blob/main/Alexx.png");
+
+/* Global values */
+background-image: inherit;
+background-image: initial;
+background-image: revert;
+background-image: revert-layer;
+background-image: unset;
