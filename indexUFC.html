@@ -20,369 +20,369 @@
             <h1 id='header_UFCapp'> UFC app </h1>
         </div>
     <py-script>
-        from tkinter import *
-        from tkinter import ttk
-        from tkinter import font
-        from tkinter import Tk, Button, simpledialog
-        from functools import partial
-        import re
-        import sys
-        import keyboard
-        from pynput.keyboard import Key, Listener
-        from tkinter import messagebox
-        from datetime import datetime
-        from tkinter import commondialog 
+from tkinter import *
+from tkinter import ttk
+from tkinter import font
+from tkinter import Tk, Button, simpledialog
+from functools import partial
+import re
+import sys
+import keyboard
+from pynput.keyboard import Key, Listener
+from tkinter import messagebox
+from datetime import datetime
+from tkinter import commondialog 
         
         
-        class UFC_fighter:
-            def __init__(self, name, score, willpower, finishes, age, winstreak, wellrounded, injuries,
-                        statistics, fightweek, coaches, interviews, odds, total, date):
-                self.name = name
-                self.score = score
-                self.willpower = willpower
-                self.finishes = finishes
-                self.age = age
-                self.winstreak = winstreak
-                self.wellrounded = wellrounded
-                self.injuries = injuries
-                self.statistics = statistics
-                self.fightweek = fightweek
-                self.coaches = coaches
-                self.interviews = interviews
-                self.odds = odds
-                self.total = total
-                self.date = date
+class UFC_fighter:
+def __init__(self, name, score, willpower, finishes, age, winstreak, wellrounded, injuries,
+statistics, fightweek, coaches, interviews, odds, total, date):
+self.name = name
+self.score = score
+self.willpower = willpower
+self.finishes = finishes
+self.age = age
+self.winstreak = winstreak
+self.wellrounded = wellrounded
+self.injuries = injuries
+self.statistics = statistics
+self.fightweek = fightweek
+self.coaches = coaches
+self.interviews = interviews
+self.odds = odds
+self.total = total
+self.date = date
                 
                 
-                root = Tk()
-                root.title('UFC fighters')
-                # root.lift()
-                # root.resizable(1, 1)
-                # simpledialog.Dialog.resizable(width=True, height=True, self=True)
-                root.overrideredirect(1) # will remove the top badge of window
-                mainFrame = ttk.Frame(root, borderwidth=0, relief='ridge', width=1920, height=1080)
-                mainFrame.grid(column=10, row=2, padx=0, pady=0, in_=root)
-                mainLabel = ttk.Label(root, font='Arial', text='UFC WINNER APP', background="#def190")
-                mainLabel.grid(column=10, row=1, padx=10, pady=10, sticky=(N, E, W, S), in_=root)
-                labelInScreen = ttk.Label(root, foreground='green', font='Arial', 
-                                        text='For get result you need input all we need!')
-                labelInScreen.grid(column=10, row=2, padx=10, pady=12, sticky=(N, W, E), columnspan=3, in_=root)
-                # mainLabel.lift()
-                # mainFrame.after(3000, mainFrame.destroy)
-                
-                
-                for child in mainFrame.winfo_children():
-                    child.configure(background='enable')
-                    simpledialog.Dialog.minsize(width=0, height=0)
-                root.columnconfigure(10, weight=0)
-                root.rowconfigure(10, weight=0)
-                root.geometry('1920x1080+2+30')
-                
-                # style = ttk.Style()
-                # style.theme_use('default')
-                # style.map(mainFrame, lightcolor=[('focus', 'red')])
-                
-                myFont = font.Font(family='Helvetica', size=18, weight='bold', slant='roman')
-                myFont2 = font.Font(family='Helvetica', size=8, weight='bold', slant='roman')
-                font.families()
-                
-                global winStr
-                
-                nameOfFighter = StringVar()
-                
-                winStr = 0
-                winStr = IntVar()
-                lossStr = IntVar()
-                drawStr = IntVar()
-                NCStr = IntVar()
-                
-                finStr = 0
-                finStr = IntVar() 
-                # finStr.get() > winStr.get()
-                subattStr = DoubleVar()
-                strminStr = DoubleVar()
-                            
-                finishesStr = IntVar()
-                
-                ageStr = DoubleVar()
-                
-                winstreakStr = IntVar()
-                
-                wrestlingStr = IntVar()
-                strikingStr = IntVar()
-                
-                straccStr = DoubleVar()
-                takedownaccStr = DoubleVar()
-                signstrdefStr = DoubleVar()
-                takedowndefStr = DoubleVar()
-                
-                injury = DoubleVar()
-                fightWeek = DoubleVar()
-                coaches = DoubleVar()
-                interviews = DoubleVar()
-                oddfavor = IntVar()
-                oddunderdog = IntVar()
-                date = StringVar()
-                
-                ttk.Button(mainFrame, text='Compute score', command=Name(nameOfFighter),
-                            takefocus=1).grid(column=0, row=0)
-        
-                # root.after(3000, root.destroy)
-                ttk.Button(mainFrame, text='Compute willing', command=Score(winStr, lossStr, drawStr, NCStr),
-                            takefocus=1).grid(column=0, row=0)
-                
-                # root.after(3000, root.destroy)
-                ttk.Button(mainFrame, text='Compute finish rate', command=Willing(finStr, subattStr, strminStr),
-                            takefocus=1).grid(column=0, row=0)
-                
-                
-                # root.after(3000, root.destroy)
-                ttk.Button(mainFrame, text='Compute age', command=FinishRate(winStr, finishesStr),
-                            takefocus=1).grid(column=0, row=0)
-                
-                # root.after(3000, root.destroy)
-                ttk.Button(mainFrame, text='Compute win streak', command=Age(ageStr),
-                            takefocus=1).grid(column=0, row=0)
-                
-                ttk.Button(mainFrame, text='Compute well rounded', command=WinStreak(winstreakStr),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute stats', command=WellRounded(wrestlingStr, strikingStr),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute injury', command=Stats(straccStr, takedownaccStr, signstrdefStr, takedowndefStr),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute fight week', command=Injury(injury),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute coaches', command=FightWeek(fightWeek),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute interviews', command=Coaches(coaches),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Compute odds', command=Interviews(interviews),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='Input date', command=Odds(oddfavor, oddunderdog),
-                            takefocus=1).grid(column=0, row=0)
-                ttk.Button(mainFrame, text='IDK', command=Date(date),
-                            takefocus=1).grid(column=0, row=0)
-                root.destroy()
-                # root.mainloop()
-                
-                # for child in mainFrame.winfo_children():
-                #     child.grid_configure(padx=1, pady=1)
+root = Tk()
+root.title('UFC fighters')
+# root.lift()
+# root.resizable(1, 1)
+# simpledialog.Dialog.resizable(width=True, height=True, self=True)
+root.overrideredirect(1) # will remove the top badge of window
+mainFrame = ttk.Frame(root, borderwidth=0, relief='ridge', width=1920, height=1080)
+mainFrame.grid(column=10, row=2, padx=0, pady=0, in_=root)
+mainLabel = ttk.Label(root, font='Arial', text='UFC WINNER APP', background="#def190")
+mainLabel.grid(column=10, row=1, padx=10, pady=10, sticky=(N, E, W, S), in_=root)
+labelInScreen = ttk.Label(root, foreground='green', font='Arial', 
+text='For get result you need input all we need!')
+labelInScreen.grid(column=10, row=2, padx=10, pady=12, sticky=(N, W, E), columnspan=3, in_=root)
+# mainLabel.lift()
+# mainFrame.after(3000, mainFrame.destroy)
+
+
+for child in mainFrame.winfo_children():
+child.configure(background='enable')
+simpledialog.Dialog.minsize(width=0, height=0)
+root.columnconfigure(10, weight=0)
+root.rowconfigure(10, weight=0)
+root.geometry('1920x1080+2+30')
+
+# style = ttk.Style()
+# style.theme_use('default')
+# style.map(mainFrame, lightcolor=[('focus', 'red')])
+
+myFont = font.Font(family='Helvetica', size=18, weight='bold', slant='roman')
+myFont2 = font.Font(family='Helvetica', size=8, weight='bold', slant='roman')
+font.families()
+
+global winStr
+
+nameOfFighter = StringVar()
+
+winStr = 0
+winStr = IntVar()
+lossStr = IntVar()
+drawStr = IntVar()
+NCStr = IntVar()
+
+finStr = 0
+finStr = IntVar() 
+# finStr.get() > winStr.get()
+subattStr = DoubleVar()
+strminStr = DoubleVar()
             
-                # win_entry.focus()
-                # root.bind("<return>")    
-                # ttk.Button(mainFrame, text="Quit", command=root.destroy).grid(column=1, row=10)
-                # root.mainloop()   
-        
-        # w - win, ll - loses, d - draw, n - no contents.
-        # If lost to un-ranked or out of UFC -1
-        # CONSTANTA! +3 win over current champion.
-        # Amateur score out of computing
-        
-        # Just date of event
-        dateOfEvent = 0
-        
-        
-        def Name(nameOfFighter):
-            nameOfFighter = simpledialog.askstring('Name of fighter', 'Input first and lastname')
-            while not nameOfFighter.replace(' ', '').isalpha():
-                # messagebox.showerror("Oops! Only letters allowed", "Input right first and last name")
-                print("Only letters are allowed!")
-                nameOfFighter = simpledialog.askstring('Name of fighter', 'Input first and lastname')
-            print("Name of fighter:", nameOfFighter)
-        
-        
-        def Score(winStr, lossStr, drawStr, NCStr):
-            global sc
-            winStr = simpledialog.askinteger('Wins', 'Input wins')
-            while winStr == 0:
-                winStr = simpledialog.askinteger('Wins', 'Input wins')
-            lossStr = simpledialog.askinteger('Losses', 'Input losses')
-            drawStr = simpledialog.askinteger('Draws', 'Input draws')
-            NCStr = simpledialog.askinteger('NC', 'Input NC')
-            sc = (winStr - lossStr + (drawStr)/2 - (NCStr)/2 - 2) * 40
-            print("Score:", sc)
-        
-        
-        # Willpower = finishes + submission attempt + significant strikes
-        
-        # Maybe first round finishes streak also!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        
-        
-        def Willing(finStr, subattStr, strminStr):
-            global wil       
-            finStr = simpledialog.askinteger('Finishes', 'Input finishes')
-            # while finStr > winStr:
-            #     finStr = simpledialog.askinteger('Finishes', 'Input finishes')
-            subattStr = simpledialog.askfloat('Sub attempt', 'Input sub attempt per minute')
-            strminStr = simpledialog.askfloat('Strikes per minute', 'Input strikes per minute')
-            while strminStr == 0:
-                strminStr = simpledialog.askfloat('Strikes per minute', 'Input strikes per minute')    
-            wil = finStr + (subattStr * 100) * strminStr
-            print("Willing to win:", wil)
-        
-        
-        # Going to subtract when summarize data
-        
-        
-        def FinishRate(winStr, finishesStr):
-            global fin
-            winStr = simpledialog.askinteger('Wins', 'Input wins')
-            while winStr == 0:
-                winStr = simpledialog.askinteger('Wins', 'Input wins')  
-            # while winsStr != winStr:
-            #     winsStr = simpledialog.askinteger('Wins', 'Input wins')    
-            finishesStr = simpledialog.askinteger('Finishes', 'Input finishes')
-            fin = (winStr - finishesStr) * 20
-            print("Finish rate:", fin)
-        
-        # 100 - ages with months = result
-        
-        
-        def Age(ageStr):
-            global ages
-            ageStr = simpledialog.askfloat('Age', 'Input age of fighter')
-            while ageStr <= 17:
-                # messagebox.showerror("Oops, 18+ only", "Input right age")
-                ageStr = simpledialog.askfloat('Age', 'Input age of fighter')
-            ages = (100 - ageStr)
-            print("Age rate:", ages)
-        
-            # print("No kind of age possible")
-        
-        # Plus +4 if beat champ
-        
-        
-        def WinStreak(winstreakStr):
-            global winstr
-            winstreakStr = simpledialog.askinteger('Win streak', 'Input win streak')
-            while winstreakStr == 0:
-                winstreakStr = simpledialog.askinteger('Win streak', 'Input win streak')
-            winstr = 10 * winstreakStr
-            print("Win streak:", winstr)
-        
-        
-        # Striking and wrestling wins
-        
-        def WellRounded(wrestlingStr, strikingStr):
-            global wl
-            wrestlingStr = simpledialog.askinteger('Wins by submission', 'Input submissions')
-            strikingStr = simpledialog.askinteger('Wins by striking', 'Input TKOs/KOs')
-            wl = (wrestlingStr * strikingStr) * 15
-            print("Well-rounded:", wl)
-        
-        # stracc - strike accuracy, takedownacc - takedown accuracy,
-        # signstrdef - significant striking defense, takedowndef - takedown defense,
-        
-        
-        
-        def Stats(straccStr, takedownaccStr, signstrdefStr, takedowndefStr):
-            global stats
-            straccStr = simpledialog.askfloat('Striking accuracy', 'Input striking accuracy')
-            while straccStr == 0:
-                straccStr = simpledialog.askfloat('Striking accuracy', 'Input striking accuracy')
-            takedownaccStr = simpledialog.askfloat('Takedown accuracy', 'Input takedown accuracy')
-            signstrdefStr = simpledialog.askfloat('Significant striking defense', 'Input significant striking defense')
-            while signstrdefStr == 0:
-                signstrdefStr = simpledialog.askfloat('Significant striking defense', 'Input significant striking defense')
-            takedowndefStr = simpledialog.askfloat('Takedown defense', 'Input takedown defense')
-            stats = straccStr + takedownaccStr + signstrdefStr + takedowndefStr
-            print("Stats of 5:", stats)
-        
-        
-        def Injury(injury):
-            injury = simpledialog.askfloat('Injury before fight overall', 'Percent injury')
-            print('Percent of injury:', injury)
-        
-        
-        def FightWeek(fightWeek):
-            fightWeek = simpledialog.askfloat('Fight week behavior', 'Percent behavior')
-            while fightWeek == 0:
-                fightWeek = simpledialog.askfloat('Fight week behavior', 'Percent behavior')
-            print('Percent of behavior:', fightWeek)
-        
-        
-        def Coaches(coaches):
-            coaches = simpledialog.askfloat('Coaches of fighter', 'Percent coaches')
-            print('Coaches of fighter:', coaches)
-        
-        
-        def Interviews(interviews):
-            interviews = simpledialog.askfloat('Interviews behavior', 'Percent interview behavior')
-            while interviews == 0:
-                interviews = simpledialog.askfloat('Interviews behavior', 'Percent interview behavior')
-            print('Interviews behavior:', interviews)        
-        
-        
-        def Odds(oddfavor, oddunderdog):
-            global od
-            oddfavor = simpledialog.askinteger('Odd after weight-in', 'Input favor odd')
-            while oddfavor == 0:
-                oddfavor = simpledialog.askinteger('Odd after weight-in', 'Input favor odd')
-            oddunderdog = simpledialog.askinteger('Odd after weight-in', 'Input underdog odd')
-            while oddunderdog == 0:
-                oddunderdog = simpledialog.askinteger('Odd after weight-in', 'Input underdog odd')
-            od = abs(oddfavor + oddunderdog) * 2
-            print('Odd after weight-in:', od)
-        
-            total = sc + wil - fin - ages + winstr + wl + stats - injury + fightWeek + coaches + interviews + odds + dateOfEvent
-            print('Total points:', total)
-        
-        
-        def Date(date):
-            date = simpledialog.askstring('Date of event', 'Input date: mm-dd-YYYY')
-            while date != datetime.strptime(date, '%m-%d-%Y').strftime('%m-%d-%Y'):
-                date = simpledialog.askstring('Date of event', 'Input date: mm-dd-YYYY')
-            print('Date of event:', date)
-        
-        
-        # if injury before fight -100 points
-        
-        
-        injury = 0
-        
-        # How good looking fighter on training session
-        fightWeek = 0
-        
-        # Coaches how famous
-        coaches = 0
-        
-        # Interview behavior
-        interviews = 0
-        
-        # Odd of favor - odd of underdog and * 2
-        odds = 0
-        
-        total = 0
-        
-        
-        # ttl = ages + winstr + wl + inju + stats + fw + coach + interv + od
-        
-        
-        # Excel tab and all we need to start below
-        
-        # Score = sc
-        # Willpower = wil
-        
-        # finishes = fin
-        # age = ages
-        # winstreak = winstr
-        # wellrounded = wl
-        # injuries = inju
-        # statistics = stats
-        # fightweek = fw
-        # coaches = coach
-        # interviews = interv
-        # odds = od
-        # total = t
-        # date = dt
-        
-        # ttl2 = sc + wil
-        
-        stricklandSean = UFC_fighter(Name, Score, Willing, FinishRate,
-                                    Age, WinStreak, WellRounded, Stats, Injury,
-                                    FightWeek, Coaches, Interviews, Odds, total, Date)
-        
-        print(vars(stricklandSean))
+finishesStr = IntVar()
+
+ageStr = DoubleVar()
+
+winstreakStr = IntVar()
+
+wrestlingStr = IntVar()
+strikingStr = IntVar()
+                
+straccStr = DoubleVar()
+takedownaccStr = DoubleVar()
+signstrdefStr = DoubleVar()
+takedowndefStr = DoubleVar()
+
+injury = DoubleVar()
+fightWeek = DoubleVar()
+coaches = DoubleVar()
+interviews = DoubleVar()
+oddfavor = IntVar()
+oddunderdog = IntVar()
+date = StringVar()
+
+ttk.Button(mainFrame, text='Compute score', command=Name(nameOfFighter),
+takefocus=1).grid(column=0, row=0)
+
+# root.after(3000, root.destroy)
+ttk.Button(mainFrame, text='Compute willing', command=Score(winStr, lossStr, drawStr, NCStr),
+takefocus=1).grid(column=0, row=0)
+
+# root.after(3000, root.destroy)
+ttk.Button(mainFrame, text='Compute finish rate', command=Willing(finStr, subattStr, strminStr),
+takefocus=1).grid(column=0, row=0)
+
+
+# root.after(3000, root.destroy)
+ttk.Button(mainFrame, text='Compute age', command=FinishRate(winStr, finishesStr),
+takefocus=1).grid(column=0, row=0)
+
+# root.after(3000, root.destroy)
+ttk.Button(mainFrame, text='Compute win streak', command=Age(ageStr),
+takefocus=1).grid(column=0, row=0)
+
+ttk.Button(mainFrame, text='Compute well rounded', command=WinStreak(winstreakStr),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute stats', command=WellRounded(wrestlingStr, strikingStr),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute injury', command=Stats(straccStr, takedownaccStr, signstrdefStr, takedowndefStr),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute fight week', command=Injury(injury),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute coaches', command=FightWeek(fightWeek),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute interviews', command=Coaches(coaches),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Compute odds', command=Interviews(interviews),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='Input date', command=Odds(oddfavor, oddunderdog),
+takefocus=1).grid(column=0, row=0)
+ttk.Button(mainFrame, text='IDK', command=Date(date),
+takefocus=1).grid(column=0, row=0)
+root.destroy()
+# root.mainloop()
+
+# for child in mainFrame.winfo_children():
+#     child.grid_configure(padx=1, pady=1)
+
+# win_entry.focus()
+# root.bind("<return>")    
+# ttk.Button(mainFrame, text="Quit", command=root.destroy).grid(column=1, row=10)
+# root.mainloop()   
+
+# w - win, ll - loses, d - draw, n - no contents.
+# If lost to un-ranked or out of UFC -1
+# CONSTANTA! +3 win over current champion.
+# Amateur score out of computing
+
+# Just date of event
+dateOfEvent = 0
+
+
+def Name(nameOfFighter):
+nameOfFighter = simpledialog.askstring('Name of fighter', 'Input first and lastname')
+while not nameOfFighter.replace(' ', '').isalpha():
+# messagebox.showerror("Oops! Only letters allowed", "Input right first and last name")
+print("Only letters are allowed!")
+nameOfFighter = simpledialog.askstring('Name of fighter', 'Input first and lastname')
+print("Name of fighter:", nameOfFighter)
+
+
+def Score(winStr, lossStr, drawStr, NCStr):
+global sc
+winStr = simpledialog.askinteger('Wins', 'Input wins')
+while winStr == 0:
+winStr = simpledialog.askinteger('Wins', 'Input wins')
+lossStr = simpledialog.askinteger('Losses', 'Input losses')
+drawStr = simpledialog.askinteger('Draws', 'Input draws')
+NCStr = simpledialog.askinteger('NC', 'Input NC')
+sc = (winStr - lossStr + (drawStr)/2 - (NCStr)/2 - 2) * 40
+print("Score:", sc)
+
+
+# Willpower = finishes + submission attempt + significant strikes
+
+# Maybe first round finishes streak also!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+def Willing(finStr, subattStr, strminStr):
+global wil       
+finStr = simpledialog.askinteger('Finishes', 'Input finishes')
+# while finStr > winStr:
+# finStr = simpledialog.askinteger('Finishes', 'Input finishes')
+subattStr = simpledialog.askfloat('Sub attempt', 'Input sub attempt per minute')
+strminStr = simpledialog.askfloat('Strikes per minute', 'Input strikes per minute')
+while strminStr == 0:
+strminStr = simpledialog.askfloat('Strikes per minute', 'Input strikes per minute')    
+wil = finStr + (subattStr * 100) * strminStr
+print("Willing to win:", wil)
+
+
+# Going to subtract when summarize data
+
+
+def FinishRate(winStr, finishesStr):
+global fin
+winStr = simpledialog.askinteger('Wins', 'Input wins')
+while winStr == 0:
+winStr = simpledialog.askinteger('Wins', 'Input wins')  
+# while winsStr != winStr:
+#winsStr = simpledialog.askinteger('Wins', 'Input wins')    
+finishesStr = simpledialog.askinteger('Finishes', 'Input finishes')
+fin = (winStr - finishesStr) * 20
+print("Finish rate:", fin)
+
+# 100 - ages with months = result
+
+
+def Age(ageStr):
+global ages
+ageStr = simpledialog.askfloat('Age', 'Input age of fighter')
+while ageStr <= 17:
+# messagebox.showerror("Oops, 18+ only", "Input right age")
+ageStr = simpledialog.askfloat('Age', 'Input age of fighter')
+ages = (100 - ageStr)
+print("Age rate:", ages)
+
+# print("No kind of age possible")
+
+# Plus +4 if beat champ
+
+
+def WinStreak(winstreakStr):
+global winstr
+winstreakStr = simpledialog.askinteger('Win streak', 'Input win streak')
+while winstreakStr == 0:
+winstreakStr = simpledialog.askinteger('Win streak', 'Input win streak')
+winstr = 10 * winstreakStr
+print("Win streak:", winstr)
+
+
+# Striking and wrestling wins
+
+def WellRounded(wrestlingStr, strikingStr):
+global wl
+wrestlingStr = simpledialog.askinteger('Wins by submission', 'Input submissions')
+strikingStr = simpledialog.askinteger('Wins by striking', 'Input TKOs/KOs')
+wl = (wrestlingStr * strikingStr) * 15
+print("Well-rounded:", wl)
+
+# stracc - strike accuracy, takedownacc - takedown accuracy,
+# signstrdef - significant striking defense, takedowndef - takedown defense,
+
+
+
+def Stats(straccStr, takedownaccStr, signstrdefStr, takedowndefStr):
+global stats
+straccStr = simpledialog.askfloat('Striking accuracy', 'Input striking accuracy')
+while straccStr == 0:
+straccStr = simpledialog.askfloat('Striking accuracy', 'Input striking accuracy')
+takedownaccStr = simpledialog.askfloat('Takedown accuracy', 'Input takedown accuracy')
+signstrdefStr = simpledialog.askfloat('Significant striking defense', 'Input significant striking defense')
+while signstrdefStr == 0:
+signstrdefStr = simpledialog.askfloat('Significant striking defense', 'Input significant striking defense')
+takedowndefStr = simpledialog.askfloat('Takedown defense', 'Input takedown defense')
+stats = straccStr + takedownaccStr + signstrdefStr + takedowndefStr
+print("Stats of 5:", stats)
+
+
+def Injury(injury):
+injury = simpledialog.askfloat('Injury before fight overall', 'Percent injury')
+print('Percent of injury:', injury)
+
+
+def FightWeek(fightWeek):
+fightWeek = simpledialog.askfloat('Fight week behavior', 'Percent behavior')
+while fightWeek == 0:
+fightWeek = simpledialog.askfloat('Fight week behavior', 'Percent behavior')
+print('Percent of behavior:', fightWeek)
+
+
+def Coaches(coaches):
+coaches = simpledialog.askfloat('Coaches of fighter', 'Percent coaches')
+print('Coaches of fighter:', coaches)
+
+
+def Interviews(interviews):
+interviews = simpledialog.askfloat('Interviews behavior', 'Percent interview behavior')
+while interviews == 0:
+interviews = simpledialog.askfloat('Interviews behavior', 'Percent interview behavior')
+print('Interviews behavior:', interviews)        
+
+
+def Odds(oddfavor, oddunderdog):
+global od
+oddfavor = simpledialog.askinteger('Odd after weight-in', 'Input favor odd')
+while oddfavor == 0:
+oddfavor = simpledialog.askinteger('Odd after weight-in', 'Input favor odd')
+oddunderdog = simpledialog.askinteger('Odd after weight-in', 'Input underdog odd')
+while oddunderdog == 0:
+oddunderdog = simpledialog.askinteger('Odd after weight-in', 'Input underdog odd')
+od = abs(oddfavor + oddunderdog) * 2
+print('Odd after weight-in:', od)
+
+total = sc + wil - fin - ages + winstr + wl + stats - injury + fightWeek + coaches + interviews + odds + dateOfEvent
+print('Total points:', total)
+
+
+def Date(date):
+date = simpledialog.askstring('Date of event', 'Input date: mm-dd-YYYY')
+while date != datetime.strptime(date, '%m-%d-%Y').strftime('%m-%d-%Y'):
+date = simpledialog.askstring('Date of event', 'Input date: mm-dd-YYYY')
+print('Date of event:', date)
+
+
+# if injury before fight -100 points
+
+
+injury = 0
+
+# How good looking fighter on training session
+fightWeek = 0
+
+# Coaches how famous
+coaches = 0
+
+# Interview behavior
+interviews = 0
+
+# Odd of favor - odd of underdog and * 2
+odds = 0
+
+total = 0
+
+
+# ttl = ages + winstr + wl + inju + stats + fw + coach + interv + od
+
+
+# Excel tab and all we need to start below
+
+# Score = sc
+# Willpower = wil
+
+# finishes = fin
+# age = ages
+# winstreak = winstr
+# wellrounded = wl
+# injuries = inju
+# statistics = stats
+# fightweek = fw
+# coaches = coach
+# interviews = interv
+# odds = od
+# total = t
+# date = dt
+
+# ttl2 = sc + wil
+
+stricklandSean = UFC_fighter(Name, Score, Willing, FinishRate,
+Age, WinStreak, WellRounded, Stats, Injury,
+FightWeek, Coaches, Interviews, Odds, total, Date)
+
+print(vars(stricklandSean))
         
     </py-script>
     </body>    
