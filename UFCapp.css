@@ -1,12 +1,6 @@
 #header_UFCapp{
     align-items:center;
 };
-body background-color {
-    url('img_girl.jpg')
+body {
+    background-color:aliceblue;
 };
-background-repeat{
-    no-repeat
-};
-
-background-attachment: fixed;
-background-size: 100% 100%;
