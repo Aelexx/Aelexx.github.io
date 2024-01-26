@@ -11,6 +11,7 @@
 # import xlwings as xw
 # import idle
 #import subprocess
+import micropip
 from tkinter import *
 from tkinter import ttk
 from tkinter import font
