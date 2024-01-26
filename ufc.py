@@ -1,16 +1,16 @@
-import pandas as pd
+#import pandas as pd
 # import numpy as np
 # import csv
-import openpyxl as xl
+#import openpyxl as xl
 # import pyxll
 # from openpyxl import Workbook
-from openpyxl.styles import Alignment
+#from openpyxl.styles import Alignment
 # from openpyxl.styles import colors
-from openpyxl.styles import Font
+#from openpyxl.styles import Font
 # from openpyxl.workbook.protection import WorkbookProtection
 # import xlwings as xw
 # import idle
-import subprocess
+#import subprocess
 from tkinter import *
 from tkinter import ttk
 from tkinter import font
@@ -18,11 +18,10 @@ from tkinter import Tk, Button, simpledialog
 from functools import partial
 import re
 import sys
-import keyboard
-from pynput.keyboard import Key, Listener
+#import keyboard
+#from pynput.keyboard import Key, Listener
 from tkinter import messagebox
 from datetime import datetime
-import subprocess
 from tkinter import commondialog 
 
 
