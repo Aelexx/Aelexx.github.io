@@ -7,6 +7,13 @@
     margin-top: auto;
     padding-top: 0%;
 }
+#header_Welcome {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-size: 40pt;
+    margin-top: auto;
+    padding-top: 0%;
+}
 
 #stbtn {
     background-color: aquamarine;
