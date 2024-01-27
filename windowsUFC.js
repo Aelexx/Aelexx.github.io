@@ -15,5 +15,5 @@ function myFun() {
     } else {
     text = "Fighter: " + fighter + "Got it in base";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("messFightersName").innerHTML = text;
 }
