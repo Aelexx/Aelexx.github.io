@@ -3,7 +3,9 @@
 #header_UFCapp {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
-    font-size: 90pt;
+    font-size: 80pt;
+    margin-top: auto;
+    padding-inline: auto;
 }
 
 #start-btn {
