@@ -13,7 +13,7 @@ function myFun() {
     if (fighter == null || fighter == "") {
     text = "You cancelled the count run";
     } else {
-    text = "Fighter: " + fighter + "Got it in base";
+    text = "Fighter: " + fighter + " Got in the base";
     }
     document.getElementById("messFightersName").innerHTML = text;
 }
