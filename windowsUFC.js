@@ -9,11 +9,11 @@ function myFun() {
     let text;
     /* The variable `fighter` is used to store the value entered by the user in response to the
     prompt. */
-    let fighter = prompt("Please enter your name:", "Harry Potter");
+    let fighter = prompt("Input name of fighter:", "Name of fighter");
     if (fighter == null || fighter == "") {
     text = "You cancelled the count run";
     } else {
-    text = "Fighter: " + fighter + "! How are you today?";
+    text = "Fighter: " + fighter + "Got it in base";
     }
     document.getElementById("demo").innerHTML = text;
 }
