@@ -1,1 +1,1 @@
-let firstWindow = document.getElementById("stbtn").submit();
+object.addEventListener("click", myScript);
