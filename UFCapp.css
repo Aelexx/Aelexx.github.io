@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-#header_UFCapp{
-    align-items:center;
-};
-.btn btn-primary btn-lg{
-    background-color: azure;
-    text-align: left;
-    text-shadow: beige;
-};
 .start-btn{
     background-color: aqua;
     text-align: right;
