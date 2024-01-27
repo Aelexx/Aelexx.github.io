@@ -3,4 +3,6 @@
 };
 .btn btn-primary btn-lg{
     background-color: azure;
-}
+    text-align: left;
+    text-shadow: beige;
+};
