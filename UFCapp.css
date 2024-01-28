@@ -23,12 +23,13 @@
 #chF {
     font-size: 75pt;
     color:rgb(63, 134, 197);
-    transform: rotate(-90deg);
+    transform: rotate(45deg) translateX(180px);
 }
 
 #chC {
     font-size: 65pt;
     color:rgb(172, 114, 26);
+    
 }
 
 #header_Welcome {
