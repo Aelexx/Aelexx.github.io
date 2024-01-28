@@ -23,8 +23,10 @@
 #chF {
     font-size: 75pt;
     color:rgb(63, 134, 197);
-    -webkit-transform-origin-x: rotate(-90deg);
+    
 }
+
+.charF:before { transform: rotate(45deg); }
 
 #chC {
     font-size: 65pt;
