@@ -7,6 +7,10 @@ function myFun() {
 
     let text;
     let fighter = prompt("Input name of fighter:", "...");
+    if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
     if (fighter == null || fighter == "" || fighter == '0-9') {
     text = "Count run is over! Try it again.";
     } else {
