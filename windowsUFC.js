@@ -7,7 +7,7 @@ function myFun() {
 
     let text;
     let fighter = prompt("Input name of fighter:", "...");
-    if (fighter.charCodeAt > 64 && fighter.charCodeAt < 91 || fighter.charCodeAt > 96 && fighter.charCodeAt < 123)
+    if (fighter.at > 64 && fighter.at < 91 || fighter.at > 96 && fighter.at < 123)
         {
     text = "Count run is over! Try it again.";
     } else {
