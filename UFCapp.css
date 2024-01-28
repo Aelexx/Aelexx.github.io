@@ -23,7 +23,7 @@
 #chF {
     font-size: 75pt;
     color:rgb(63, 134, 197);
-   
+    transform: rotate(-90deg);
 }
 
 #chC {
