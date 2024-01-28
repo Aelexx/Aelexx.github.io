@@ -23,9 +23,7 @@
 #chF {
     font-size: 75pt;
     color:rgb(63, 134, 197);
-    display: inline-block; 
-    max-width: 10px;
-    -webkit-transform-origin-x: 12cm;    
+   
 }
 
 #chC {
