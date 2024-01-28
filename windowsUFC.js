@@ -7,7 +7,7 @@ function myFun() {
 
     let text;
     let fighter = prompt("Input name of fighter:", "...");
-    if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+    if ((fighter > 64 && fighter < 91) || (fighter > 96 && fighter < 123))
                     return true;
                 else
                     return false;
