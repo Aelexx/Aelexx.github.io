@@ -6,7 +6,7 @@ Finally, it sets the innerHTML of an element with the id "demo" to the value of 
 function myFun() {
 
     let text;
-    let fighter = prompt("Input name of fighter:", "...");
+    let fighter = prompt("Input name of fighter:", "");
     if (fighter > 64 && fighter < 91 || fighter > 96 && fighter.at < 123)
         {
     text = "Count run is over! Try it again.";
