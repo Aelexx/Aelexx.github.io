@@ -7,11 +7,14 @@ function myFun() {
 
     let text;
     let fighter = prompt("Input name of fighter:", "");
-    if (fighter > 64 && fighter < 91 || fighter > 96 && fighter.at < 123)
-        {
-    text = "Count run is over! Try it again.";
-    } else {
-    text = "Fighter: " + fighter + " now in the base";
-    }
+    if (name == null || name == "") {
+        alert("You must enter your name into the prompt box!");
+        validate()
+      } else if (!/^[a-zA-Z]+$/.test(name)) {
+        alert("Please only enter letters");
+        validate()
+      } else {
+        alert("Your enquiry has gone through");
+      }
     document.getElementById("messFightersName").innerHTML = text;
 }
