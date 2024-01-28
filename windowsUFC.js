@@ -8,9 +8,9 @@ function myFun() {
     let text;
     let fighter = prompt("Input name of fighter:", "...");
     if (fighter == null || fighter == "" || fighter == '0-9') {
-    text = "You cancelled the count run";
+    text = "Count run is over! Try it again.";
     } else {
-    text = "Fighter: " + fighter + " Got in the base";
+    text = "Fighter: " + fighter + " now in the base";
     }
     document.getElementById("messFightersName").innerHTML = text;
 }
