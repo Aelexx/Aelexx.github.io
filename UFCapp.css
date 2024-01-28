@@ -43,13 +43,14 @@
     top: 0;
     /* left: 10%; */
     padding: 12px 12px 12px 12px;
-    white-space: nowrap; 
+    /* white-space: nowrap;  */
     font-size: 80pt;
 }
 
 #chC {
     font-size: 85pt;
     color:rgb(172, 114, 26);
+    letter-spacing: 50px;
     
 }
 
