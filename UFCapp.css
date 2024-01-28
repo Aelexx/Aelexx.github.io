@@ -49,22 +49,6 @@ text-shadow: 1px 1px 1px #9e5151,
 } */
 
 .charF {
-    color:#3f86c5;
-    -webkit-transform: rotate(-45deg);
-    /* -webkit-transform-origin: left top; */
-    -moz-transform: rotate(-45deg);
-    /* -moz-transform-origin: left top; */
-    -ms-transform: rotate(-45deg);
-    /* -ms-transform-origin: left top; */
-    -o-transform: rotate(-45deg);
-    /* -o-transform-origin: left top; */
-    transform: rotate(-45deg);
-    /* transform-origin: left top; */
-
-    position: absolute;
-    padding: 12px 12px 12px 12px;
-    /* white-space: nowrap;  */
-    font-size: 80pt;
 top: 7%;   
 right: 60%;  
 transform: translate(50%,-50%);  
@@ -85,6 +69,23 @@ text-shadow: 1px 1px 1px #5b93c4,
 1px 22px 10px rgba(16,16,16,0.2),  
 1px 25px 35px rgba(16,16,16,0.2),  
 1px 30px 60px rgba(16,16,16,0.4);
+
+color:#3f86c5;
+-webkit-transform: rotate(-45deg);
+/* -webkit-transform-origin: left top; */
+-moz-transform: rotate(-45deg);
+/* -moz-transform-origin: left top; */
+-ms-transform: rotate(-45deg);
+/* -ms-transform-origin: left top; */
+-o-transform: rotate(-45deg);
+/* -o-transform-origin: left top; */
+transform: rotate(-45deg);
+/* transform-origin: left top; */
+
+position: absolute;
+padding: 12px 12px 12px 12px;
+/* white-space: nowrap;  */
+font-size: 80pt;
 }
 
 #chC {
