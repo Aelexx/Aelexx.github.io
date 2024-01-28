@@ -42,8 +42,9 @@
     position: absolute;
     top: 0;
     /* left: 10%; */
+    padding: 12px 12px 12px 12px;
     white-space: nowrap; 
-    font-size: 78pt;
+    font-size: 80pt;
 }
 
 #chC {
