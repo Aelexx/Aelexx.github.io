@@ -37,7 +37,7 @@
 } */
 
 .charF {
-
+    color:rgb(63, 134, 197);
     -webkit-transform: rotate(-45deg);
     /* -webkit-transform-origin: left top; */
     -moz-transform: rotate(-45deg);
