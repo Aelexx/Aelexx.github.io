@@ -28,15 +28,15 @@
 
 .charF {
 
-    -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-45deg);
     /* -webkit-transform-origin: left top; */
-    -moz-transform: rotate(-90deg);
+    -moz-transform: rotate(-45deg);
     /* -moz-transform-origin: left top; */
-    -ms-transform: rotate(-90deg);
+    -ms-transform: rotate(-45deg);
     /* -ms-transform-origin: left top; */
-    -o-transform: rotate(-90deg);
+    -o-transform: rotate(-45deg);
     /* -o-transform-origin: left top; */
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
     /* transform-origin: left top; */
 
     position: absolute;
