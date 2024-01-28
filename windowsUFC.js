@@ -11,7 +11,7 @@ function myFun() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[a-zA-Z]+$/.test(name)) {
+    else if (!/^[a-zA-Z]+$/.test(fighter)) {
         alert("Please only enter letters");
         validate()
     } 
