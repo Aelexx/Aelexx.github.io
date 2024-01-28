@@ -1,17 +1,40 @@
 @charset "UTF-8";
 
-#header_UFCapp {
+/* #header_UFCapp {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
     font-size: 80pt;
     margin-top: auto;
     padding-top: 0%;
+} */
+
+#mainCaption {
+    margin-top: auto;
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
+#chU {
+    font-size: 85pt;
+    color:brown;
+}
+
+#chF {
+    font-size: 75pt;
+    color:rgb(63, 134, 197);
+}
+
+#chC {
+    font-size: 65pt;
+    color:rgb(172, 114, 26);
+}
+
 #header_Welcome {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
     font-size: 40pt;
-    margin-top: -39pt;
+    margin-top: -30pt;
     padding-top: 0%;
 }
 
@@ -26,3 +49,6 @@
     border: 2px solid #04AA6D;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+
+
