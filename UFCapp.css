@@ -91,10 +91,10 @@ font-size: 80pt;
 #chC {
     font-size: 85pt;
     color:#ac721a;
-    letter-spacing: 10cm;
-    transition: 3.0s;
+    /* letter-spacing: 10cm; */
+    /* transition: 3.0s; */
     top: 7%;   
-right: 20%;  
+right: 10%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
 font-family: verdana;  
