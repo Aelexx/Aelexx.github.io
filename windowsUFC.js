@@ -38,7 +38,7 @@ function myFunWin() {
     else {
     text = "Wins: " + win + " now in the base";
     }
-    document.getElementById("messFightersName").innerHTML = text;
+    document.getElementById("messFightersWins").innerHTML = text;
 }
 
 function myFunLost() {
@@ -57,7 +57,7 @@ function myFunLost() {
     else {
     text = "Losses: " + lost + " now in the base";
     }
-    document.getElementById("messFightersName").innerHTML = text;
+    document.getElementById("messFightersLosses").innerHTML = text;
 }
 
 function Cupcakes(type, name, description, Price, cost, image){
