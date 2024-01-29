@@ -25,7 +25,7 @@ function myFun() {
 function myFunWin() {
 
     let text2;
-    let win = prompt("Input name of fighter:", "");
+    let win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
     text = "Count run is over! Try it again.";
