@@ -117,22 +117,3 @@ function myFunFinishes() {
     }
     document.getElementById("FighterFinishes").innerHTML = text;
 }
-
-function myFunSubAtt() {
-
-    let text2;
-    let subatt = prompt("How many NC's?:", "");
-    if (subatt == null || subatt == "")
-        {
-    text = "Count run is over! Try it again.";
-    } 
-    else if (!/^[0-9]+$/.test(subatt)) {
-        alert("Only numbers allowed");
-        validate()
-    } 
-    
-    else {
-    text = "Submission attempt: " + subatt + ";";
-    }
-    document.getElementById("FighterSubAtt").innerHTML = text;
-}
