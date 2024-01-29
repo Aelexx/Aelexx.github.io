@@ -17,9 +17,9 @@ function myFun() {
     } 
     
     else {
-    text = "Fighter: " + fighter + ";";
+    text = "Fighter: " + fighter + " now in the base";
     }
-    document.getElementById("FighterName").innerHTML = text;
+    document.getElementById("messFightersName").innerHTML = text;
 }
 
 function myFunWin() {
@@ -36,123 +36,26 @@ function myFunWin() {
     } 
     
     else {
-    text = "Wins: " + win + ";";
+    text = "Wins: " + win + " now in the base";
     }
-    document.getElementById("FighterWins").innerHTML = text;
+    document.getElementById("messFightersName").innerHTML = text;
 }
 
-function myFunLost() {
+function myFunWin() {
 
     let text2;
-    let lost = prompt("How many losses?:", "");
-    if (lost == null || lost == "")
+    let win = prompt("How many wins?:", "");
+    if (win == null || win == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(lost)) {
+    else if (!/^[0-9]+$/.test(win)) {
         alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    text = "Losses: " + lost + ";";
+    text = "Wins: " + win + " now in the base";
     }
-    document.getElementById("FighterLosses").innerHTML = text;
+    document.getElementById("messFightersName").innerHTML = text;
 }
-
-function myFunLost() {
-
-    let text2;
-    let lost = prompt("How many losses?:", "");
-    if (lost == null || lost == "")
-        {
-    text = "Count run is over! Try it again.";
-    } 
-    else if (!/^[0-9]+$/.test(lost)) {
-        alert("Only numbers allowed");
-        validate()
-    } 
-    
-    else {
-    text = "Losses: " + lost + ";";
-    }
-<<<<<<< HEAD
-    document.getElementById("FighterLosses").innerHTML = text;
-=======
-    document.getElementById("FighterLosses").innerHTML = text;
-
-function myFunNC() {
-
-    let text2;
-    let NC = prompt("How many draws?:", "");
-    if (NC == null || draw == "")
-        {
-    text = "Count run is over! Try it again.";
-    } 
-    else if (!/^[0-9]+$/.test(draw)) {
-        alert("Only numbers allowed");
-        validate()
-    } 
->>>>>>> d51f329eaccef7e69cb0329931fcb75210241921
-    
-<<<<<<< HEAD
-function Cupcakes(type, name, description, Price, cost, image){
-    this.type = type; //create an instant of object
-    this.name = name;
-    this.description = description;
-    this.Price = Price;
-    this.cost = cost;
-    thi.image = image;
-    this.displayInfo = function(){
-    var info ="<div class='divCell1' id = 'line1'>";
-    info += this.name + "</div><div class='divCell2' id = 'line2'>";
-    info += this.description + "</div><div class='divCell3' id = 'line3'>";
-    info += this.Price + "<div>Price <br>";
-    info += this.cost + "</div><div class = 'divCell4' id='line4'>";
-    info += this.image + "</div>";
-    return info;
-    }   
-}
-
-// define an array to store products
-var product_list = [];
-var cart = [];
-var cost = "Half Dozen: $7.00 <br> Dozen:  $12.50 <br> Party Size [20 cupcakes]:  $18.00"
-var desc1 = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci elit, lobortis nec neque in, condimentum gravida velit. Suspendisse maximus nisl et vehicula placerat. Sed elit turpis, venenatis sit amet tortor vel, interdum cursus mi.';  
-var image = " ";
-var product = new Products('cupcake','Winter Festival', desc1, 15.99);
-product_list.push(product);
-=======
-    else {
-    text = "Losses: " + draw + ";";
-    }
-    document.getElementById("FighterLosses").innerHTML = text;
-
-
-function Cupcakes(type, name, description, Price, cost, image){
-    this.type = type; //create an instant of object
-    this.name = name;
-    this.description = description;
-    this.Price = Price;
-    this.cost = cost;
-    thi.image = image;
-    this.displayInfo = function(){
-    var info ="<div class='divCell1' id = 'line1'>";
-    info += this.name + "</div><div class='divCell2' id = 'line2'>";
-    info += this.description + "</div><div class='divCell3' id = 'line3'>";
-    info += this.Price + "<div>Price <br>";
-    info += this.cost + "</div><div class = 'divCell4' id='line4'>";
-    info += this.image + "</div>";
-    return info;
-    }   
-}
-
-// define an array to store products
-var product_list = [];
-var cart = [];
-var cost = "Half Dozen: $7.00 <br> Dozen:  $12.50 <br> Party Size [20 cupcakes]:  $18.00"
-var desc1 = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci elit, lobortis nec neque in, condimentum gravida velit. Suspendisse maximus nisl et vehicula placerat. Sed elit turpis, venenatis sit amet tortor vel, interdum cursus mi.';  
-var image = " ";
-var product = new Products('cupcake','Winter Festival', desc1, 15.99);
-product_list.push(product);
->>>>>>> d51f329eaccef7e69cb0329931fcb75210241921
