@@ -145,7 +145,7 @@ function myFunStrMin() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(strmin)) {
+    else if (!/^[0-9]*[.][0-9]+$/.test(strmin)) {
         alert("Only numbers allowed");
         validate()
     } 
