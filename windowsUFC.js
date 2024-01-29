@@ -210,5 +210,5 @@ function myFunAge() {
     else {
     text = "Age: " + age + ";";
     }
-    document.getElementById("FighterWins").innerHTML = text;
+    document.getElementById("FighterAge").innerHTML = text;
 }
