@@ -95,31 +95,3 @@ function myFunNC() {
     text = "Losses: " + NC + ";";
     }
     document.getElementById("NC's").innerHTML = text;
-
-
-function Cupcakes(type, name, description, Price, cost, image){
-    this.type = type; //create an instant of object
-    this.name = name;
-    this.description = description;
-    this.Price = Price;
-    this.cost = cost;
-    thi.image = image;
-    this.displayInfo = function(){
-    var info ="<div class='divCell1' id = 'line1'>";
-    info += this.name + "</div><div class='divCell2' id = 'line2'>";
-    info += this.description + "</div><div class='divCell3' id = 'line3'>";
-    info += this.Price + "<div>Price <br>";
-    info += this.cost + "</div><div class = 'divCell4' id='line4'>";
-    info += this.image + "</div>";
-    return info;
-    }   
-}
-
-// define an array to store products
-var product_list = [];
-var cart = [];
-var cost = "Half Dozen: $7.00 <br> Dozen:  $12.50 <br> Party Size [20 cupcakes]:  $18.00"
-var desc1 = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci elit, lobortis nec neque in, condimentum gravida velit. Suspendisse maximus nisl et vehicula placerat. Sed elit turpis, venenatis sit amet tortor vel, interdum cursus mi.';  
-var image = " ";
-var product = new Products('cupcake','Winter Festival', desc1, 15.99);
-product_list.push(product);
