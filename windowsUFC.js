@@ -16,6 +16,7 @@ function myFun() {
         validate()
     } 
     
+    
     else {
     text = "Fighter: " + fighter + " now in the base";
     }
