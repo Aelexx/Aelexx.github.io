@@ -12,12 +12,31 @@ function myFun() {
     text = "Count run is over! Try it again.";
     } 
     else if (!/^[a-zA-Z ]+$/.test(fighter)) {
-        alert("Please only enter letters");
+        alert("Only letters we need");
         validate()
     } 
     
     else {
     text = "Fighter: " + fighter + " now in the base";
+    }
+    document.getElementById("messFightersName").innerHTML = text;
+}
+
+function myFunWin() {
+
+    let text2;
+    let win = prompt("Input name of fighter:", "");
+    if (win == null || win == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(win)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + win + " now in the base";
     }
     document.getElementById("messFightersName").innerHTML = text;
 }
