@@ -37,7 +37,7 @@ function myFunWin() {
     } 
     
     else {
-    text = "Wins: " + win + " now in the base";
+    text = "Wins: " + win + ";";
     }
     document.getElementById("FighterWins").innerHTML = text;
 }
