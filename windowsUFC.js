@@ -44,7 +44,7 @@ function myFunWin() {
 function myFunLost() {
 
     let text2;
-    let lost = prompt("How many wins?:", "");
+    let lost = prompt("How many losses?:", "");
     if (lost == null || lost == "")
         {
     text = "Count run is over! Try it again.";
