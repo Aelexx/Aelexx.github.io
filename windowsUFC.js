@@ -55,7 +55,7 @@ function myFunLost() {
     } 
     
     else {
-    text = "Wins: " + lost + " now in the base";
+    text = "Losses: " + lost + " now in the base";
     }
     document.getElementById("messFightersName").innerHTML = text;
 }
