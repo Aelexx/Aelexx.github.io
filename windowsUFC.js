@@ -61,21 +61,40 @@ function myFunLosses() {
     document.getElementById("FighterLosses").innerHTML = text;
 }
 
-function myFunLosses() {
+function myFunDraws() {
 
     let text2;
-    let losses = prompt("How many wins?:", "");
-    if (losses == null || losses == "")
+    let draws = prompt("How many wins?:", "");
+    if (draws == null || draws == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(losses)) {
+    else if (!/^[0-9]+$/.test(draws)) {
         alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    text = "Wins: " + losses + " now in the base";
+    text = "Wins: " + draws + " now in the base";
     }
-    document.getElementById("FighterLosses").innerHTML = text;
+    document.getElementById("FighterDraws").innerHTML = text;
+}
+
+function myFunNcs() {
+
+    let text2;
+    let NCs = prompt("How many wins?:", "");
+    if (NCs == null || NCs == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(NCs)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + NCs + " now in the base";
+    }
+    document.getElementById("FighterNCs").innerHTML = text;
 }
