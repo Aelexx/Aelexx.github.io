@@ -170,4 +170,16 @@ text-shadow: 1px 1px 1px #ac721a,
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
+#agebtn {
+    background-color: #e389e2;
+    font-size:25pt;
+    text-align: center;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: #ffff00;
+    border-radius: 18%;
+    border: 2px solid #ad7dae;
+    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
 
