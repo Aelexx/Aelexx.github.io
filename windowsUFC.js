@@ -41,3 +41,21 @@ function myFunWin() {
     document.getElementById("messFightersName").innerHTML = text;
 }
 
+function myFunLost() {
+
+    let text2;
+    let lost = prompt("How many wins?:", "");
+    if (lost == null || lost == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(lost)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + lost + " now in the base";
+    }
+    document.getElementById("messFightersName").innerHTML = text;
+}
