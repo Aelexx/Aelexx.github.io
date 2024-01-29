@@ -68,13 +68,13 @@ function Cupcakes(type, name, description, Price, cost, image){
     this.cost = cost;
     thi.image = image;
     this.displayInfo = function(){
-      var info ="<div class='divCell1' id = 'line1'>";
-      info += this.name + "</div><div class='divCell2' id = 'line2'>";
-      info += this.description + "</div><div class='divCell3' id = 'line3'>";
-      info += this.Price + "<div>Price <br>";
-      info += this.cost + "</div><div class = 'divCell4' id='line4'>";
-      info += this.image + "</div>";
-      return info;
+    var info ="<div class='divCell1' id = 'line1'>";
+    info += this.name + "</div><div class='divCell2' id = 'line2'>";
+    info += this.description + "</div><div class='divCell3' id = 'line3'>";
+    info += this.Price + "<div>Price <br>";
+    info += this.cost + "</div><div class = 'divCell4' id='line4'>";
+    info += this.image + "</div>";
+    return info;
     }   
 }
 
