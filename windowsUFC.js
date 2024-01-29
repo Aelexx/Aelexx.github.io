@@ -18,7 +18,7 @@ function myFunName() {
 
     
     else {
-    text = "Fighter: " + name + " now in the base";
+    text = name + ";";
     }
     document.getElementById("FighterName").innerHTML = text;
 }
