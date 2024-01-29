@@ -60,6 +60,43 @@ function myFunLost() {
     document.getElementById("FighterLosses").innerHTML = text;
 }
 
+function myFunDraw() {
+
+    let text2;
+    let draw = prompt("How many draws?:", "");
+    if (draw == null || draw == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(draw)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Losses: " + draw + ";";
+    }
+    document.getElementById("FighterDraws").innerHTML = text;
+
+function myFunNC() {
+
+    let text2;
+    let NC = prompt("How many NC's?:", "");
+    if (NC == null || NC == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(NC)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Losses: " + NC + ";";
+    }
+    document.getElementById("FighterNC's").innerHTML = text;
+
+
 function Cupcakes(type, name, description, Price, cost, image){
     this.type = type; //create an instant of object
     this.name = name;
