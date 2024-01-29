@@ -18,7 +18,7 @@ function myFunName() {
 
     
     else {
-    text ="Name: " name + ";";
+    text ="Name: " + name + ";";
     }
     document.getElementById("FighterName").innerHTML = text;
 }
