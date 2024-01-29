@@ -98,3 +98,41 @@ function myFunNCs() {
     }
     document.getElementById("FighterNCs").innerHTML = text;
 }
+
+function myFunFinishes() {
+
+    let text2;
+    let finishes = prompt("How many NC's?:", "");
+    if (finishes == null || finishes == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(finishes)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Finishes: " + finishes + ";";
+    }
+    document.getElementById("FighterFinishes").innerHTML = text;
+}
+
+function myFunSubAtt() {
+
+    let text2;
+    let subatt = prompt("How many NC's?:", "");
+    if (subatt == null || subatt == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(subatt)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Submission attempt: " + subatt + ";";
+    }
+    document.getElementById("FighterSubAtt").innerHTML = text;
+}
