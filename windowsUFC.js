@@ -80,7 +80,7 @@ function myFunDraws() {
     document.getElementById("FighterDraws").innerHTML = text;
 }
 
-function myFunNcs() {
+function myFunNCs() {
 
     let text2;
     let NCs = prompt("How many NC's?:", "");
