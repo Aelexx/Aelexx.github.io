@@ -126,7 +126,7 @@ function myFunSubAtt() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(subatt)) {
+    else if (!/^[0-9]*[.][0-9]+$/.test(subatt)) {
         alert("Only numbers allowed");
         validate()
     } 
