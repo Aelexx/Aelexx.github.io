@@ -17,7 +17,7 @@ function myFun() {
     } 
     
     else {
-    text = "Fighter: " + fighter + " now in the base";
+    text = "Fighter: " + fighter;
     }
     document.getElementById("FighterName").innerHTML = text;
 }
@@ -36,7 +36,7 @@ function myFunWin() {
     } 
     
     else {
-    text = "Wins: " + win + " now in the base";
+    text = "Wins: " + win;
     }
     document.getElementById("FighterWins").innerHTML = text;
 }
@@ -55,7 +55,7 @@ function myFunLost() {
     } 
     
     else {
-    text = "Losses: " + lost + " now in the base";
+    text = "Losses: " + lost;
     }
     document.getElementById("FighterLosses").innerHTML = text;
 }
