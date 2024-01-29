@@ -18,7 +18,7 @@ function myFunName() {
 
     
     else {
-    text = name + ";";
+    text ="Name: " name + ";";
     }
     document.getElementById("FighterName").innerHTML = text;
 }
@@ -56,7 +56,7 @@ function myFunLosses() {
     } 
     
     else {
-    text = "Wins: " + losses + " now in the base";
+    text = "Losses: " + losses + ";";
     }
     document.getElementById("FighterLosses").innerHTML = text;
 }
@@ -75,7 +75,7 @@ function myFunDraws() {
     } 
     
     else {
-    text = "Wins: " + draws + " now in the base";
+    text = "Draws: " + draws + ";";
     }
     document.getElementById("FighterDraws").innerHTML = text;
 }
@@ -94,7 +94,7 @@ function myFunNcs() {
     } 
     
     else {
-    text = "Wins: " + NCs + " now in the base";
+    text = "NC's: " + NCs + ";";
     }
     document.getElementById("FighterNCs").innerHTML = text;
 }
