@@ -102,7 +102,7 @@ function myFunNCs() {
 function myFunFinishes() {
 
     let text2;
-    let finishes = prompt("How many NC's?:", "");
+    let finishes = prompt("How many finishes?:", "");
     if (finishes == null || finishes == "")
         {
     text = "Count run is over! Try it again.";
@@ -116,4 +116,42 @@ function myFunFinishes() {
     text = "Finishes: " + finishes + ";";
     }
     document.getElementById("FighterFinishes").innerHTML = text;
+}
+
+function myFunSubAtt() {
+
+    let text2;
+    let subatt = prompt("How many submission attempts?:", "");
+    if (subatt == null || subatt == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(subatt)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Submission attempt: " + subatt + ";";
+    }
+    document.getElementById("FighterSubAtt").innerHTML = text;
+}
+
+function myFunStrMin() {
+
+    let text2;
+    let strmin = prompt("How many strikes per minute?:", "");
+    if (strmin == null || strmin == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(strmin)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Strikes per minute: " + strmin + ";";
+    }
+    document.getElementById("FighterStrMin").innerHTML = text;
 }
