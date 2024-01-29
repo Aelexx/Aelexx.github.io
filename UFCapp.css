@@ -128,7 +128,7 @@ text-shadow: 1px 1px 1px #ac721a,
     text-align: center;
     font-style:italic;
     font-family:Arial, Helvetica, sans-serif;
-    text-shadow: yellow;
+    text-shadow: #ffff00;
     border-radius: 18%;
     border: 2px solid #c3ebdd;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -140,7 +140,7 @@ text-shadow: 1px 1px 1px #ac721a,
     text-align: center;
     font-style:italic;
     font-family:Arial, Helvetica, sans-serif;
-    text-shadow: yellow;
+    text-shadow: #ffff00;
     border-radius: 18%;
     border: 2px solid #d86886;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -152,19 +152,19 @@ text-shadow: 1px 1px 1px #ac721a,
     text-align: center;
     font-style:italic;
     font-family:Arial, Helvetica, sans-serif;
-    text-shadow: yellow;
+    text-shadow: #ffff00;
     border-radius: 18%;
     border: 2px solid #f2d4a8;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-#wlbtn {
+#finrtbtn {
     background-color: #3470df;
     font-size:25pt;
     text-align: center;
     font-style:italic;
     font-family:Arial, Helvetica, sans-serif;
-    text-shadow: yellow;
+    text-shadow: #ffff00;
     border-radius: 18%;
     border: 2px solid #799ddf;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
