@@ -6,21 +6,21 @@ Finally, it sets the innerHTML of an element with the id "demo" to the value of 
 function myFunName() {
 
     let text;
-    let fighter = prompt("Input name of fighter:", "");
-    if (fighter == null || fighter == "")
+    let name = prompt("Input name of fighter:", "");
+    if (name == null || name == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[a-zA-Z ]+$/.test(fighter)) {
+    else if (!/^[a-zA-Z ]+$/.test(name)) {
         alert("Only letters we need");
         validate()
     } 
 
     
     else {
-    text = "Fighter: " + fighter + " now in the base";
+    text = "Fighter: " + name + " now in the base";
     }
-    document.getElementById("messFightersName").innerHTML = text;
+    document.getElementById("FighterName").innerHTML = text;
 }
 
 function myFunWin() {
