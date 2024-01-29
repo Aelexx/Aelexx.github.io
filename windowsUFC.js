@@ -202,7 +202,7 @@ function myFunAge() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(age)) {
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(age)) {
         alert("Only numbers allowed");
         validate()
     } 
