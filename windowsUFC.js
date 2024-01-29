@@ -193,3 +193,22 @@ function myFunFinishes() {
     }
     document.getElementById("FighterFinishes").innerHTML = text;
 }
+
+function myFunAge() {
+
+    let text2;
+    let age = prompt("How many wins?:", "");
+    if (age == null || age == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(age)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + age + ";";
+    }
+    document.getElementById("FighterWins").innerHTML = text;
+}
