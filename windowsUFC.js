@@ -197,7 +197,7 @@ function myFunFinishes() {
 function myFunAge() {
 
     let text2;
-    let age = prompt("How many wins?:", "");
+    let age = prompt("What is age?:", "");
     if (age == null || age == "")
         {
     text = "Count run is over! Try it again.";
@@ -208,7 +208,7 @@ function myFunAge() {
     } 
     
     else {
-    text = "Wins: " + age + ";";
+    text = "Age: " + age + ";";
     }
     document.getElementById("FighterWins").innerHTML = text;
 }
