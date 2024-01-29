@@ -39,24 +39,43 @@ function myFunWin() {
     else {
     text = "Wins: " + win + " now in the base";
     }
-    document.getElementById("messFightersName").innerHTML = text;
+    document.getElementById("FighterWins").innerHTML = text;
 }
 
-function myFunWin() {
+function myFunLosses() {
 
     let text2;
-    let win = prompt("How many wins?:", "");
-    if (win == null || win == "")
+    let losses = prompt("How many wins?:", "");
+    if (losses == null || losses == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(win)) {
+    else if (!/^[0-9]+$/.test(losses)) {
         alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    text = "Wins: " + win + " now in the base";
+    text = "Wins: " + losses + " now in the base";
     }
-    document.getElementById("messFightersName").innerHTML = text;
+    document.getElementById("FighterLosses").innerHTML = text;
+}
+
+function myFunLosses() {
+
+    let text2;
+    let losses = prompt("How many wins?:", "");
+    if (losses == null || losses == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(losses)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + losses + " now in the base";
+    }
+    document.getElementById("FighterLosses").innerHTML = text;
 }
