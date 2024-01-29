@@ -155,3 +155,41 @@ function myFunStrMin() {
     }
     document.getElementById("FighterStrMin").innerHTML = text;
 }
+
+function myFunWins() {
+
+    let text2;
+    let win = prompt("How many wins?:", "");
+    if (win == null || win == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(win)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wins: " + win + ";";
+    }
+    document.getElementById("FighterWins").innerHTML = text;
+}
+
+function myFunFinishes() {
+
+    let text2;
+    let finishes = prompt("How many finishes?:", "");
+    if (finishes == null || finishes == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(finishes)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Finishes: " + finishes + ";";
+    }
+    document.getElementById("FighterFinishes").innerHTML = text;
+}
