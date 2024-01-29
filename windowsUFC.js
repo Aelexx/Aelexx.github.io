@@ -19,7 +19,7 @@ function myFun() {
     else {
     text = "Fighter: " + fighter + ";";
     }
-    document.getElementById("FighterName").innerHTML = text;
+    document.getElementById("Name").innerHTML = text;
 }
 
 function myFunWin() {
@@ -38,7 +38,7 @@ function myFunWin() {
     else {
     text = "Wins: " + win + ";";
     }
-    document.getElementById("FighterWins").innerHTML = text;
+    document.getElementById("Wins").innerHTML = text;
 }
 
 function myFunLost() {
@@ -57,7 +57,7 @@ function myFunLost() {
     else {
     text = "Losses: " + lost + ";";
     }
-    document.getElementById("FighterLosses").innerHTML = text;
+    document.getElementById("Losses").innerHTML = text;
 }
 
 function myFunDraw() {
@@ -76,7 +76,7 @@ function myFunDraw() {
     else {
     text = "Losses: " + draw + ";";
     }
-    document.getElementById("FighterDraws").innerHTML = text;
+    document.getElementById("Draws").innerHTML = text;
 
 function myFunNC() {
 
@@ -94,7 +94,7 @@ function myFunNC() {
     else {
     text = "Losses: " + NC + ";";
     }
-    document.getElementById("FighterNC's").innerHTML = text;
+    document.getElementById("NC's").innerHTML = text;
 
 
 function Cupcakes(type, name, description, Price, cost, image){
