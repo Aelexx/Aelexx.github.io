@@ -23,7 +23,7 @@ function myFunName() {
     document.getElementById("FighterName").innerHTML = text;
 }
 
-function myFunWin() {
+function myFunWins() {
 
     let text2;
     let win = prompt("How many wins?:", "");
@@ -45,7 +45,7 @@ function myFunWin() {
 function myFunLosses() {
 
     let text2;
-    let losses = prompt("How many wins?:", "");
+    let losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
     text = "Count run is over! Try it again.";
@@ -64,7 +64,7 @@ function myFunLosses() {
 function myFunDraws() {
 
     let text2;
-    let draws = prompt("How many wins?:", "");
+    let draws = prompt("How many draws?:", "");
     if (draws == null || draws == "")
         {
     text = "Count run is over! Try it again.";
@@ -83,7 +83,7 @@ function myFunDraws() {
 function myFunNcs() {
 
     let text2;
-    let NCs = prompt("How many wins?:", "");
+    let NCs = prompt("How many NC's?:", "");
     if (NCs == null || NCs == "")
         {
     text = "Count run is over! Try it again.";
