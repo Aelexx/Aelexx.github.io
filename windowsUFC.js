@@ -259,7 +259,7 @@ function myFunStrikeAccuracy() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(strikeacc)) {
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(strikeacc)) {
         alert("Only numbers allowed");
         validate()
     } 
@@ -278,7 +278,7 @@ function myFunTakedownAccuracy() {
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(takedownacc)) {
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(takedownacc)) {
         alert("Only numbers allowed");
         validate()
     } 
