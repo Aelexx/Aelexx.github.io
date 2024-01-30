@@ -308,7 +308,7 @@ function myFunStrikeDefense() {
     document.getElementById("FighterStrikeDefense").innerHTML = text;
 }
 
-function myTakedownDefense() {
+function myFunTakedownDefense() {
 
     let text2;
     let takedowndefense = prompt("Give me takedown defense:", "");
@@ -326,3 +326,4 @@ function myTakedownDefense() {
     }
     document.getElementById("FighterTakedownDefense").innerHTML = text;
 }
+
