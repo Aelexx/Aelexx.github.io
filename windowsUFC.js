@@ -212,3 +212,22 @@ function myFunAge() {
     }
     document.getElementById("FighterAge").innerHTML = text;
 }
+
+function myFunWinStreak() {
+
+    let text2;
+    let winstreak = prompt("What is age?:", "");
+    if (winstreak == null || winstreak == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(winstreak)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Win streak: " + winstreak + ";";
+    }
+    document.getElementById("FighterWinStreak").innerHTML = text;
+}
