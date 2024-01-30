@@ -251,21 +251,40 @@ function myFunWrestleWins() {
     document.getElementById("FighterWrestleWins").innerHTML = text;
 }
 
-function myFunStrikeWins() {
+function myFunStrikeAccuracy() {
 
     let text2;
-    let strikewins = prompt("Give me streak wins:", "");
-    if (strikewins == null || strikewins == "")
+    let strikeacc = prompt("Give me streak accuracy:", "");
+    if (strikeacc == null || strikeacc == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(strikewins)) {
+    else if (!/^[0-9]+$/.test(strikeacc)) {
         alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    text = "Strike wins: " + strikewins + ";";
+    text = "Strike accuracy: " + strikeacc + ";";
     }
-    document.getElementById("FighterStrikeWins").innerHTML = text;
+    document.getElementById("FighterStrikeAccuracy").innerHTML = text;
+}
+
+function myFunTakedownAccuracy() {
+
+    let text2;
+    let takedownacc = prompt("Give me takedown accuracy:", "");
+    if (takedownacc == null || takedownacc == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(takedownacc)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Takedown accuracy: " + takedownacc + ";";
+    }
+    document.getElementById("FighterTakedownAccuracy").innerHTML = text;
 }
