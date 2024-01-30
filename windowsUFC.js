@@ -288,3 +288,41 @@ function myFunTakedownAccuracy() {
     }
     document.getElementById("FighterTakedownAccuracy").innerHTML = text;
 }
+
+function myFunStrikeDefense() {
+
+    let text2;
+    let strikedefense = prompt("Give me strike defense:", "");
+    if (strikedefense == null || takedownacc == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(strikedefense)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Strike defense: " + strikedefense + ";";
+    }
+    document.getElementById("FighterStrikeDefense").innerHTML = text;
+}
+
+function myTakedownDefense() {
+
+    let text2;
+    let takedowndefense = prompt("Give me takedown defense:", "");
+    if (takedowndefense == null || takedowndefense == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(takedowndefense)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Takedown defense: " + takedowndefense + ";";
+    }
+    document.getElementById("FighterTakedownDefense").innerHTML = text;
+}
