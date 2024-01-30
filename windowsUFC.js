@@ -216,12 +216,12 @@ function myFunAge() {
 function myFunWinStreak() {
 
     let text2;
-    let winstreak = prompt("What is age?:", "");
+    let winstreak = prompt("Give me win streak:", "");
     if (winstreak == null || winstreak == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(winstreak)) {
+    else if (!/^[0-9]+$/.test(winstreak)) {
         alert("Only numbers allowed");
         validate()
     } 
