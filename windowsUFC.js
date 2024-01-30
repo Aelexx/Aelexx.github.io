@@ -330,7 +330,7 @@ function myFunTakedownDefense() {
 function myFunInjury() {
 
     let text2;
-    let injury = prompt("Give me wrestle wins:", "");
+    let injury = prompt("Give me injury:", "");
     if (injury == null || injury == "")
         {
     text = "Count run is over! Try it again.";
@@ -349,7 +349,7 @@ function myFunInjury() {
 function myFunFightWeek() {
 
     let text2;
-    let fightweek = prompt("Give me wrestle wins:", "");
+    let fightweek = prompt("Give me fight week:", "");
     if (fightweek == null || fightweek == "")
         {
     text = "Count run is over! Try it again.";
@@ -368,18 +368,56 @@ function myFunFightWeek() {
 function myFunCoaches() {
 
     let text2;
-    let coaches = prompt("Give me wrestle wins:", "");
-    if (fightweek == null || fightweek == "")
+    let coaches = prompt("Give me coaches:", "");
+    if (coaches == null || coaches == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[0-9]+$/.test(fightweek)) {
+    else if (!/^[0-9]+$/.test(coaches)) {
         alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    text = "Fight week: " + fightweek + ";";
+    text = "Coaches: " + coaches + ";";
     }
-    document.getElementById("FighterFightWeek").innerHTML = text;
+    document.getElementById("FighterCoaches").innerHTML = text;
+}
+
+function myFunInterviews() {
+
+    let text2;
+    let interviews = prompt("Give me interviews:", "");
+    if (interviews == null || interviews == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(interviews)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Interviews: " + interviews + ";";
+    }
+    document.getElementById("FighterInterviews").innerHTML = text;
+}
+
+function myFunOdds() {
+
+    let text2;
+    let odds = prompt("Give me odds:", "");
+    if (odds == null || odds == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(odds)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Odds: " + odds + ";";
+    }
+    document.getElementById("FighterOdds").innerHTML = text;
 }
