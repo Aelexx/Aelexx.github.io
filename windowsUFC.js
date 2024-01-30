@@ -327,3 +327,59 @@ function myFunTakedownDefense() {
     document.getElementById("FighterTakedownDefense").innerHTML = text;
 }
 
+function myFunInjury() {
+
+    let text2;
+    let injury = prompt("Give me wrestle wins:", "");
+    if (injury == null || injury == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(injury)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Injury: " + injury + ";";
+    }
+    document.getElementById("FighterInjury").innerHTML = text;
+}
+
+function myFunFightWeek() {
+
+    let text2;
+    let fightweek = prompt("Give me wrestle wins:", "");
+    if (fightweek == null || fightweek == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(fightweek)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Fight week: " + fightweek + ";";
+    }
+    document.getElementById("FighterFightWeek").innerHTML = text;
+}
+
+function myFunCoaches() {
+
+    let text2;
+    let coaches = prompt("Give me wrestle wins:", "");
+    if (fightweek == null || fightweek == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(fightweek)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Fight week: " + fightweek + ";";
+    }
+    document.getElementById("FighterFightWeek").innerHTML = text;
+}
