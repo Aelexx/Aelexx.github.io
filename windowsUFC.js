@@ -231,3 +231,41 @@ function myFunWinStreak() {
     }
     document.getElementById("FighterWinStreak").innerHTML = text;
 }
+
+function myFunWrestleWins() {
+
+    let text2;
+    let wrestlewins = prompt("Give me wrestle wins:", "");
+    if (wrestlewins == null || wrestlewins == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(wrestlewins)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Wrestle wins: " + wrestlewins + ";";
+    }
+    document.getElementById("FighterWrestleWins").innerHTML = text;
+}
+
+function myFunStrikeWins() {
+
+    let text2;
+    let strikewins = prompt("Give me streak wins:", "");
+    if (strikewins == null || strikewins == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(strikewins)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
+    
+    else {
+    text = "Strike wins: " + strikewins + ";";
+    }
+    document.getElementById("FighterStrikeWins").innerHTML = text;
+}
