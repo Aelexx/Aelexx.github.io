@@ -24,27 +24,27 @@ function myFunName() {
     document.getElementById("FighterName").innerHTML = text;
 }
 
-// var win;
-// function myFunWins() {
+var win;
+function myFunWins() {
 
-//     let text;
-//     win = prompt("How many wins?:", "");
-//     if (win == null || win == "")
-//         {
-//     text = "Count run is over! Try it again.";
-//     } 
-//     else if (!/^[0-9]+$/.test(win)) {
-//         alert("Only numbers allowed");
-//         validate()
-//     } 
+    let text;
+    win = prompt("How many wins?:", "");
+    if (win == null || win == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(win)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
     
-//     else {
-//     text = "Wins: " + win + ";";
-//     }
-//     document.getElementById("FighterWins").innerHTML = text;
+    else {
+    text = "Wins: " + win + ";";
+    }
+    document.getElementById("FighterWins").innerHTML = text;
 
     
-// }
+}
 var sum;
 var losses;
 function myFunLosses() {
@@ -107,7 +107,7 @@ function myFunNCs() {
 }
 // (win - losses + (draws/2) - (NCs/2)) * 40
 
-sum = losses + (draws/2) - (NCs/2) 
+sum = win - losses + (draws/2) - (NCs/2) 
 console.log(sum)
 // document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
@@ -169,24 +169,24 @@ function myFunStrMin() {
     document.getElementById("FighterStrMin").innerHTML = text;
 }
 
-// function myFunWins() {
+function myFunWins2() {
 
-//     let text;
-//     let win = prompt("How many wins?:", "");
-//     if (win == null || win == "")
-//         {
-//     text = "Count run is over! Try it again.";
-//     } 
-//     else if (!/^[0-9]+$/.test(win)) {
-//         alert("Only numbers allowed");
-//         validate()
-//     } 
+    let text;
+    let win2 = prompt("How many wins?:", "");
+    if (win2 == null || win2 == "")
+        {
+    text = "Count run is over! Try it again.";
+    } 
+    else if (!/^[0-9]+$/.test(win2)) {
+        alert("Only numbers allowed");
+        validate()
+    } 
     
-//     else {
-//     text = "Wins: " + win + ";";
-//     }
-//     document.getElementById("FighterWins").innerHTML = text;
-// }
+    else {
+    text = "Wins: " + win2 + ";";
+    }
+    document.getElementById("FighterWins2").innerHTML = text;
+}
 
 function myFunFinishes() {
 
