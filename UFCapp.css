@@ -230,6 +230,7 @@ text-shadow: 1px 1px 1px #ac721a,
     border: 2px solid #c4cbaf;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -245,8 +246,9 @@ text-shadow: 1px 1px 1px #ac721a,
     color: #222;
     position: relative;
     min-height: 100vh;
+    background-color: #b3e6f4;
   }
-
+  
   .modal {
     display: flex;
     flex-direction: column;
@@ -256,6 +258,7 @@ text-shadow: 1px 1px 1px #ac721a,
     padding: 1.3rem;
     min-height: 250px;
     position: absolute;
+    z-index: 2;
     top: 20%;
     background-color: white;
     border: 1px solid #ddd;
@@ -309,7 +312,7 @@ text-shadow: 1px 1px 1px #ac721a,
     background: #eee;
     border-radius: 50%;
   }
-
+  
   .overlay {
     position: fixed;
     top: 0;
@@ -321,4 +324,8 @@ text-shadow: 1px 1px 1px #ac721a,
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
   }
