@@ -45,7 +45,7 @@ function myFunName() {
 
     
 // }
-
+var sum;
 var losses;
 function myFunLosses() {
 
