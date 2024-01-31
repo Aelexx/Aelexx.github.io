@@ -27,7 +27,7 @@ var win;
 function myFunWins() {
 
     let textWins;
-    var win = prompt("How many wins?:", "");
+    win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
     text = "Count run is over! Try it again.";
@@ -47,7 +47,7 @@ var losses;
 function myFunLosses() {
 
     let textLosses;
-    var losses = prompt("How many losses?:", "");
+    losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
     text = "Count run is over! Try it again.";
@@ -66,8 +66,8 @@ function myFunLosses() {
 var draws;
 function myFunDraws() {
 
-    let textDraws;
-    var draws = prompt("How many draws?:", "");
+    let text;
+    draws = prompt("How many draws?:", "");
     if (draws == null || draws == "")
         {
     text = "Count run is over! Try it again.";
@@ -80,14 +80,14 @@ function myFunDraws() {
     else {
     text = "Draws: " + draws + ";";
     }
-    document.getElementById("FighterDraws").innerHTML = textDraws;
+    document.getElementById("FighterDraws").innerHTML = text;
 }
 
 var NCs;
 function myFunNCs() {
 
-    let textNCs;
-    var NCs = prompt("How many NC's?:", "");
+    let text;
+    NCs = prompt("How many NC's?:", "");
     if (NCs == null || NCs == "")
         {
     text = "Count run is over! Try it again.";
@@ -100,7 +100,7 @@ function myFunNCs() {
     else {
     text = "NC's: " + NCs + ";";
     }
-    document.getElementById("FighterNCs").innerHTML = textNCs;
+    document.getElementById("FighterNCs").innerHTML = text;
 }
 
 const scoreResult = (win - losses + draws/2 - NCs/2 - 2) * 40
@@ -109,7 +109,7 @@ document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
 function myFunFinishes() {
 
-    let text2;
+    let text;
     let finishes = prompt("How many finishes?:", "");
     if (finishes == null || finishes == "")
         {
@@ -128,7 +128,7 @@ function myFunFinishes() {
 
 function myFunSubAtt() {
 
-    let text2;
+    let text;
     let subatt = prompt("How many submission attempts?:", "");
     if (subatt == null || subatt == "")
         {
@@ -147,7 +147,7 @@ function myFunSubAtt() {
 
 function myFunStrMin() {
 
-    let text2;
+    let text;
     let strmin = prompt("How many strikes per minute?:", "");
     if (strmin == null || strmin == "")
         {
@@ -166,7 +166,7 @@ function myFunStrMin() {
 
 function myFunWins() {
 
-    let text2;
+    let text;
     let win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
@@ -185,7 +185,7 @@ function myFunWins() {
 
 function myFunFinishes() {
 
-    let text2;
+    let text;
     let finishes = prompt("How many finishes?:", "");
     if (finishes == null || finishes == "")
         {
@@ -204,7 +204,7 @@ function myFunFinishes() {
 
 function myFunAge() {
 
-    let text2;
+    let text;
     let age = prompt("What is age?:", "");
     if (age == null || age == "")
         {
@@ -223,7 +223,7 @@ function myFunAge() {
 
 function myFunWinStreak() {
 
-    let text2;
+    let text;
     let winstreak = prompt("Give me win streak:", "");
     if (winstreak == null || winstreak == "")
         {
@@ -242,7 +242,7 @@ function myFunWinStreak() {
 
 function myFunWrestleWins() {
 
-    let text2;
+    let text;
     let wrestlewins = prompt("Give me wrestle wins:", "");
     if (wrestlewins == null || wrestlewins == "")
         {
@@ -261,7 +261,7 @@ function myFunWrestleWins() {
 
 function myFunStrikeAccuracy() {
 
-    let text2;
+    let text;
     let strikeacc = prompt("Give me streak accuracy:", "");
     if (strikeacc == null || strikeacc == "")
         {
@@ -280,7 +280,7 @@ function myFunStrikeAccuracy() {
 
 function myFunTakedownAccuracy() {
 
-    let text2;
+    let text;
     let takedownacc = prompt("Give me takedown accuracy:", "");
     if (takedownacc == null || takedownacc == "")
         {
@@ -299,7 +299,7 @@ function myFunTakedownAccuracy() {
 
 function myFunStrikeDefense() {
 
-    let text2;
+    let text;
     let strikedefense = prompt("Give me strike defense:", "");
     if (strikedefense == null || takedownacc == "")
         {
@@ -318,7 +318,7 @@ function myFunStrikeDefense() {
 
 function myFunTakedownDefense() {
 
-    let text2;
+    let text;
     let takedowndefense = prompt("Give me takedown defense:", "");
     if (takedowndefense == null || takedowndefense == "")
         {
@@ -337,7 +337,7 @@ function myFunTakedownDefense() {
 
 function myFunInjury() {
 
-    let text2;
+    let text;
     let injury = prompt("Give me injury:", "");
     if (injury == null || injury == "")
         {
@@ -356,7 +356,7 @@ function myFunInjury() {
 
 function myFunFightWeek() {
 
-    let text2;
+    let text;
     let fightweek = prompt("Give me fight week:", "");
     if (fightweek == null || fightweek == "")
         {
@@ -375,7 +375,7 @@ function myFunFightWeek() {
 
 function myFunCoaches() {
 
-    let text2;
+    let text;
     let coaches = prompt("Give me coaches:", "");
     if (coaches == null || coaches == "")
         {
@@ -394,7 +394,7 @@ function myFunCoaches() {
 
 function myFunInterviews() {
 
-    let text2;
+    let text;
     let interviews = prompt("Give me interviews:", "");
     if (interviews == null || interviews == "")
         {
@@ -413,7 +413,7 @@ function myFunInterviews() {
 
 function myFunOdds() {
 
-    let text2;
+    let text;
     let odds = prompt("Give me odds:", "");
     if (odds == null || odds == "")
         {
