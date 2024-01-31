@@ -52,7 +52,7 @@ function myFunLosses() {
     textLosses = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(losses)) {
-        alert("Only numbers allowed");
+        alert("Only whole numbers appropriate");
         validate()
     } 
     
@@ -72,7 +72,7 @@ function myFunDraws() {
     textDraws = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(draws)) {
-        alert("Only numbers allowed");
+        alert("Only whole number appropriate");
         validate()
     } 
     
@@ -92,7 +92,7 @@ function myFunNCs() {
     textNCs = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(NCs)) {
-        alert("Only numbers allowed");
+        alert("Only whole numbers allow");
         validate()
     } 
     
