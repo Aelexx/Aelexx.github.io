@@ -5,7 +5,6 @@ assigns the value to the `fighter` variable and creates a string using the value
 cancelled the prompt or did not enter a value, it assigns a different string to the `text` variable.
 Finally, it sets the innerHTML of an element with the id "demo" to the value of the `text` variable. */
 
-// var sum;
 function myFunName() {
 
     let text;
@@ -109,7 +108,7 @@ function myFunNCs() {
 // (win - losses + (draws/2) - (NCs/2)) * 40
 
 // sum = win - losses + draws - NCs;
-alert(' So ${win} - ${losses} + ${draws} - ${NCs}');
+console.log(' So ${win} - ${losses} + ${draws} - ${NCs}');
 // document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
 
