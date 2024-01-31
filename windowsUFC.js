@@ -99,7 +99,7 @@ function myFunNCs() {
     document.getElementById("FighterNCs").innerHTML = text;
 }
 
-let scoreResult = (win - losses + draws/2 - NCs/2 - 2) * 40
+var scoreResult = (win - losses + draws/2 - NCs/2 - 2) * 40
 console.log(let)
 document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
