@@ -30,7 +30,7 @@ function myFunWins() {
     win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
-    text = "Count run is over! Try it again.";
+    textWins = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(win)) {
         alert("Only numbers allowed");
@@ -38,7 +38,7 @@ function myFunWins() {
     } 
     
     else {
-    text = "Wins: " + win + ";";
+    textWins = "Wins: " + win + ";";
     }
     document.getElementById("FighterWins").innerHTML = textWins;
 }
@@ -50,7 +50,7 @@ function myFunLosses() {
     losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
-    text = "Count run is over! Try it again.";
+    textLosses = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(losses)) {
         alert("Only numbers allowed");
@@ -58,7 +58,7 @@ function myFunLosses() {
     } 
     
     else {
-    text = "Losses: " + losses + ";";
+    textLosses = "Losses: " + losses + ";";
     }
     document.getElementById("FighterLosses").innerHTML = textLosses;
 }
@@ -78,7 +78,7 @@ function myFunDraws() {
     } 
     
     else {
-    text = "Draws: " + draws + ";";
+    textDraws = "Draws: " + draws + ";";
     }
     document.getElementById("FighterDraws").innerHTML = textDraws;
 }
@@ -98,7 +98,7 @@ function myFunNCs() {
     } 
     
     else {
-    text = "NC's: " + NCs + ";";
+    textNCs = "NC's: " + NCs + ";";
     }
     document.getElementById("FighterNCs").innerHTML = textNCs;
 }
