@@ -4,6 +4,8 @@ then checks if the user entered a value or cancelled the prompt. If the user ent
 assigns the value to the `fighter` variable and creates a string using the value. If the user
 cancelled the prompt or did not enter a value, it assigns a different string to the `text` variable.
 Finally, it sets the innerHTML of an element with the id "demo" to the value of the `text` variable. */
+
+var sum;
 function myFunName() {
 
     let text;
@@ -45,7 +47,6 @@ function myFunWins() {
 
     
 }
-var sum = 0;
 var losses = 0;
 function myFunLosses() {
 
