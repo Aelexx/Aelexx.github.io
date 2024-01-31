@@ -70,7 +70,7 @@ function myFunDraws() {
     draws = prompt("How many draws?:", "");
     if (draws == null || draws == "")
         {
-    text = "Count run is over! Try it again.";
+    textDraws = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(draws)) {
         alert("Only numbers allowed");
@@ -90,7 +90,7 @@ function myFunNCs() {
     NCs = prompt("How many NC's?:", "");
     if (NCs == null || NCs == "")
         {
-    text = "Count run is over! Try it again.";
+    textNCs = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(NCs)) {
         alert("Only numbers allowed");
