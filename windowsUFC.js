@@ -169,24 +169,24 @@ function myFunStrMin() {
     document.getElementById("FighterStrMin").innerHTML = text;
 }
 
-function myFunWins() {
+// function myFunWins() {
 
-    let text;
-    let win = prompt("How many wins?:", "");
-    if (win == null || win == "")
-        {
-    text = "Count run is over! Try it again.";
-    } 
-    else if (!/^[0-9]+$/.test(win)) {
-        alert("Only numbers allowed");
-        validate()
-    } 
+//     let text;
+//     let win = prompt("How many wins?:", "");
+//     if (win == null || win == "")
+//         {
+//     text = "Count run is over! Try it again.";
+//     } 
+//     else if (!/^[0-9]+$/.test(win)) {
+//         alert("Only numbers allowed");
+//         validate()
+//     } 
     
-    else {
-    text = "Wins: " + win + ";";
-    }
-    document.getElementById("FighterWins").innerHTML = text;
-}
+//     else {
+//     text = "Wins: " + win + ";";
+//     }
+//     document.getElementById("FighterWins").innerHTML = text;
+// }
 
 function myFunFinishes() {
 
