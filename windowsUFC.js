@@ -42,10 +42,9 @@ function myFunWins() {
     text = "Wins: " + win + ";";
     }
     document.getElementById("FighterWins").innerHTML = text;
-}
-
-var losses;
-function myFunLosses() {
+    
+    var losses;
+    function myFunLosses() {
 
     let text;
     losses = prompt("How many losses?:", "");
@@ -62,10 +61,10 @@ function myFunLosses() {
     text = "Losses: " + losses + ";";
     }
     document.getElementById("FighterLosses").innerHTML = text;
-}
+    }
 
-var draws;
-function myFunDraws() {
+    var draws;
+    function myFunDraws() {
 
     let text;
     draws = prompt("How many draws?:", "");
@@ -82,10 +81,11 @@ function myFunDraws() {
     text = "Draws: " + draws + ";";
     }
     document.getElementById("FighterDraws").innerHTML = text;
-}
 
-var NCs;
-function myFunNCs() {
+    }
+
+    var NCs;
+    function myFunNCs() {
 
     let text;
     NCs = prompt("How many NC's?:", "");
@@ -102,7 +102,10 @@ function myFunNCs() {
     text = "NC's: " + NCs + ";";
     }
     document.getElementById("FighterNCs").innerHTML = text;
+    }
 }
+
+
 
 var scoreResult = (win - losses + (draws/2) - (NCs/2)) * 40
 console.log(scoreResult)
