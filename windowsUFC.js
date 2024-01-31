@@ -26,7 +26,7 @@ function myFunName() {
 var win;
 function myFunWins() {
 
-    let text2;
+    let textWins;
     var win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
@@ -40,13 +40,13 @@ function myFunWins() {
     else {
     text = "Wins: " + win + ";";
     }
-    document.getElementById("FighterWins").innerHTML = text;
+    document.getElementById("FighterWins").innerHTML = textWins;
 }
 
 var losses;
 function myFunLosses() {
 
-    let text2;
+    let textLosses;
     var losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
@@ -60,13 +60,13 @@ function myFunLosses() {
     else {
     text = "Losses: " + losses + ";";
     }
-    document.getElementById("FighterLosses").innerHTML = text;
+    document.getElementById("FighterLosses").innerHTML = textLosses;
 }
 
 var draws;
 function myFunDraws() {
 
-    let text2;
+    let textDraws;
     var draws = prompt("How many draws?:", "");
     if (draws == null || draws == "")
         {
@@ -80,13 +80,13 @@ function myFunDraws() {
     else {
     text = "Draws: " + draws + ";";
     }
-    document.getElementById("FighterDraws").innerHTML = text;
+    document.getElementById("FighterDraws").innerHTML = textDraws;
 }
 
 var NCs;
 function myFunNCs() {
 
-    let text2;
+    let textNCs;
     var NCs = prompt("How many NC's?:", "");
     if (NCs == null || NCs == "")
         {
@@ -100,7 +100,7 @@ function myFunNCs() {
     else {
     text = "NC's: " + NCs + ";";
     }
-    document.getElementById("FighterNCs").innerHTML = text;
+    document.getElementById("FighterNCs").innerHTML = textNCs;
 }
 
 const scoreResult = (win - losses + draws/2 - NCs/2 - 2) * 40
