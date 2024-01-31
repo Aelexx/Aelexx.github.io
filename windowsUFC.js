@@ -27,7 +27,7 @@ function myFunName() {
 var win;
 function myFunWins() {
 
-    let textWins;
+    let text;
     win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
@@ -41,13 +41,13 @@ function myFunWins() {
     else {
     text = "Wins: " + win + ";";
     }
-    document.getElementById("FighterWins").innerHTML = textWins;
+    document.getElementById("FighterWins").innerHTML = text;
 }
 
 var losses;
 function myFunLosses() {
 
-    let textLosses;
+    let text;
     losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
@@ -61,7 +61,7 @@ function myFunLosses() {
     else {
     text = "Losses: " + losses + ";";
     }
-    document.getElementById("FighterLosses").innerHTML = textLosses;
+    document.getElementById("FighterLosses").innerHTML = text;
 }
 
 var draws;
