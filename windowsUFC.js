@@ -26,7 +26,6 @@ function myFunName() {
 
 function myFunSum(){
 
-
 var win;
 function myFunWins() {
 
