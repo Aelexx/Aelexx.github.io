@@ -26,6 +26,10 @@ function myFunName() {
 
 function myFunSum(){
 
+    var scoreResult = (win - losses + (draws/2) - (NCs/2)) * 40
+console.log(scoreResult)
+document.getElementById("FighterScoreResult").innerHTML = scoreResult;
+
 var win;
 function myFunWins() {
 
@@ -105,9 +109,7 @@ function myFunNCs() {
     }
     document.getElementById("FighterNCs").innerHTML = text;
 }
-var scoreResult = (win - losses + (draws/2) - (NCs/2)) * 40
-console.log(scoreResult)
-document.getElementById("FighterScoreResult").innerHTML = scoreResult;
+
 }
 
 
