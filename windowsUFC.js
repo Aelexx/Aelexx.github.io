@@ -1,3 +1,4 @@
+// const { text } = require("stream/consumers");
 /* The `myFun()` function is prompting the user to enter their name using the `prompt()` function. It
 then checks if the user entered a value or cancelled the prompt. If the user entered a value, it
 assigns the value to the `fighter` variable and creates a string using the value. If the user
