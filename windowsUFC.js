@@ -1,5 +1,3 @@
-const { text } = require("stream/consumers");
-
 /* The `myFun()` function is prompting the user to enter their name using the `prompt()` function. It
 then checks if the user entered a value or cancelled the prompt. If the user entered a value, it
 assigns the value to the `fighter` variable and creates a string using the value. If the user
@@ -7,31 +5,32 @@ cancelled the prompt or did not enter a value, it assigns a different string to 
 Finally, it sets the innerHTML of an element with the id "demo" to the value of the `text` variable. */
 function myFunName() {
 
-    let textName;
+    let text;
     let name = prompt("Input name of fighter:", "");
     if (name == null || name == "")
         {
-    textName = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[a-zA-Z ]+$/.test(name)) {
         alert("Only letters we need");
         validate()
     } 
+
     
     else {
-    textName ="Name: " + name + ";";
+    text ="Name: " + name + ";";
     }
-    document.getElementById("FighterName").innerHTML = textName;
+    document.getElementById("FighterName").innerHTML = text;
 }
 
 var win;
 function myFunWins() {
 
     let textWins;
-    win = prompt("How many wins?:", "");
+    var win = prompt("How many wins?:", "");
     if (win == null || win == "")
         {
-    textWins = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(win)) {
         alert("Only numbers allowed");
@@ -39,7 +38,7 @@ function myFunWins() {
     } 
     
     else {
-    textWins = "Wins: " + win + ";";
+    text = "Wins: " + win + ";";
     }
     document.getElementById("FighterWins").innerHTML = textWins;
 }
@@ -48,18 +47,18 @@ var losses;
 function myFunLosses() {
 
     let textLosses;
-    losses = prompt("How many losses?:", "");
+    var losses = prompt("How many losses?:", "");
     if (losses == null || losses == "")
         {
-    textLosses = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(losses)) {
-        alert("Only whole numbers appropriate");
+        alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    textLosses = "Losses: " + losses + ";";
+    text = "Losses: " + losses + ";";
     }
     document.getElementById("FighterLosses").innerHTML = textLosses;
 }
@@ -68,18 +67,18 @@ var draws;
 function myFunDraws() {
 
     let textDraws;
-    draws = prompt("How many draws?:", "");
+    var draws = prompt("How many draws?:", "");
     if (draws == null || draws == "")
         {
-    textDraws = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(draws)) {
-        alert("Only whole number appropriate");
+        alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    textDraws = "Draws: " + draws + ";";
+    text = "Draws: " + draws + ";";
     }
     document.getElementById("FighterDraws").innerHTML = textDraws;
 }
@@ -88,33 +87,33 @@ var NCs;
 function myFunNCs() {
 
     let textNCs;
-    NCs = prompt("How many NC's?:", "");
+    var NCs = prompt("How many NC's?:", "");
     if (NCs == null || NCs == "")
         {
-    textNCs = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(NCs)) {
-        alert("Only whole numbers allow");
+        alert("Only numbers allowed");
         validate()
     } 
     
     else {
-    textNCs = "NC's: " + NCs + ";";
+    text = "NC's: " + NCs + ";";
     }
     document.getElementById("FighterNCs").innerHTML = textNCs;
 }
 
-var scoreResult = (win - losses + (draws/2) - (NCs/2)) * 40
+const scoreResult = (win - losses + draws/2 - NCs/2 - 2) * 40
 console.log(scoreResult)
-// document.getElementById("FighterScoreResult").innerHTML = text;
+document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
 function myFunFinishes() {
 
-    let textFinishes;
+    let text2;
     let finishes = prompt("How many finishes?:", "");
     if (finishes == null || finishes == "")
         {
-    textFinishes = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(finishes)) {
         alert("Only numbers allowed");
@@ -122,18 +121,18 @@ function myFunFinishes() {
     } 
     
     else {
-    textFinishes = "Finishes: " + finishes + ";";
+    text = "Finishes: " + finishes + ";";
     }
-    document.getElementById("FighterFinishes").innerHTML = textFinishes;
+    document.getElementById("FighterFinishes").innerHTML = text;
 }
 
 function myFunSubAtt() {
 
-    let textSubAtt;
+    let text2;
     let subatt = prompt("How many submission attempts?:", "");
     if (subatt == null || subatt == "")
         {
-    textSubAtt = "Count run is over! Try it again.";
+    text = "Count run is over! Try it again.";
     } 
     else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(subatt)) {
         alert("Only numbers allowed");
@@ -141,9 +140,9 @@ function myFunSubAtt() {
     } 
     
     else {
-    textSubAtt = "Submission attempt: " + subatt + ";";
+    text = "Submission attempt: " + subatt + ";";
     }
-    document.getElementById("FighterSubAtt").innerHTML = textSubAtt;
+    document.getElementById("FighterSubAtt").innerHTML = text;
 }
 
 function myFunStrMin() {
