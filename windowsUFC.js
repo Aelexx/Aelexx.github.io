@@ -105,8 +105,8 @@ function myFunNCs() {
 }
 
 var scoreResult = (win - losses + (draws/2) - (NCs/2)) * 40
-// console.log(scoreResult)
-document.getElementById("FighterScoreResult").innerHTML = text;
+console.log(scoreResult)
+// document.getElementById("FighterScoreResult").innerHTML = text;
 
 function myFunFinishes() {
 
