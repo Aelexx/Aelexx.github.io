@@ -41,7 +41,7 @@ function myFunWins() {
     else {
     text = "Wins: " + win + ";";
     }
-    var Result1 = document.getElementById("FighterWins").innerHTML = text;
+    document.getElementById("FighterWins").innerHTML = text;
     
 }
 
@@ -62,7 +62,7 @@ function myFunLosses() {
     else {
     text = "Losses: " + losses + ";";
     }
-    var Result2 = document.getElementById("FighterLosses").innerHTML = text;
+    document.getElementById("FighterLosses").innerHTML = text;
 }
 
 var draws;
@@ -106,7 +106,7 @@ function myFunNCs() {
 }
 // (win - losses + (draws/2) - (NCs/2)) * 40
 
-sum = myFunWins() - myFunLosses
+sum = myFunWins() - myFunLosses()
 console.log(sum)
 // document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
