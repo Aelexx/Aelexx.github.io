@@ -92,8 +92,8 @@ font-size: 80pt;
     color:#ac721a;
     /* letter-spacing: 10cm; */
     /* transition: 3.0s; */
-    top: 0%;   
-right: 0%;  
+    top: 0%;     
+padding-right: 30%;
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
 font-family: verdana;  
