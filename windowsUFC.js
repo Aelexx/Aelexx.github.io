@@ -107,8 +107,10 @@ function myFunNCs() {
 // (win - losses + (draws/2) - (NCs/2)) * 40
 var Result1 = document.getElementById("FighterWins")
 var Result2 = document.getElementById("FighterLosses")
+
+var sum = Number(Result1.value) + Number(Result2.value);
 console.log(Result1 + Result2)
-document.getElementById("FighterScoreResult").innerHTML = scoreResult;
+// document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
 
 function myFunFinishes() {
