@@ -5,22 +5,21 @@ cancelled the prompt or did not enter a value, it assigns a different string to 
 Finally, it sets the innerHTML of an element with the id "demo" to the value of the `text` variable. */
 function myFunName() {
 
-    let text;
+    let textName;
     let name = prompt("Input name of fighter:", "");
     if (name == null || name == "")
         {
-    text = "Count run is over! Try it again.";
+    textName = "Count run is over! Try it again.";
     } 
     else if (!/^[a-zA-Z ]+$/.test(name)) {
         alert("Only letters we need");
         validate()
     } 
-
     
     else {
-    text ="Name: " + name + ";";
+    textName ="Name: " + name + ";";
     }
-    document.getElementById("FighterName").innerHTML = text;
+    document.getElementById("FighterName").innerHTML = textName;
 }
 
 var win;
