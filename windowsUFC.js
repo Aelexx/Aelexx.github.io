@@ -200,7 +200,7 @@ function myFunFinishes() {
     else {
     text = "Finishes: " + finishes + ";";
     }
-    document.getElementById("FighterFinishes").innerHTML = text;
+    document.getElementById("FinishRateScope").innerHTML = text;
 }
 
 function myFunAge() {
