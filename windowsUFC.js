@@ -109,11 +109,11 @@ document.getElementById("FighterScoreResult").innerHTML = scoreResult;
 
 function myFunFinishes() {
 
-    let text2;
+    let textFinishes;
     let finishes = prompt("How many finishes?:", "");
     if (finishes == null || finishes == "")
         {
-    text = "Count run is over! Try it again.";
+    textFinishes = "Count run is over! Try it again.";
     } 
     else if (!/^[0-9]+$/.test(finishes)) {
         alert("Only numbers allowed");
@@ -121,18 +121,18 @@ function myFunFinishes() {
     } 
     
     else {
-    text = "Finishes: " + finishes + ";";
+    textFinishes = "Finishes: " + finishes + ";";
     }
-    document.getElementById("FighterFinishes").innerHTML = text;
+    document.getElementById("FighterFinishes").innerHTML = textFinishes;
 }
 
 function myFunSubAtt() {
 
-    let text2;
+    let textSubAtt;
     let subatt = prompt("How many submission attempts?:", "");
     if (subatt == null || subatt == "")
         {
-    text = "Count run is over! Try it again.";
+    textSubAtt = "Count run is over! Try it again.";
     } 
     else if (!/[+-]?([0-9]*[.])?[0-9]+/.test(subatt)) {
         alert("Only numbers allowed");
@@ -140,9 +140,9 @@ function myFunSubAtt() {
     } 
     
     else {
-    text = "Submission attempt: " + subatt + ";";
+    textSubAtt = "Submission attempt: " + subatt + ";";
     }
-    document.getElementById("FighterSubAtt").innerHTML = text;
+    document.getElementById("FighterSubAtt").innerHTML = textSubAtt;
 }
 
 function myFunStrMin() {
