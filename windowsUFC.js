@@ -23,6 +23,7 @@ function myFunName() {
     document.getElementById("FighterName").innerHTML = text;
 }
 
+var win;
 function myFunWins() {
 
     let text2;
@@ -42,6 +43,7 @@ function myFunWins() {
     document.getElementById("FighterWins").innerHTML = text;
 }
 
+var losses;
 function myFunLosses() {
 
     let text2;
@@ -61,6 +63,7 @@ function myFunLosses() {
     document.getElementById("FighterLosses").innerHTML = text;
 }
 
+var draws;
 function myFunDraws() {
 
     let text2;
@@ -80,6 +83,7 @@ function myFunDraws() {
     document.getElementById("FighterDraws").innerHTML = text;
 }
 
+var NCs;
 function myFunNCs() {
 
     let text2;
