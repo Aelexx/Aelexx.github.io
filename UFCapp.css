@@ -291,7 +291,7 @@ text-shadow: 1px 1px 1px #ac721a,
   }
   
   .btn {
-    display: inline-block;
+    /* display: inline-block; */
     align-content: center;
     padding: 0.8rem 1.4rem;
     position:absolute;
