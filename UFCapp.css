@@ -295,7 +295,7 @@ text-shadow: 1px 1px 1px #ac721a,
     align-content: center;
     padding: 0.8rem 1.4rem;
     position:absolute;
-    left: 50%;
+    right: 50%;
     font-weight: 700;
     background-color: #ce4444;
     color: white;
