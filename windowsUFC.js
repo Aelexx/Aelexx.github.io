@@ -10,13 +10,13 @@ const overlay = document.querySelector(".overlay");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 const minimizeModalBtn = document.querySelector(".btn-minimize");
-const submitName = document.querySelector(".btn");
+// const submitName = document.querySelector(".btn");
 let fighterName = document.getElementById('nameOfFighter');
 console.log(fighterName);
 
-let nameForm = document.getElementById("nameOfFighter");
+let fighterNameForm = document.getElementById("fighterNameForm");
 
-nameForm.addEventListener("submit", (e) => {
+fighterNameForm.addEventListener("submit", (e) => {
 e.preventDefault();
 
 let name = document.getElementById("nameOfFighter");
