@@ -12,7 +12,7 @@ const closeModalBtn = document.querySelector(".btn-close");
 const minimizeModalBtn = document.querySelector(".btn-minimize");
 const submitName = document.querySelector(".btn");
 let fighterName = document.getElementsByClassName('input-name');
-console.log(fighterName);
+console.log(fighterName[0]);
 
 let nameFForm = document.getElementById("fighterNameForm");
 
