@@ -18,7 +18,7 @@ const closeModal = function () {
 };
 
 // minimze modal function
-const closeModal = function () {
+const minimizeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
 };
