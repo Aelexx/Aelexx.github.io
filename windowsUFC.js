@@ -10,6 +10,7 @@ const overlay = document.querySelector(".overlay");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 const minimizeModalBtn = document.querySelector(".btn-minimize");
+const submitName = document.querySelector(".btn");
 
 // close modal function
 const closeModal = function () {
@@ -43,6 +44,10 @@ overlay.classList.remove("hidden");
 // open modal event
 openModalBtn.addEventListener("click", openModal);
 
+const submitName = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    };
 
 function myFunName() {
 
