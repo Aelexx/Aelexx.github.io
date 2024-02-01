@@ -21,17 +21,14 @@ e.preventDefault();
 
 let name = document.getElementById("nameOfFighter");
 
-
 if (name.value == "") {
     alert("Ensure you input a value in both fields!");
 } else {
     // perform operation with form input
     alert("This form has been successfully submitted!");
-    console.log(
-    `Fighter's name ${name.value}`
-    );
+    console.log(`Fighter's name ${name.value}`);
 
-    username.value = "";
+    name.value = "";
 }
 });
 
