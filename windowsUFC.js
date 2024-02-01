@@ -26,7 +26,7 @@ if (name.value == "") {
 } else {
     // perform operation with form input
     alert("This form has been successfully submitted!");
-    console.log(`Fighter's name ${name.value}`);
+    console.log(name.value);
 
     name.value = "";
 }
