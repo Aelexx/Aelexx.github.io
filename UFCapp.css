@@ -313,7 +313,7 @@ text-shadow: 1px 1px 1px #ac721a,
     border-radius: 50%;
   }
   .btn-minimize {
-    transform: translate(0px, -15px);
+    transform: translate(10px, -23px);
     padding: 0.7rem 0.9rem;
     background: #eee;
     border-radius: 0%;
