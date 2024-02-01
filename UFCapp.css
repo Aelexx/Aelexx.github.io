@@ -308,13 +308,12 @@ text-shadow: 1px 1px 1px #ac721a,
   
   .btn-close {
     transform: translate(10px, -20px);
-    padding: 0.5rem 0.7rem;
+    /* padding: 0.5rem 0.7rem; */
     background: #eee;
     border-radius: 50%;
   }
   .btn-minimize {
     transform: translate(10px, -20px);
-    /* padding: 10px 17px 4px 4px;  */
     margin-inline: 20px;
     background: #eee;
     border-radius: 0%;
