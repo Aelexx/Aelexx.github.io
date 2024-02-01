@@ -14,9 +14,9 @@ const submitName = document.querySelector(".btn");
 let fighterName = document.getElementById('nameOfFighter');
 console.log(fighterName);
 
-let nameFForm = document.getElementById("fighterNameForm");
+let nameForm = document.getElementById("nameOfFighter");
 
-nameFForm.addEventListener("submit", (e) => {
+nameForm.addEventListener("submit", (e) => {
 e.preventDefault();
 
 let name = document.getElementById("nameOfFighter");
