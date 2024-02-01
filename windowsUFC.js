@@ -14,20 +14,19 @@ const minimizeModalBtn = document.querySelector(".btn-minimize");
 let fighterName = document.getElementById('nameOfFighter');
 console.log(fighterName);
 
-let fighterNameForm = document.getElementById("fighterNameForm");
+let fighterNameForm = document.getElementById("fighterNameForm").submit();
 
-fighterNameForm.addEventListener("submit", (e) => {
-e.preventDefault();
+// fighterNameForm.addEventListener("submit", (e) => {
+// e.preventDefault();
 
 let name = document.getElementById("nameOfFighter");
-let text;
-if (name.value == " ") {
+
+if (name.value == "") {
     alert("Ensure you input a value in both fields!");
 } else {
     // perform operation with form input
     alert("This form has been successfully submitted!");
-    console.log(name);
-    document.getElementById("FighterName").innerHTML = text;
+    console.log(name.value);
     // name.value = "";
 }
 });
