@@ -47,19 +47,19 @@ openModalBtn.addEventListener("click", openModal);
 function myFunName() {
 
     let text;
-    let name = prompt("Input name of fighter:", "");
-    if (name == null || name == "")
+    let nameOfFighter = prompt("Input name of fighter:", "");
+    if (nameOfFighter == null || nameOfFighter == "")
         {
     text = "Count run is over! Try it again.";
     } 
-    else if (!/^[a-zA-Z ]+$/.test(name)) {
+    else if (!/^[a-zA-Z ]+$/.test(nameOfFighter)) {
         alert("Only letters we need");
         validate()
     } 
 
     
     else {
-    text ="Name: " + name + ";";
+    text ="Name: " + nameOfFighter + ";";
     }
     document.getElementById("FighterName").innerHTML = text;
 }
