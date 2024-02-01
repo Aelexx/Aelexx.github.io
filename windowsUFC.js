@@ -11,8 +11,8 @@ const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 const minimizeModalBtn = document.querySelector(".btn-minimize");
 const submitName = document.querySelector(".btn");
-let fighterName = document.getElementsByClassName('input-name');
-console.log(fighterName[0]);
+let fighterName = document.getElementById('nameOfFighter');
+console.log(fighterName);
 
 let nameFForm = document.getElementById("fighterNameForm");
 
