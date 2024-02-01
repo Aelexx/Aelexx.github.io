@@ -135,7 +135,7 @@ text-shadow: 1px 1px 1px #ac721a,
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-#scbtn {
+#btn btn-open {
     background-color: #c94752;
     font-size:25pt;
     text-align: center;
