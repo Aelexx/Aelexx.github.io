@@ -279,8 +279,8 @@ text-shadow: 1px 1px 1px #ac721a,
   }
   
   .modal p {
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 14pt;
+    color: #000000;
     margin: 0.4rem 0 0.2rem;
   }
   
@@ -294,11 +294,11 @@ text-shadow: 1px 1px 1px #ac721a,
     display: inline-block;
     padding: 0.8rem 1.4rem;
     font-weight: 700;
-    background-color: black;
+    background-color: #ce4444;
     color: white;
     border-radius: 5px;
     text-align: center;
-    font-size: 1em;
+    font-size: 14pt;
   }
   
   .btn-open {
