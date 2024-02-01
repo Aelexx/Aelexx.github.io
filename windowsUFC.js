@@ -11,6 +11,29 @@ const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 const minimizeModalBtn = document.querySelector(".btn-minimize");
 const submitName = document.querySelector(".btn");
+let fighterName = document.getElementsByClassName('input-name');
+console.log(fighterName[0]);
+
+let nameFForm = document.getElementById("fighterNameForm");
+
+nameFForm.addEventListener("submit", (e) => {
+e.preventDefault();
+
+let name = document.getElementById("nameOfFighter");
+
+
+if (name.value == "") {
+    alert("Ensure you input a value in both fields!");
+} else {
+    // perform operation with form input
+    alert("This form has been successfully submitted!");
+    console.log(
+    `Fighter's name ${name.value}`
+    );
+
+    username.value = "";
+}
+});
 
 // close modal function
 const closeModal = function () {
