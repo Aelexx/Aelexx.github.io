@@ -9,15 +9,23 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
+const minimizeModalBtn = document.querySelector(".btn-minimize");
 
 // close modal function
 const closeModal = function () {
-modal.classList.add("hidden");
-overlay.classList.add("hidden");
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+};
+
+// minimze modal function
+const closeModal = function () {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
 };
 
 // close the modal when the close button and overlay is clicked
 closeModalBtn.addEventListener("click", closeModal);
+minimizeModalBtn.addEventListener("click", )
 overlay.addEventListener("click", closeModal);
 
 // close modal when the Esc key is pressed
