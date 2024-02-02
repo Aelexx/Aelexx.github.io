@@ -95,12 +95,12 @@ font-size: 80pt;
     color:#ac721a;
     /* letter-spacing: 10cm; */
     /* transition: 3.0s; */
-    top: 0%;     
-padding-right: -216%;
-transform: translate(50%,-50%);  
-text-transform: uppercase;  
-font-family: verdana;  
-font-weight: 700;    
+    top: 0%;   
+    right: 55%;  
+    transform: translate(50%,-50%);  
+    text-transform: uppercase;  
+    font-family: verdana;  
+    font-weight: 700;   
 text-shadow: 1px 1px 1px #ac721a,  
 1px 2px 1px #ac721a,  
 1px 3px 1px #d3b280,  
