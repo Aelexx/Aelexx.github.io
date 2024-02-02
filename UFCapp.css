@@ -107,11 +107,11 @@ text-shadow: 1px 1px 1px #ac721a,
 1px 25px 35px #10101033,  
 1px 30px 60px #10101066;
 
--webkit-transform: rotate(65deg);
--moz-transform: rotate(65deg);
--ms-transform: rotate(65deg);
--o-transform: rotate(65deg);
-transform: rotate(65deg);
+-webkit-transform: rotate(88deg);
+-moz-transform: rotate(88deg);
+-ms-transform: rotate(88deg);
+-o-transform: rotate(88deg);
+transform: rotate(88deg);
 
 position: absolute;
 padding: 12px 12px 12px 12px;
