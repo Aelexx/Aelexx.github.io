@@ -37,7 +37,14 @@ text-shadow: 1px 1px 1px #9e5151,
 1px 18px 6px #10101066,  
 1px 22px 10px #10101033,  
 1px 25px 35px #10101033,  
-1px 30px 60px #10101066;  
+1px 30px 60px #10101066;
+
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+transform-origin: left top; 
 }
 
 /* #chF {
@@ -70,13 +77,9 @@ text-shadow: 1px 1px 1px #5b93c4,
 
 color:#3f86c5;
 -webkit-transform: rotate(-45deg);
-/* -webkit-transform-origin: left top; */
 -moz-transform: rotate(-45deg);
-/* -moz-transform-origin: left top; */
 -ms-transform: rotate(-45deg);
-/* -ms-transform-origin: left top; */
 -o-transform: rotate(-45deg);
-/* -o-transform-origin: left top; */
 transform: rotate(-45deg);
 /* transform-origin: left top; */
 
