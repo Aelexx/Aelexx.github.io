@@ -39,16 +39,16 @@ text-shadow: 1px 1px 1px #9e5151,
 1px 25px 35px #10101033,  
 1px 30px 60px #10101066;
 
--webkit-transform: rotate(-55deg);
--moz-transform: rotate(-55deg);
--ms-transform: rotate(-55deg);
--o-transform: rotate(-55deg);
-transform: rotate(-55deg);
+-webkit-transform: rotate(-35deg);
+-moz-transform: rotate(-35deg);
+-ms-transform: rotate(-35deg);
+-o-transform: rotate(-35deg);
+transform: rotate(-35deg);
 transform-origin: left top; 
 }
 
 .charF {
-top: 14%;   
+top: 10%;   
 right: 55%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
@@ -86,7 +86,7 @@ font-size: 85pt;
 .charC {
 font-size: 84pt;
 color:#ac721a;
-top: 8%;   
+top: 2%;   
 right: 40%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
@@ -107,9 +107,9 @@ text-shadow: 1px 1px 1px #ac721a,
 1px 25px 35px #10101033,  
 1px 30px 60px #10101066;
 
--webkit-transform: rotate(45deg);
--moz-transform: rotate(45deg);
--ms-transform: rotate(45deg);
+-webkit-transform: rotate(65deg);
+-moz-transform: rotate(65deg);
+-ms-transform: rotate(65deg);
 -o-transform: rotate(65deg);
 transform: rotate(65deg);
 
