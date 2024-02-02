@@ -1,4 +1,3 @@
-<?php
 // define variables and set to empty values
 $nameErr = "";
 $name = "";
@@ -19,4 +18,3 @@ $data = stripslashes($data);
 $data = htmlspecialchars($data);
 return $data;
 }
-?>
