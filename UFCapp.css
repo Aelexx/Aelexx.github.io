@@ -39,7 +39,7 @@ text-shadow: 1px 1px 1px #9e5151,
 1px 25px 35px #10101033,  
 1px 30px 60px #10101066;
 
--webkit-transform: rotate(-45deg);
+-webkit-transform: rotate(-55deg);
 -moz-transform: rotate(-45deg);
 -ms-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);
@@ -91,16 +91,14 @@ font-size: 80pt;
 }
 
 .charC {
-    font-size: 35pt;
-    color:#ac721a;
-    /* letter-spacing: 10cm; */
-    /* transition: 3.0s; */
-    /* top: 0%;   
-    right: 55%;  
-    transform: translate(50%,-50%);   */
-    /* text-transform: uppercase;  
-    font-family: verdana;  
-    font-weight: 700;    */
+font-size: 75pt;
+color:#ac721a;
+top: 7%;   
+right: 70%;  
+transform: translate(50%,-50%);  
+text-transform: uppercase;  
+font-family: verdana;  
+font-weight: 700; 
 text-shadow: 1px 1px 1px #ac721a,  
 1px 2px 1px #ac721a,  
 1px 3px 1px #d3b280,  
@@ -121,7 +119,6 @@ text-shadow: 1px 1px 1px #ac721a,
 -ms-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);
 transform: rotate(45deg);
-
 }
 
 #header_Welcome {
