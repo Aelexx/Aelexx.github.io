@@ -121,7 +121,7 @@ text-shadow: 1px 1px 1px #ac721a,
 -ms-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);
 transform: rotate(-45deg);
-transform-origin: right top;
+transform-origin: left top;
 }
 
 #header_Welcome {
