@@ -18,7 +18,7 @@
     font-size: 86pt;
     color:#a52a2a;
     position: absolute;  
-top: 3%;   
+top: 10%;   
 right: 70%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
@@ -48,7 +48,7 @@ transform-origin: left top;
 }
 
 .charF {
-top: 0%;   
+top: 14%;   
 right: 55%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
@@ -86,7 +86,7 @@ font-size: 85pt;
 .charC {
 font-size: 84pt;
 color:#ac721a;
-top: 1%;   
+top: 8%;   
 right: 40%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
