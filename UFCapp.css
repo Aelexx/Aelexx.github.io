@@ -18,7 +18,7 @@
     font-size: 86pt;
     color:#a52a2a;
     position: absolute;  
-top: 7%;   
+top: 3%;   
 right: 70%;  
 transform: translate(50%,-50%);  
 text-transform: uppercase;  
@@ -40,10 +40,10 @@ text-shadow: 1px 1px 1px #9e5151,
 1px 30px 60px #10101066;
 
 -webkit-transform: rotate(-55deg);
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--o-transform: rotate(-45deg);
-transform: rotate(-45deg);
+-moz-transform: rotate(-55deg);
+-ms-transform: rotate(-55deg);
+-o-transform: rotate(-55deg);
+transform: rotate(-55deg);
 transform-origin: left top; 
 }
 
