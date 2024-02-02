@@ -15,7 +15,7 @@
 }
 
 #chU {
-    font-size: 85pt;
+    font-size: 86pt;
     color:#a52a2a;
     position: absolute;  
 top: 7%;   
@@ -80,11 +80,11 @@ transform: rotate(-45deg);
 position: absolute;
 padding: 12px 12px 12px 12px;
 white-space: nowrap; 
-font-size: 80pt;
+font-size: 85pt;
 }
 
 .charC {
-font-size: 75pt;
+font-size: 84pt;
 color:#ac721a;
 top: 7%;   
 right: 70%;  
