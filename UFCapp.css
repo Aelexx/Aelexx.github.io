@@ -81,12 +81,11 @@ color:#3f86c5;
 -ms-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);
 transform: rotate(-45deg);
-/* transform-origin: left top; */
 
 
 position: absolute;
 padding: 12px 12px 12px 12px;
-/* white-space: nowrap;  */
+white-space: nowrap; 
 font-size: 80pt;
 }
 
