@@ -98,9 +98,9 @@ font-size: 80pt;
     /* top: 0%;   
     right: 55%;  
     transform: translate(50%,-50%);   */
-    text-transform: uppercase;  
+    /* text-transform: uppercase;  
     font-family: verdana;  
-    font-weight: 700;   
+    font-weight: 700;    */
 text-shadow: 1px 1px 1px #ac721a,  
 1px 2px 1px #ac721a,  
 1px 3px 1px #d3b280,  
@@ -120,7 +120,7 @@ text-shadow: 1px 1px 1px #ac721a,
 -moz-transform: rotate(-45deg);
 -ms-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);
-transform: rotate(-45deg);
+transform: rotate(45deg);
 
 }
 
