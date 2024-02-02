@@ -70,11 +70,11 @@ text-shadow: 1px 1px 1px #5b93c4,
 1px 30px 60px #10101066;
 
 color:#3f86c5;
--webkit-transform: rotate(55deg);
--moz-transform: rotate(55deg);
--ms-transform: rotate(55deg);
--o-transform: rotate(55deg);
-transform: rotate(55deg);
+-webkit-transform: rotate(50deg);
+-moz-transform: rotate(50deg);
+-ms-transform: rotate(50deg);
+-o-transform: rotate(50deg);
+transform: rotate(50deg);
 
 
 position: absolute;
