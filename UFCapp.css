@@ -115,6 +115,13 @@ text-shadow: 1px 1px 1px #ac721a,
 1px 22px 10px #10101033,  
 1px 25px 35px #10101033,  
 1px 30px 60px #10101066;
+
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+transform-origin: right top;
 }
 
 #header_Welcome {
