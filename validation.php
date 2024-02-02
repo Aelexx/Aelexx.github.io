@@ -3,8 +3,11 @@
 $name = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$name = test_input($_POST["name"]);
-}
+    if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+    } else {
+    $name = test_input($_POST["name"]);
+    }
 
 function test_input($data) {
 $data = trim($data);
