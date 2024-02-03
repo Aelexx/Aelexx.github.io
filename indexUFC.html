@@ -5,25 +5,9 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="https://aelexx.github.io/UFCapp.css" />
     <meta name="google-signin-client_id" content="454931458656-7s442pl0vqok29klnv3hjaulihaa81fl.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
-     <!-- BEGIN Pre-requisites -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
-</script>
-<script src="https://apis.google.com/js/client:platform.js?onload=start" async defer>
-</script>
-<!-- END Pre-requisites -->
-<script>
-    function start() {
-      gapi.load('auth2', function() {
-        auth2 = gapi.auth2.init({
-          client_id: '454931458656-7s442pl0vqok29klnv3hjaulihaa81fl.apps.googleusercontent.com',
-          // Scopes to request in addition to 'profile' and 'email'
-          //scope: 'additional_scope'
-        });
-      });
-    }
-  </script>
 </head>
     <body>
         <style>
@@ -41,47 +25,16 @@
             <span id="chC" class="charC"> C </span>
             <!-- <h2 id="header_Welcome"> You are Welcome! </h2> -->
         </div>
-        <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
-        <!-- Add where you want your sign-in button to render -->
-<!-- Use an image that follows the branding guidelines in a real app -->
-<button id="signinButton">Sign in with Google</button>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
 <script>
-  $('#signinButton').click(function() {
-    // signInCallback defined in step 6.
-    auth2.grantOfflineAccess().then(signInCallback);
-  });
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
 </script>
-
-<!-- Last part of BODY element in file index.html -->
-<script>
-    function signInCallback(authResult) {
-      if (authResult['code']) {
-    
-        // Hide the sign-in button now that the user is authorized, for example:
-        $('#signinButton').attr('style', 'display: none');
-    
-        // Send the code to the server
-        $.ajax({
-          type: 'POST',
-          url: 'http://example.com/storeauthcode',
-          // Always include an `X-Requested-With` header in every AJAX request,
-          // to protect against CSRF attacks.
-          headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-          },
-          contentType: 'application/octet-stream; charset=utf-8',
-          success: function(result) {
-            // Handle or verify the server response.
-          },
-          processData: false,
-          data: authResult['code']
-        });
-      } else {
-        // There was an error.
-      }
-    }
-    </script>
-
 <div id="divbtn">
         <div class="overlay hidden"></div>
         <button class="btn btn-open">Start counting</button>
