@@ -34,5 +34,5 @@ echo "<span>Valid</span>";
 }
 }
 ?>
-Copy
+
 
