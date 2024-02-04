@@ -5,7 +5,7 @@ function onSignIn(googleUser) {
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
-window.handleCredentialResponse = (response) => {
+globalThis.handleCredentialResponse = (response) => {
     // decodeJwtResponse() is a custom function defined by you
     // to decode the credential response.
     responsePayload = decodeJwtResponse(response.credential);
