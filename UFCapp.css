@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/* #header_UFCapp {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align:center;
-    font-size: 80pt;
-    margin-top: auto;
-    padding-top: 0%;
-} */
-
 #mainCaption {
     margin-top: auto;
     text-align:center;
@@ -140,101 +132,6 @@ white-space: nowrap;
     box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-#scbtn {
-    background-color: #c94752;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    /* border: 2px solid #d86886; */
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#wlbtn {
-    background-color: #e89c4b;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    /* border: 2px solid #f2d4a8; */
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#finrtbtn {
-    background-color: #3470df;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    /* border: 2px solid #799ddf; */
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#agebtn {
-    background-color: #89e38c;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    border: 2px solid #7fae7d;
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#winstbtn {
-    background-color: #d78752;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    border: 2px solid #dabb4b;
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#wellrndbtn {
-    background-color: #9d8de5;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    border: 2px solid #ecdcf7;
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#statsbtn {
-    background-color: #cfe58d;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    border: 2px solid #c4cbaf;
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-#preparationbtn {
-    background-color: #df4643;
-    font-size:25pt;
-    text-align: center;
-    font-style:italic;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: #ffff00;
-    border-radius: 18%;
-    border: 2px solid #c4cbaf;
-    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-}
 
 /* * {
     margin: 0;
