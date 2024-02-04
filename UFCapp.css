@@ -238,3 +238,7 @@ white-space: nowrap;
 .g-signin2{
   color: #a52f2f33;
 }
+
+#name-fighter{
+  position:absolute;
+}
