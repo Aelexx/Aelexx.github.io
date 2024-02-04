@@ -222,3 +222,17 @@ white-space: nowrap;
     display: none;
   }
 
+#my-signin2{
+  clip-path: polygon(
+    0% 0px,
+    0px 0%,
+    calc(100% - 20px) 0px,
+    100% 20px,
+    100% calc(100% - 0px),
+    calc(100% - 0px) 100%,
+    0px 100%,
+    0px calc(100% - 0px)
+  );
+
+  );
+}
