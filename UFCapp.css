@@ -242,3 +242,8 @@ white-space: nowrap;
 #name-fighter{
   margin-left: 40%;
 }
+
+#form-name{
+  margin-inline-start: 50%;
+  
+}
