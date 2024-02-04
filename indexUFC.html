@@ -83,7 +83,19 @@ gtag('config', 'G-CJ45Z1ZZM1');
         return JSON.parse(jsonPayload);
     }
 </script>
-
+<div id="g_id_onload"
+     :data-client_id="client_id"
+     data-login_uri="http://localhost:8080"
+     data-auto_prompt="false">
+</div>
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="left">
+</div>
 <div id="divbtn">
         <div class="overlay hidden"></div>
         <button class="btn btn-open">Start counting</button>
