@@ -59,7 +59,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 
     <div class="caption_Rus">
-        <h1 id='header_Rus'> Россия </h1>
+        <h1 id='header_Rus'></h1>
     </div>
 
     <div class="stage">
@@ -106,6 +106,7 @@ createApp({
     }
 }).mount('#app')
 </script>
+
 <p id="hover-me"> Накрой меня и я исчезну </p>
 <p id="click-me"> Нажми на меня </p>
 <p id="dclick-me"> Нажми на меня дважды </p>
@@ -140,10 +141,14 @@ createApp({
         });
     });
 </script>
-<div> 
-    <p id="ajax"> Вот тут текст размести </p>
+
+
+<!-- AJAX technics -->
+<div id="demo">
+    <h2>Let AJAX change this text</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
 </div>
-<button id="btn-ajax"> Запускаем Ajax </button>
+
 <div class="container">
             <div class="form-signin">
                 <form id="form-id" action="" method="post">
