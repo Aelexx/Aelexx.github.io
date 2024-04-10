@@ -188,8 +188,8 @@ function dont(event){
 }
 
 const dropSearch = document.querySelector('.dropSearch');
-const txtItem = document.querySelector('.dropContent');
-const txtLimit = txtItem.getAttribute('maxlength');
+const txtItems = document.querySelector('.dropContent');
+const txtLimit = txtItems.getAttribute('maxlength');
 
 document.addEventListener('click', Dropdrop);
 document.addEventListener('keydown', KeyDown);
