@@ -1,5 +1,4 @@
 'use restrict'
-
 const captBrasil = document.querySelector('.caption_Brasil');
 const offsParent = captBrasil.offsetParent;
 console.log(offsParent);
@@ -178,7 +177,8 @@ function loadWin(){
     console.log('WinLoaded');
     console.log(loadW.offsetWidth);
 }
-/*window.addEventListener('beforeunload', dont);
+
+window.addEventListener('beforeunload', dont);
 
 function dont(event){
     event.preventDefault();
@@ -282,7 +282,7 @@ mainFormSI1Input.focus();
 mainFormSI1Input.addEventListener("change", function(e){
     console.log('It works! Changed');
 });
-/*
+
 mainFormSI1Input.addEventListener("copy", function(e){
     console.log('Copy that');
 });
