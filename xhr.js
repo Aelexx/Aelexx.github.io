@@ -46,10 +46,10 @@
 // const scrollWidth = window.pageXOffset;
 // console.log(scrollWidth);
 
-setTimeout(function setScrollTo() {
-    window.scrollTo(0, 100);
-    const scrollTop = window.pageYOffset;
-}, 1000);
+// setTimeout(function setScrollTo() {
+//     window.scrollTo(0, 100);
+//     const scrollTop = window.pageYOffset;
+// }, 1000);
 
 const counts = [1,2,3,4,5,6,7,8,9,10];
 counts.forEach(element => {
