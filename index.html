@@ -99,16 +99,19 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <div id="app">{{ message }}</div>
     
     <script>
-      const { createApp, ref } = Vue
+const { createApp, ref } = Vue
     
-      createApp({
-        setup() {
-          const message = ref('Hello vue!')
-          return {
-            message
-          }
-        }
-      }).mount('#app')
+    createApp(
+        {
+            setup() 
+            {
+                const message = ref('Hello vue!')
+                return 
+                {
+                    message
+                }
+            }
+        }).mount('#app')
     </script>
 
 <p id="hover-me"> Накрой меня и я исчезну </p>
