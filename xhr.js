@@ -57,8 +57,8 @@ counts.forEach(element => {
     console.log(result);
 });
 
-const button = document.querySelector('.button');
-    button.onclick = function(){
+const button_d = document.querySelector('.button');
+    button_d.onclick = function(){
         console.log('Function click');
     }
 
