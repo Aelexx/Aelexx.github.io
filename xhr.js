@@ -2,13 +2,13 @@
 
 
 
-const captBrasil = document.querySelector('.caption_Brasil');
+//const captBrasil = document.querySelector('.caption_Brasil');
 //const offsParent = captBrasil.offsetParent;
-console.log(offsParent);
-const offsLParent = captBrasil.offsetLeft;
-const offsTParent = captBrasil.offsetTop;
-console.log(offsLParent);
-console.log(offsTParent);
+//console.log(offsParent);
+//const offsLParent = captBrasil.offsetLeft;
+//const offsTParent = captBrasil.offsetTop;
+//console.log(offsLParent);
+//console.log(offsTParent);
 
 const owidthcaptBrasil = captBrasil.offsetWidth;
 const oheightcaptBrasil = captBrasil.offsetHeight;
