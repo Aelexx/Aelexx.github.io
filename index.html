@@ -93,21 +93,20 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
     <button type="button" class="btn btn-primary"> Кнопка из Bootstrap </button>
         
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <div id="app">{{ message }}</div>
-        
-        <script>
-          const { createApp, ref } = Vue
-        
-          createApp({
-            setup() {
-              const message = ref('Hello vue!')
-              return {
-                message
-              }
-            }
-          }).mount('#app')
-        </script>
+    <div id="app">{{ message }}</div>
+
+    <script type="module">
+      import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+    
+      createApp({
+        setup() {
+          const message = ref('Hello Vue!')
+          return {
+            message
+          }
+        }
+      }).mount('#app')
+    </script>
 
 <p id="hover-me"> Накрой меня и я исчезну </p>
 <p id="click-me"> Нажми на меня </p>
