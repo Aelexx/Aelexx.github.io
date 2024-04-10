@@ -62,15 +62,15 @@ const button_d = document.querySelector('.button');
         console.log('Function click');
     }
 
-const button = document.querySelector('.button');
-button.addEventListener('click', function(e){
+const button_e = document.querySelector('.button');
+button_e.addEventListener('click', function(e){
     console.log('1');
 });
-button.addEventListener('click', function(e){
+button_e.addEventListener('click', function(e){
     console.log('2');
 });
 
-const button = document.querySelector('.button');
+const button_e = document.querySelector('.button');
 
 function showMe(){
    // console.log('1');
@@ -81,8 +81,8 @@ function showMeEither(){
     console.log(event.clientX);
     console.log(event.clientY);
 };
-button.addEventListener('click', showMe);
-button.addEventListener('mouseenter', showMeEither);
+button_e.addEventListener('click', showMe);
+button_e.addEventListener('mouseenter', showMeEither);
 
 const block = document.querySelector('.parentDiv');
 const block1 = document.querySelector('.childDiv');
