@@ -1,5 +1,5 @@
 'use restrict'
-/*
+
 const captBrasil = document.querySelector('.caption_Brasil');
 const offsParent = captBrasil.offsetParent;
 console.log(offsParent);
@@ -300,7 +300,7 @@ formSI12.addEventListener("submit", function(event){
     }
     else{console.log('Good')};
     
-});*/
+});
 
 function validate(){
 
