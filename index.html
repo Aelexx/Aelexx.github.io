@@ -222,49 +222,6 @@ createApp({
 
     </script>
     
-    <div class="city">
-        <h2 id='mainCity'> Москва </h2>
-    </div>
-</div>
-<section class="mainformSection1">
-    <form name="formSI1">
-    <label for="firstname1"> Имя </label>
-    <input tabindex="3" id="firstname1" type="text" name="firstname" placeholder="Имечка..."> 
-
-    <label for="lastname1"> Фамилия </label>
-    <input tabindex="4" id="lastname1" type="text" name="lastname" placeholder="Фамиличька...">
-    <button type="submit"> Подтверди </button>
-
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <script>
-        const ctx = document.getElementById('myChart');
-    
-        new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: ['#3ba36d'],
-            borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-            x: {
-                beginAtZero: true
-            }
-            }
-        }
-        });
-    </script>
-    
     <script src="xhr.js"></script>
     <script src="vanilla.js"></script>
     <script src="Fetch.js"></script>
