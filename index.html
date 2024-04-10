@@ -100,18 +100,18 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <script>
 const { createApp, ref } = Vue
-    
-    createApp(
-        {
-            setup() 
+
+        createApp(
             {
-                const message = ref('Hello vue!')
-                return 
-                {
-                    message
-                }
-            }
-        }).mount('#app')
+                setup() 
+                    {
+                        const message = ref('Hello vue!')
+                        return 
+                        {
+                            message
+                        }
+                    }
+            }).mount('#app')
     </script>
 
 <p id="hover-me"> Накрой меня и я исчезну </p>
