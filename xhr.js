@@ -3,7 +3,7 @@
 
 
 const captBrasil = document.querySelector('.caption_Brasil');
-const offsParent = captBrasil.offsetParent;
+//const offsParent = captBrasil.offsetParent;
 console.log(offsParent);
 const offsLParent = captBrasil.offsetLeft;
 const offsTParent = captBrasil.offsetTop;
