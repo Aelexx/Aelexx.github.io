@@ -178,7 +178,7 @@ function loadWin(){
     console.log('WinLoaded');
     console.log(loadW.offsetWidth);
 }
-/*window.addEventListener('beforeunload', dont);
+window.addEventListener('beforeunload', dont);
 
 function dont(event){
     event.preventDefault();
@@ -282,7 +282,7 @@ mainFormSI1Input.focus();
 mainFormSI1Input.addEventListener("change", function(e){
     console.log('It works! Changed');
 });
-/*
+
 mainFormSI1Input.addEventListener("copy", function(e){
     console.log('Copy that');
 });
@@ -300,7 +300,7 @@ formSI12.addEventListener("submit", function(event){
     }
     else{console.log('Good')};
     
-});*/
+});
 
 function validate(){
 
