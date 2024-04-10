@@ -70,7 +70,7 @@ button_e.addEventListener('click', function(e){
     console.log('2');
 });
 
-const button_e = document.querySelector('.button');
+const button_f = document.querySelector('.button');
 
 function showMe(){
    // console.log('1');
@@ -81,8 +81,8 @@ function showMeEither(){
     console.log(event.clientX);
     console.log(event.clientY);
 };
-button_e.addEventListener('click', showMe);
-button_e.addEventListener('mouseenter', showMeEither);
+button_f.addEventListener('click', showMe);
+button_f.addEventListener('mouseenter', showMeEither);
 
 const block = document.querySelector('.parentDiv');
 const block1 = document.querySelector('.childDiv');
