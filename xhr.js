@@ -7,7 +7,7 @@ function loadDoc() {
        document.getElementById("demo").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.open("GET", "LoadTxt.txt", true);
     xhttp.send();
   }
 const captBrasil = document.querySelector('.caption_Brasil');
