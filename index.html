@@ -47,6 +47,8 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css"
     <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
     
+    
+<!-- JQuery Implementation -->    
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
     <script>
     $(document).ready(function(){
@@ -109,6 +111,7 @@ crossorigin="anonymous"></script>
 <p>Click me too!</p>
 
 
+<!-- VUE Implementation -->
     <script type="module">
       import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
     
@@ -121,34 +124,6 @@ crossorigin="anonymous"></script>
         }
       }).mount('#app')
     </script>
-
-<p id="hover-me"> Накрой меня и я исчезну </p>
-<p id="click-me"> Нажми на меня </p>
-<p id="dclick-me"> Нажми на меня дважды </p>
-<p id="leave-me"> Оставь меня в покое </p>
-<p id='enter-me'> Зайди вот сюда </p>
-<script>
-    $(document).ready(function(){
-        $("#hover-me").hover(function(){
-            $(this).hide();
-        });
-        $("#click-me").click(function(){
-            $(this).hide();
-        });
-        $("#dclick-me").dblclick(function(){
-            $(this).hide();
-        });
-        $("#leave-me").mouseout(function(){
-            $(this).hide();
-        });
-        $("#enter-me").click(function(){
-            $("#click-me").slideToggle(2000);
-        });
-        $("#header_Rus").hover(function(){
-            $(this).focusd()
-        })
-    });
-</script>
 
 
 <!-- AJAX technics -->
