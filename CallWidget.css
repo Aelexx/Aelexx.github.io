@@ -157,10 +157,6 @@ transform: translateZ(-28.5px);
 -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
 }
 
-.layer:nth-child(n+11):after {
--webkit-text-stroke: 15px rgba(58, 33, 186, 0.89)
-text-shadow: 6px 0 6px #ffffff, 5px 5px 5px rgb(255, 255, 255), 0 6px 6px #ffffff;
-}
 
 .layer:nth-child(n+12):after {
 -webkit-text-stroke: 15px #ffffff;
