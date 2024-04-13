@@ -1,12 +1,7 @@
 'use restrict'
 
 
-//JQuery
-    $(document).ready(function(){
-      $("p").click(function(){
-        $(this).hide();
-      });
-    });
+
 
 setTimeout(function setScrollTo() {
     window.scrollTo(0, 100);
