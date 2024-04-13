@@ -182,7 +182,10 @@ text-shadow: none;
 }
 
 #btsrp{
-    padding-left: 20%;
+    padding-left: 50%;
+    margin-left: 50%;
+    text-align: center;
+    text-decoration: solid;
     padding: 0px;
 }
 
