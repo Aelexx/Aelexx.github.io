@@ -42,16 +42,6 @@ gtag('config', 'G-61584KVT26');
 <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-<title>My first Vue page</title>
-  <style>
-    #app {
-      display: inline-block;
-      padding: 10px;
-      font-size: x-large;
-      background-color: lightgreen;
-    }
-  </style>
 </head>
 
 <body>
@@ -109,29 +99,26 @@ gtag('config', 'G-61584KVT26');
 </script>
 
 <!-- Vue -->
-<h1>Vue Example</h1>
-
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
-
 <div id="app">
-  {{ message }}
-</div>
+    {{ message }}
+  </div>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<script>
-  const app = Vue.createApp({
-   data() {
-    return {
-     message: "Hello World!"
-    }
-   }
-  })
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello World!"
+        }
+      }
+    })
+
+   app.mount('#app')
+
+  </script>
+
   
-  app.mount('#app')
-
-</script>
-
 
 <!-- AJAX -->
 <div id="AJAX">
