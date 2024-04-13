@@ -41,7 +41,7 @@ height: 250px;
 width: 400px;
 margin: auto;
 position: absolute;
-top: 0;
+top: 20px;
 right: 0;
 bottom: 0;
 left: 0;
@@ -52,7 +52,7 @@ transform-style: preserve-3d;
 .layer {
 width: 100%;
 height: 100%;
-position: absolute;
+position: top;
 transform-style: preserve-3d;
 animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
 animation-fill-mode: forwards;
