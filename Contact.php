@@ -11,6 +11,9 @@
         <input type="text" name="name" placeholder="Name">
         <input type="text" name="mail" placeholder="Mail">
         <input type="text" name="subject" placeholder="Subject of the mail">
+        <textarea name="textarea" rows="10" cols="100">
+        <button type="submit" name="subscribeformychannel"> Send </button>
+
         </form>
         </main>
 
