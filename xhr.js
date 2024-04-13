@@ -7,49 +7,6 @@
         $(this).hide();
       });
     });
-// const captBrasil = document.querySelector('.caption_Brasil');
-// //const offsParent = captBrasil.offsetParent;
-// console.log(offsParent);
-// const offsLParent = captBrasil.offsetLeft;
-// const offsTParent = captBrasil.offsetTop;
-// console.log(offsLParent);
-// console.log(offsTParent);
-
-// const owidthcaptBrasil = captBrasil.offsetWidth;
-// const oheightcaptBrasil = captBrasil.offsetHeight;
-// console.log(owidthcaptBrasil);
-// console.log(oheightcaptBrasil);
-
-// const leftcaptBrasil = captBrasil.clientLeft;
-// const topcaptBrasil = captBrasil.clientTop;
-// console.log(leftcaptBrasil);
-// console.log(topcaptBrasil);
-
-// const clwidthcaptBrasil = captBrasil.clientWidth;
-// const clheicaptBrasil = captBrasil.clientHeight;
-// console.log(clwidthcaptBrasil);
-// console.log(clheicaptBrasil);
-
-// //captBrasil.scrollTop = 205;
-// const scrollLeftcaptBrasil = captBrasil.scrollLeft;
-// const scrollTopcaptBrasil = captBrasil.scrollTop = 150;
-// console.log(scrollLeftcaptBrasil);
-// console.log(scrollTopcaptBrasil);
-
-// const rioItem = document.querySelector('#mainCity');
-// const rioItemCoord = rioItem.getBoundingClientRect();
-// const rioItemCoordRight = rioItem.getBoundingClientRect().right;
-// console.log(rioItemCoord);
-// console.log(rioItemCoordRight);
-// const rioItemCoordTop = rioItem.getBoundingClientRect().top;
-// const rioItemCoordTop2 = rioItemCoordTop + window.pageYOffset;
-// console.log(rioItemCoordTop2);
-
-// const findByCoordinate = document.elementFromPoint(120, 120);
-// console.log(findByCoordinate);
-
-// const scrollWidth = window.pageXOffset;
-// console.log(scrollWidth);
 
 setTimeout(function setScrollTo() {
     window.scrollTo(0, 100);
