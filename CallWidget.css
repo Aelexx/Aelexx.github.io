@@ -180,6 +180,11 @@ text-shadow: none;
     transform: rotateY(-60deg) rotateX(60deg);
 }
 }
+
+.btn btn-primary{
+    padding: 50px;
+}
+
 #AJAX{
     padding: 50px;
 
