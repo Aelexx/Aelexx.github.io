@@ -1,7 +1,7 @@
 #header_Brasil{
     font-stretch: extra-expanded;
     position: absolute;
-    top: 50%; 
+    top: 10%; 
     right: 50%;
     transform: translate(50%,-50%);
     text-transform: uppercase;
