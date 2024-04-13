@@ -180,6 +180,10 @@ text-shadow: none;
     transform: rotateY(-60deg) rotateX(60deg);
 }
 }
+#AJAX{
+    padding: 50px;
+
+}
 #what_todo{
     font-family: Geneva;
     font-stretch:condensed;
