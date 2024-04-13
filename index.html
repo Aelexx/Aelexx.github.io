@@ -42,6 +42,16 @@ gtag('config', 'G-61584KVT26');
 <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<title>My first Vue page</title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 10px;
+      font-size: x-large;
+      background-color: lightgreen;
+    }
+  </style>
 </head>
 
 <body>
@@ -99,39 +109,29 @@ gtag('config', 'G-61584KVT26');
 </script>
 
 <!-- Vue -->
+<h1>Vue Example</h1>
+
+<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+
 <div id="app">
-    {{ message }}
-  </div>
+  {{ message }}
+</div>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-  <script>
-    const app = Vue.createApp({
-      data() {
-        return {
-          message: "Hello World!"
-        }
-      }
-    })
+<script>
+  const app = Vue.createApp({
+   data() {
+    return {
+     message: "Hello World!"
+    }
+   }
+  })
+  
+  app.mount('#app')
 
-   app.mount('#app')
+</script>
 
-  </script>
-
-  <script setup>
-    import { ref } from 'vue'
-    
-    // A "ref" is a reactive data source that stores a value.
-    // Technically, we don't need to wrap the string with ref()
-    // in order to display it, but we will see in the next
-    // example why it is needed if we ever intend to change
-    // the value.
-    const message = ref('Hello World!')
-    </script>
-    
-    <template>
-      <h1>{{ message }}</h1>
-    </template>
 
 <!-- AJAX -->
 <div id="AJAX">
