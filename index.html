@@ -148,7 +148,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("demo").innerHTML = this.responseText;
+    document.getElementById("AJAX").innerHTML = this.responseText;
     }
     };
     xhttp.open("GET", "LoadTxt.txt", true);
