@@ -1,7 +1,12 @@
 'use restrict'
 
 
-
+//JQuery
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
 // const captBrasil = document.querySelector('.caption_Brasil');
 // //const offsParent = captBrasil.offsetParent;
 // console.log(offsParent);
