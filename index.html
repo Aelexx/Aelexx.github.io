@@ -37,6 +37,7 @@ gtag('config', 'G-61584KVT26');
   src="https://unpkg.com/vue@3/dist/vue.global.js">
 </script>
 
+
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -57,6 +58,8 @@ gtag('config', 'G-61584KVT26');
       });
     });
     </script>
+
+    <title>My first Vue page</title>
 </head>
 <style>
 
@@ -112,18 +115,24 @@ gtag('config', 'G-61584KVT26');
 
 
 <!-- VUE Implementation -->
-    <script type="module">
-      import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-    
-      createApp({
-        setup() {
-          const message = ref('Hello Vue!')
-          return {
-            message
-          }
+<div id="app">
+    {{ message }}
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello World!"
         }
-      }).mount('#app')
-    </script>
+      }
+    })
+
+   app.mount('#app')
+
+  </script>
 
 
 <!-- AJAX technics -->
