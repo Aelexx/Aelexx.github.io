@@ -91,14 +91,13 @@ gtag('config', 'G-61584KVT26');
 <!-- Jquery -->
 
 <h6 id="jq"> Нажми JQuery </h6>
-
 <script>
     $("#jq").click(function(){
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
     });
 
-
 </script>
+
 <!-- Vue -->
 <div id="app">
     {{ message }}
@@ -119,6 +118,20 @@ gtag('config', 'G-61584KVT26');
 
   </script>
 
+  <script setup>
+    import { ref } from 'vue'
+    
+    // A "ref" is a reactive data source that stores a value.
+    // Technically, we don't need to wrap the string with ref()
+    // in order to display it, but we will see in the next
+    // example why it is needed if we ever intend to change
+    // the value.
+    const message = ref('Hello World!')
+    </script>
+    
+    <template>
+      <h1>{{ message }}</h1>
+    </template>
 
 <!-- AJAX -->
 <div id="AJAX">
