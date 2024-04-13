@@ -30,15 +30,15 @@
 @import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
 
 body {
-min-height: 450px;
-height: 100vh;
+min-height: 350px;
+height: 90vh;
 margin: 0;
 background: #ffffff;/*radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);*/
 }
 
 .stage {
-height: 300px;
-width: 500px;
+height: 250px;
+width: 400px;
 margin: auto;
 position: absolute;
 top: 0;
