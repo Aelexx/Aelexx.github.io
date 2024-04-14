@@ -96,8 +96,8 @@ gtag('config', 'G-61584KVT26');
 <button id="sw"> Показать текст, если скрыли его </button>
 <button id="btn-fade"> Высветление красного квадрата </button>
 <div id="div1" style="width:70px; height:70px; background-color:red;"></div><br>
-<div id="panel" style="width:70px; height:70px; background-color:red;"></div><br>
-<div id="flip"> Нажать и увидеть </div><br>
+<div id="flip"> Нажать и увидеть </div>
+<div id="panel"> С Добрым Утром! </div>
 <script>
     $("#jq").click(function(){
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
@@ -115,11 +115,15 @@ gtag('config', 'G-61584KVT26');
         $("div").fadeTo("slow", 0.5);
     });
 
+    $("#flip").click(function(){
+        $("#panel").slideDown();
+    });
 
 </script>
 <style>
     #panel, #flip{
         padding: 7px;
+        text-align: center;
         background-color: #f0fcb2;
         border: 12px;
     }
