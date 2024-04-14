@@ -97,10 +97,12 @@ gtag('config', 'G-61584KVT26');
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
     });
 
-    $("hd").click(function(){
-        $(this).hide();
+    $(document).ready(function(){
+        $("hd").click(function(){
+            $(this).hide();
+        });
     });
-    
+
 </script>
 
 <a href="http://ufcapp.free.nf/Contact.php"> On contact form </a>
