@@ -94,7 +94,7 @@ gtag('config', 'G-61584KVT26');
 <h6> Реализация JQuery: скрыть и показать текст. </h6>
 <button id="hd"> Скрыть текст </button>
 <button id="sw"> Показать текст, если скрыли его </button>
-<button> Высветление красного квадрата </button>
+<button id="btn-fade"> Высветление </button>
 <div id="div1" style="width:70px; height:70px; background-color:red;"></div><br>
 <script>
     $("#jq").click(function(){
@@ -109,7 +109,7 @@ gtag('config', 'G-61584KVT26');
         $("h6").show();
     });
 
-    $("button").click(function(){
+    $("#btn-fade").click(function(){
         $("#div1").fadeTo("slow", 0.5);
     });
 
