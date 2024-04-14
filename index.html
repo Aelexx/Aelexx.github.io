@@ -93,7 +93,8 @@ gtag('config', 'G-61584KVT26');
 <h6 id="jq"> Нажми JQuery </h6>
 <h6> Реализация JQuery: скрыть и показать текст. </h6>
 <button id="hd"> Скрыть текст </button>
-<button id="sw"> Показать текст </button>
+<button id="btn-fade"> Затемнение </button>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
 <script>
     $("#jq").click(function(){
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
@@ -105,6 +106,10 @@ gtag('config', 'G-61584KVT26');
 
     $("#sw").click(function(){
         $("h6").show();
+    });
+
+    $("#btn-fade").click(function(){
+        $("div1").fadeTo("slow", 0.5);
     });
 
 </script>
