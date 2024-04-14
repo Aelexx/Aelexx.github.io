@@ -91,11 +91,16 @@ gtag('config', 'G-61584KVT26');
 <!-- Jquery -->
 
 <h6 id="jq"> Нажми JQuery </h6>
+<h6 id="hd"> Скрыть текст </h6>
 <script>
     $("#jq").click(function(){
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
     });
 
+    $("hd").click(function(){
+        $(this).hide();
+    });
+    
 </script>
 
 <a href="http://ufcapp.free.nf/Contact.php"> On contact form </a>
