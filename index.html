@@ -91,6 +91,7 @@ gtag('config', 'G-61584KVT26');
 <!-- Jquery -->
 
 <h6 id="jq"> Нажми JQuery </h6>
+<p> Реализация JQuery: скрыть и показать текст. </p>
 <button id="hd"> Скрыть текст </button>
 <button id="sw"> Показать текст </button>
 <script>
@@ -99,11 +100,11 @@ gtag('config', 'G-61584KVT26');
     });
     
     $("#hd").click(function(){
-        $(this).hide();
+        $("p").hide();
     });
 
     $("#sw").click(function(){
-        $(this).show();
+        $("p").show();
     });
 
 </script>
