@@ -96,11 +96,9 @@ gtag('config', 'G-61584KVT26');
     $("#jq").click(function(){
         alert("Был клик и сработал JQuery, вызвав это сообщение. ");
     });
-
-    $(document).ready(function(){
-        $("hd").click(function(){
-            $("hd").hide();
-        });
+    
+    $("hd").click(function(){
+        $(this).hide();
     });
 
 </script>
