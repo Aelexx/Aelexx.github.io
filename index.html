@@ -160,7 +160,19 @@ gtag('config', 'G-61584KVT26');
 <a href="http://ufcapp.free.nf/Contact.php"> Форма обратной связи на PHP </a><br>
 <a href="https://stackblitz.com/edit/stackblitz-starters-rjwljo?file=src%2Fmain.ts"> Пробую Angular на StackBlitz </a>
 <!-- Vue -->
+createApp({
+  setup() {
+    return {
+      count: ref(0)
+    }
+  }
+}).mount('#app')
 
+<div id="app">
+    <button @click="count++">
+      Count is: {{ count }}
+    </button>
+  </div>
 
 <!-- AJAX -->
 <div id="AJAX">
