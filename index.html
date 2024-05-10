@@ -160,19 +160,36 @@ gtag('config', 'G-61584KVT26');
 <a href="http://ufcapp.free.nf/Contact.php"> Форма обратной связи на PHP </a><br>
 <a href="https://stackblitz.com/edit/stackblitz-starters-rjwljo?file=src%2Fmain.ts"> Пробую Angular на StackBlitz </a>
 <!-- Vue -->
-createApp({
-  setup() {
+<script>
+export default {
+  // Properties returned from data() become reactive state
+  // and will be exposed on `this`.
+  data() {
     return {
-      count: ref(0)
+      count: 0
     }
-  }
-}).mount('#app')
+  },
 
-<div id="app">
-    <button @click="count++">
-      Count is: {{ count }}
-    </button>
-  </div>
+  // Methods are functions that mutate state and trigger updates.
+  // They can be bound as event handlers in templates.
+  methods: {
+    increment() {
+      this.count++
+    }
+  },
+
+  // Lifecycle hooks are called at different stages
+  // of a component's lifecycle.
+  // This function will be called when the component is mounted.
+  mounted() {
+    console.log(`The initial count is ${this.count}.`)
+  }
+}
+</script>
+
+<template>
+  <button @click="increment">Count is: {{ count }}</button>
+</template>
 
 <!-- AJAX -->
 <div id="AJAX">
