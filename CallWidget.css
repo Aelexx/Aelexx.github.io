@@ -1,0 +1,207 @@
+body {
+min-height: 450px;
+height: 100vh;
+margin: 0;
+background: #ffffff;/*radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);*/
+}
+
+#boldF{
+    font-weight: 900;
+}
+
+/* Шрифт от Гугл */
+/* .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: table;
+    margin: auto;
+    
+} */
+
+.btns{
+    color: whitesmoke;
+    background-color: black;
+    font-size: large;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+.btns:hover{
+    background-color: white;
+    color: black;
+}
+
+.bdMA{
+    color:#fff;
+    background-color: rgba(3, 3, 3, 0.803);
+    opacity: 100%;
+    background-color: white;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%;
+    background-size: 100%; 
+    
+}
+td:hover:first-child{
+    background-color: #cdea13;
+}
+a:any-link{
+    color:#12BB56;
+}
+
+a:visited{
+    color:rgb(174, 82, 82)
+}
+
+.Firo{
+    border-collapse: collapse;
+    display: table;
+    margin: 0 auto;
+}
+
+.tabl{
+    display: table;
+    margin: 0 auto;
+}
+
+.tablNames{
+    display: table;
+    margin: 0 auto;
+}
+
+@media screen and (width > 1280px) and (width < 2000px ){
+    p{
+        text-align: center;
+    }
+}
+
+@media print {
+    p{
+        text-align: right;
+    }
+}
+
+@media screen and (orientation:portrait){
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+}
+
+/************************************Bootstrap ***************************************************************/ 
+
+.container-fluid{
+    color: whitesmoke;
+    background-color: rgb(195, 55, 24);
+    a{
+        color: white;
+    }
+}
+
+.container-sm{
+    padding-bottom: 2cm;
+}
+
+#hom{
+        color: white;
+}
+
+#link{
+    color: white;
+}
+/* #link:hover{
+    color:rgb(211, 39, 188);
+} */
+
+#dropd{
+    color:white;
+}
+
+.dropdown-center{
+    background-color:black;
+}
+#poisk{
+    color:white;
+}
+
+
+/********************************** Cards ***********************************/
+.card{
+    display: table;
+    margin: auto;
+}
+.bodycl{
+    background-color: white;
+}
+.whole-container{
+    text-align: center;
+    color:white;
+    
+}
+.carouselExampleAutoplaying{
+    color:white;
+}
+
+.btn btn-primary{
+    color: white;
+}
+
+.bodycl2{
+    background-color: white;
+}
+
+.carousel-inner{
+    color:white;
+}
+
+.container-sm{
+    background-color: #343a40;
+    border-radius: 10px;
+    
+}
+#ii{
+    width: 330px;
+    height: 150px;
+    margin: left 5px;
+    
+    padding: 10px 10px 10px 10px;
+}
+#dlml{
+    width: 330px;
+    height: 150px;
+    margin-right: 5px;
+    padding: 10px 10px 10px 10px;
+}
+#chgpt{
+    width: 330px;
+    height: 150px;
+    margin-left: 5px;
+
+    padding: 10px 10px 10px 10px;
+}
+#ftr{
+    background-color: white;
+    color: black;
+}
+
+/* Для мобильных устройств нужна конкретика в параграфах */
+p{
+    color:black;
+}
+
+button::-moz-focus-inner,
+input[type="color"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  padding-block-start: 0px;
+  padding-inline-end: 2px;
+  padding-block-end: 0px;
+  padding-inline-start: 2px;
+  border: 2px dotted red;
+}
+
+.visually-hidden-focusable{
+    color:black;
+}
