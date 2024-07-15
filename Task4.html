@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="ru"></html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная</title>
+</head>
+<body>
+<h1 id="h1"></h1>
+<h2 id="h2"></h2>
+<h3 id="h3"></h3>
+<script>
+    let uInp = prompt("Введите дату: ")
+    const myDate = new Date(uInp)
+    const currentDate = new Date()
+    let res = (currentDate - myDate)/(1000*60*60*24*30)
+    document.getElementById('h1').innerHTML = "Количество месяцев = " + res
+</script>  
+<script>
+    let uNum = prompt("Введите число: ")
+    document.getElementById('h2').innerHTML = "Возведение в степень: "  + uNum*uNum
+    document.getElementById('h3').innerHTML = "Квадратный корень: " + Math.sqrt(uNum)
+</script>
+
+</body>
