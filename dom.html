@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        .default{
+            width: 100px;
+            height: 100px;
+            position: 
+        }
+
+    </script>
+</head>
+<body>
+    <div class="default"></div>
+    <ul class="cls" id="ee" test="first">
+            <li>
+                <ol>
+                <li> First </li>
+                <li> Second </li>
+                <li> Third </li>
+                <li> Fourth </li>
+                <li> Fifth </li>
+                </ol>    
+            <li> Object1 </li>
+            <li> Object2 </li>
+            <li> Object3 </li>
+
+        
+    </ul>
+    <script>
+        function baseNodes(){     
+        for(let i = 0; i < document.body.childNodes.length; i++){
+            console.log(document.body.childNodes[i]);
+            console.log(document.body.firstChild);
+            console.log(document.body.lastChild);
+        }
+    }
+    baseNodes();
+
+    function Li(){
+        console.log("First: ", document.getElementsByTagName("ul")[0].firstChild);
+        console.log("First element: ",document.getElementsByTagName("ul")[0].firstElementChild);
+        console.log("Last: ",document.getElementsByTagName("ul")[0].lastChild);
+        console.log("Last element: ",document.getElementsByTagName("ul")[0].lastElementChild);
+    }
+
+    Li();
+
+    function allEl(){
+        let allEl = document.body.childNodes;
+        for(let el of allEl){
+            console.log("All els: ", allEl);
+        }
+    }
+
+    allEl();
+
+    function takeEl(){
+        let ul = document.getElementById("ee");
+        console.log(`Text of <ul>: ${ul.innerText}`)
+        console.log(`codeHTML: ${ul.innerHTML}`)
+        console.log(`id of ul: ${ul.id}`)
+        console.log(`class ul: ${ul.className}`)
+        ul.id = "eee"
+        console.log(`new id that I changed: ${ul.id}`)
+        ul.setAttribute("test", "second")
+        console.log(`Attrs: ${ul.getAttribute('test')}`)
+        console.log(`Attrs: ${ul.ELEMENT_NODE}`)
+        ul.removeAttribute('test')
+        ul.setAttribute('test', 'third')
+        console.log(`Attrs: ${ul.getAttribute('test')}`)
+    }
+
+    takeEl();
+    </script>
+
+    <img src="pic.jpg" id="me" alt="Me" height="200" width="200">
+    <div class="class-Smpl"></div>
+    <script>
+        let pic = document.getElementById("me");
+        pic.ondragstart = function(){
+            return false;
+        }
+        pic.onmousedown = function(event){
+            pic.style.position = "absolute";
+            pic.style.zIndex = "30";
+            moves(event.x, event.y)
+            movesUD(event.y, event.z)
+        }
+
+        function moves(x, y){
+            pic.style.left = x - pic.offsetWidth / 2 + 'px';
+            pic.style.right = y - pic.offsetHeight / 2 + 'px';
+        }
+
+        function movesUD(y, z){
+            pic.style.top = y - pic.offsetTop / 2 + 'px';
+            pic.style.bottom = z - pic.offsetBottom / 2 + 'px';
+        }
+
+
+        
+    </script>
+
+
+    
+</body>
